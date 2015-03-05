@@ -1,6 +1,12 @@
 # Tasks
 
-## Feb 26, 2014
+## Mar 5, 2015
+
+* Install LaTeX
+* Compile Thesis files
+
+
+## Feb 26, 2015
 
 * Source Code Management with [Git](http://git-scm.com/)
 * [GitHub](https://github.com/)
