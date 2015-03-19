@@ -1,5 +1,11 @@
 # Tasks
 
+## Mar 19, 2015
+
+* Store and retrieve data from SQLite database within Java program (JDBC)
+* Pull information from Web and store in database through script
+
+
 ## Mar 5, 2015
 
 * Install LaTeX
