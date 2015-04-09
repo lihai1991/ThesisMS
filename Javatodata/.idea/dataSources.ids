@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="SQLite -" uuid="37158f26-26e7-44a0-9e77-96993eb29434">
+    <database-info product="SQLite" version="3.7.6.3" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <schema name="" catalog=""/>
+    <table name="rank" schema="" catalog="" type="TABLE">
+      <column name="Ranking" sqlType="INT" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="Previous" sqlType="INT" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+      <column name="Name" sqlType="NVARCHAR(20)" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="Assoc" sqlType="NVARCHAR(20)" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
+      <column name="RankingPts" sqlType="INT" precision="2000000000" scale="10" nullable="true" jdbcType="4"/>
+    </table>
+  </data-source>
+</component>
