@@ -1,10 +1,5 @@
-/**
- * Created by ThinkPad on 2015/4/2.
- */
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 import java.sql.*;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -23,7 +18,7 @@ public class RTW {
             InputStreamReader input = new InputStreamReader(httpConn
                     .getInputStream(), "utf-8");
             BufferedReader bufReader = new BufferedReader(input);
-            String line = "";
+            String line;
             StringBuilder contentBuf = new StringBuilder();
             while ((line = bufReader.readLine()) != null) {
                 contentBuf.append(line);

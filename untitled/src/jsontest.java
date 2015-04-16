@@ -13,7 +13,7 @@ import java.net.URL;
 public class jsontest {
     public static void main(String[] args) {
         try {
-            /*Class.forName("org.sqlite.JDBC");
+            Class.forName("org.sqlite.JDBC");
             Connection conn = DriverManager.getConnection("jdbc:sqlite:Rank.db");
             String sCreate = "CREATE TABLE rank(Ranking text,Previous text,Name text,Assoc text,RankingPts text)";
             Statement stmt = conn.createStatement();
@@ -38,7 +38,7 @@ public class jsontest {
             int l=text.length();
             String []tokens=text.split("\\s{1,}", 140);
             System.out.println(text);
-            for(int j=0;j<tokens.length;j=j+7)
+            /*for(int j=0;j<tokens.length;j=j+7)
             {
                 if(j>=63){int ed=2;
                     tokens[j]=tokens[j].substring(0,ed);}
@@ -46,10 +46,9 @@ public class jsontest {
                     tokens[j]=tokens[j].substring(0,ed);}
                 for(int k=6;k<tokens.length;k=k+7)
                 {tokens[k]=tokens[k].substring(0,4);}
-            }
-            for(int k=0;k<20;k++){*/
-                    String cont="123";
-                    String jsonContent = "{"Rank":"tokens[7*k]","Previous":"tokens[7*k+1]","Name":"tokens[7*k+2]"+" "+"tokens[7*k+3]","Assoc":"tokens[7*k+5]","RankingPts":"tokens[7*k+6]"}";
+            }*/
+            for(int k=0;k<20;k++){
+                    /*String jsonContent = '{"Rank":'"+tokens[7*k]+"',"Previous":"tokens[7*k+1]","Name":"tokens[7*k+2]"+" "+"tokens[7*k+3]","Assoc":"tokens[7*k+5]","RankingPts":"tokens[7*k+6]"}';
                     JSONObject jsonObject = new JSONObject(jsonContent);
                     String str1 = jsonObject.getString("Rank");
                     String str2 = jsonObject.getString("Previous");
@@ -57,9 +56,25 @@ public class jsontest {
                     String str4=jsonObject.getString("Assoc");
                     String str5=jsonObject.getString("RankingPts");
                     System.out.println(str1);
-                    System.out.println(str2);/*
+                    System.out.println(str2);*/
+                JSONObject json;
+                json=new JSONObject();
+                json.put("rank",tokens[7*k]);
+                json.put("previous",tokens[7*k+1]);
+                json.put("name",tokens[7*k+2]+" "+tokens[7*k+3]);
+                json.put("assoc",tokens[7*k+5]);
+                json.put("rankingpts",tokens[7*k+6]);
+                /*stmt.executeUpdate("INSERT INTO rank VALUES(json.getJSONObject().getString(rank),json.getJSONObject().getString(preivous),json.getJSONObject().getString(name),json.getJSONObject().getString(assoc),json.getJSONObject().getString(rankingpts))");
+                */System.out.println(json);
+                stmt.executeUpdate("INSERT INTO  rank VALUES('"+json.getString("rank")+"','"+json.getString("previous")+"','"+json.getString("name")+"','"+json.getString("assoc")+"','"+json.getString("rankingpts")+"')");
+                System.out.print(json.getString("rank")+" ");
+                System.out.print(json.getString("previous")+" ");
+                System.out.print(json.getString("name")+" ");
+                System.out.print(json.getString("assoc")+" ");
+                System.out.println(json.getString("rankingpts"));
+
             }
-            for(int i=0;i<tokens.length;i++)
+            /*for(int i=0;i<tokens.length;i++)
             {
                 System.out.println(tokens[i]);
                 stmt.executeUpdate("INSERT INTO rank VALUES( "+tokens[7*i]+","+tokens[7*i+1]+",'"+tokens[7*i+2]+" "+tokens[7*i+3]+"','"+tokens[7*i+5]+"',"+tokens[7*i+6]+")");

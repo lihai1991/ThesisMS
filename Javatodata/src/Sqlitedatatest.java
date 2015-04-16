@@ -7,17 +7,14 @@ public class Sqlitedatatest {
         try {
             Class.forName("org.sqlite.JDBC");
             Connection conn = DriverManager.getConnection("jdbc:sqlite:MarchRank.db");
-            String sInsert= "insert into rank values(170,175,'WALKER Samuel','ENG',1774)";
-            String sSelect="SELECT * FROM rank";
-            String sDelete="delete from rank where Ranking=170" ;
-            Statement stmt = conn.createStatement();
-            stmt.executeUpdate(sDelete);
-            ResultSet rs = stmt.executeQuery(sSelect);
+            Statement stat = conn.createStatement();
+            stat.executeUpdate( "insert into rank values(170,170,'HAI','CHN',122);" );
+            ResultSet rs = stat.executeQuery("SELECT * FROM rank;");
             while (rs.next()) {
                 System.out.print("Ranking = " + rs.getString("Ranking") + " ");
-                System.out.print("Previous = " + rs.getString("Previous") + " ");
-                System.out.print("Name =" + rs.getString("Name") + " ");
-                System.out.print("Assoc =" + rs.getString("Assoc") + " ");
+                System.out.println("Previous = " + rs.getString("Previous") + " ");
+                System.out.println("Name =" + rs.getString("Name") + " ");
+                System.out.println("Assoc =" + rs.getString("Assoc") + " ");
                 System.out.println("RankingPts =" + rs.getString("RankingPts"));
             }
             rs.close();
