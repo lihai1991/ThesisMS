@@ -1,0 +1,128 @@
+\chapter{PROBLEM FORMULATION}
+Consider a scenario where several wireless clients randomly located nearby a rectangular region. Four monitoring devices are located at the four corners. Each monitoring device has information of its own location and orientation. The radiation pattern of antenna attached to each monitoring device is known as well. All of the monitoring devices are connected to the Internet. The wireless clients transmit data packets periodically and consequently detected by the monitoring devices. Since each wireless client has different MAC address, the packets transmitted from different clients can be distinguished. Here we use $\mathcal{A}_{\mathrm{t}}$ to represent the target area and $\mathcal{A}_{\mathrm{o}}$ to represent its complement.
+In this study, we assume the wireless clients are quasi-static and each client is equipped with isotropic antenna. For convenience, we use a single vector to denote the locations of the wireless clients.
+\begin{equation}
+\underline{\mathbf{U}} = (\mathbf{U}_1, \ldots, \mathbf{U}_{n_{\mathrm{a}}}).
+\end{equation}
+where $n_{\mathrm{a}}$ is the number of the detected clients.
+We also assume that the signal captured by a monitoring device comes from a line-of-sight path. Therefore the signal strength obeys free-space transmission model. The received signal strength from client $j$ to sensing device $i$ can be expressed as
+\begin{equation} 
+P_{ij} \text{[dBm]}
+= A + B \log_{10}(d_{ij}) + L_{ij} + G_i (\phi_{ij})
+\end{equation}
+where $A$ and $B$ are the mean decay parameters, $d_{ij}$ is the Euclidean distance between the client $j$ and sensing device $i$. $L_{ij}$ is shadow fading parameter and $G_i (\cdot)$ antenna gain function of sensing device. $\phi_{ij}$ is the angle of the signal transmission direction.
+The shadow fading components $\{ L_{ij} \}$ are assumed to be independent and identically log-normal distributed random variables. In the logarithmic domain, the probability density function is
+\begin{equation} 
+f_{L_{ij}} (\ell)
+= \frac{1}{\sqrt{2 \pi} \sigma_{\mathrm{s}}} 
+\exp \left( - \frac{\ell^2}{2 \sigma_{\mathrm{s}}^2} \right)
+\end{equation}
+where $\sigma_{\mathrm{s}}$ is the standard deviation of shadowing.
+The observed information from the four sensing devices form a power matrix $\underline{\mathbf{P}} = (\mathbf{P}_1, \ldots, \mathbf{P}_{n_{\mathrm{a}}})$. The vector element $\mathbf{P}_j = (P_{1j}, P_{2j},P_{3j},P_{4j})$ contains signal strength of wireless client j detected by four sensing devices.
+We assume the number and locations of wireless clients located inside the area of interest form a Poisson point process with intensity $\lambda_{\mathrm{t}}$. Therefore
+\begin{equation*}
+\Pr ( R_{\mathrm{t}} = r_{\mathrm{t}} )
+= \frac{(\lambda_{\mathrm{t}} A_{\mathrm{t}})^{r_{\mathrm{t}}}}
+{r_{\mathrm{t}}!} e^{- A_{\mathrm{t}} \lambda_{\mathrm{t}}}
+\quad r_{\mathrm{t}} = 0, 1, \ldots
+\end{equation*}
+Where $R_{\mathrm{t}}$ is the number of clients inside. $A_{\mathrm{t}}$ is the are of the target region.
+Similarly, we get
+\begin{equation*}
+\Pr ( R_{\mathrm{o}} = r_{\mathrm{o}} )
+= \frac{(\lambda_{\mathrm{o}} A_{\mathrm{o}})^{r_{\mathrm{o}}}}
+{r_{\mathrm{o}}!} e^{- A_{\mathrm{o}} \lambda_{\mathrm{o}}}
+\quad r_{\mathrm{o}} = 0, 1, \ldots
+\end{equation*}
+where $R_{\mathrm{o}}$ is the number of clients outside. $A_{\mathrm{o}}$ is the area of the complimentary of target region. $\lambda_{\mathrm{o}}$ is Poisson intensity parameter. The inference task is estimation the occupancy based on the Power matrix $\underline{\mathbf{P}}$.
+\ignore{\section{Section Test Example 1 }
+
+
+Test section for TOC display
+
+\section{Test Section in this Chapter}
+
+Section Title is to test toc display only, no actual meaning.
+
+\subsection{Test Subsection in this Chapter}
+Test subsection for TOC display
+
+\subsection{Subsection Test Example 1}
+
+Test subsection for TOC display
+
+\section{Section Test Example 2}
+
+Test section for TOC display
+
+\subsection{Test Subsection in this Chapter}
+
+Test subsection for TOC display
+
+\subsection{Subsection Test Example 3 }
+Test subsection for TOC display
+
+Example of multiple line \textbf{verbatim} environment.
+
+\begin{lstlisting}
+  123
+x 456
+=============
+  738 (this is 123 x 6)
+ 615  (this is 123 x 5, shifted one position to the left)
++492  (this is 123 x 4, shifted one position to the left)
+=============
+56088
+\end{lstlisting}
+
+
+
+\subsection*{Subsubsection Test Example 2}
+
+some text here(the text will not be displayed in the TOC)
+
+
+\subsection{Subsection Test Example 4}
+Test subsection for TOC display
+
+\subsection{Section Summary}
+  
+\begin{lstlisting}[language={Verilog},tabsize=5,title={A simple paragraph of Verilog code is below in verbatim}]
+  Always@(posedge LRCK)
+	Begin
+	Counter = Counter + 1
+	If (Counter == 40)
+	Begin
+	Counter = 0
+	Phase_control_word = Phase_Control_word + 1
+	If (phase_control_word >= 7168)
+	Begin
+	Phase_control_word =4778
+	end
+	end
+	end
+\end{lstlisting}
+
+\section{Section Test Example 3}
+Test section for toc display only
+
+\subsection{Subsection Test 1}
+Test subsection for toc display only.
+
+\subsection{Subsection Test 2}
+Test subsection for toc display only.
+
+\subsection{Subsection Test 3}
+Test subsection for toc display only.
+
+\subsection{Subsection Test 4}
+Test subsection for toc display only.
+
+\section{Section Test Example 4}
+Test section for toc display only}
+
+
+
+
+
+
