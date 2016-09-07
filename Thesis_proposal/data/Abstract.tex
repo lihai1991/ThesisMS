@@ -3,6 +3,15 @@
 %Please keep the line above and only type in below.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In various situations, there are demands for estimating the number of people in an specific area. This article focuses on estimating the number of device in a certain area based on Wi-Fi metadata. To accomplish this, four sensing devices are placed at the four points of a rectangular area respectively. The sensing devices can observe and record all local data packets under monitoring mode. For each sensing device, both directional and isotropic antennas are used to detect packets separately. Each sensing device retrieves the received signal strength indicators and the media access control  addresses from the 802.11 frames packets transmitted by the active wireless devices nearby.
-The estimator takes received signal strength indicators as input and infers the number of active Wi-Fi devices inside the specific area. Two algorithms, bayesian and maximum-likelihood are employed for the schemes.
-We also compare the performances between directional antenna and isotropic antenna. The result shows by using the directional monitoring antennas, we can obtain better accuracy.
+In various situations, there is a need to estimate the number of active devices within a specific area.
+This thesis offers one possible approach to accomplish this task.
+It focuses on estimating the number of device in a certain area based on monitoring and processing Wi-Fi metadata.
+To accomplish this goal, four sensing devices are placed at the corners of a rectangular area.
+These sensing devices observe and record local data traffic, along with the received signal strength associated with each packets.
+For each sensing device, two types of frontends are considered, namely directional and isotropic antennas.
+Each sensing device retrieves the received signal strength indicators and the media access control addresses from the 802.11 frames packets transmitted by nearby active wireless devices.
+The estimator takes the received signal strength indicators as input and infers the number of active Wi-Fi devices inside the area of interest.
+Two algorithms, bayesian and maximum-likelihood, are employed for estimation purposes.
+Overall performance is used to compare and contrast the systems implemented with directional antennas and isotropic antennas, respectively.
+Theoretical and experimental results both hint at performance improvements when using directional antennas, when compare to standard isotropic antennas.
+s
