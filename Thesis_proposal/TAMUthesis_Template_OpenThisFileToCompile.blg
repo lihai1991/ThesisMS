@@ -15,44 +15,54 @@ A level-1 auxiliary file: data/chapterVII.aux
 The style file: ieeetr.bst
 A level-1 auxiliary file: data/Appendix.aux
 Database file #1: data/myReference.bib
-You've used 3 entries,
+I was expecting a `,' or a `}'---line 36 of file data/myReference.bib
+ :  
+ :  volume={33},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Name 1 in "Nishide, R., and H. Takada" has a comma at the end for entry B_ad_hoc
+while executing---line 969 of file ieeetr.bst
+Name 1 in "Depatla, Saandeep, Arjun Muralidharan, and Yasamin Mostofi" has a comma at the end for entry W_power
+while executing---line 969 of file ieeetr.bst
+You've used 6 entries,
             1876 wiz_defined-function locations,
-            542 strings with 5019 characters,
-and the built_in function-call counts, 478 in all, are:
-= -- 34
-> -- 20
+            564 strings with 5846 characters,
+and the built_in function-call counts, 1137 in all, are:
+= -- 95
+> -- 53
 < -- 0
-+ -- 8
-- -- 5
-* -- 36
-:= -- 74
-add.period$ -- 3
-call.type$ -- 3
-change.case$ -- 2
++ -- 20
+- -- 14
+* -- 85
+:= -- 176
+add.period$ -- 7
+call.type$ -- 6
+change.case$ -- 5
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 32
-empty$ -- 62
-format.name$ -- 5
-if$ -- 111
+cite$ -- 6
+duplicate$ -- 65
+empty$ -- 122
+format.name$ -- 14
+if$ -- 268
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 2
-newline$ -- 12
-num.names$ -- 2
-pop$ -- 18
+int.to.str$ -- 6
+missing$ -- 5
+newline$ -- 22
+num.names$ -- 5
+pop$ -- 25
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 7
+skip$ -- 27
 stack$ -- 0
-substring$ -- 0
-swap$ -- 3
+substring$ -- 28
+swap$ -- 14
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 2
-width$ -- 4
-write$ -- 26
+while$ -- 7
+width$ -- 7
+write$ -- 54
+(There were 3 error messages)

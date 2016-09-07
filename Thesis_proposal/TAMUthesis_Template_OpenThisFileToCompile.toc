@@ -12,25 +12,21 @@
 \contentsline {chapter}{\numberline {3}PROBLEM FORMULATION}{4}{chapter.3}
 \contentsline {chapter}{\numberline {4}ESTIMATION SCHEMES}{6}{chapter.4}
 \addvspace {14pt}
-\contentsline {section}{\numberline {4.1}Section Test Unknown Part}{6}{section.4.1}
-\contentsline {section}{\numberline {4.2}Section Test Unknown Part 1}{6}{section.4.2}
-\contentsline {section}{\numberline {4.3}Section Test Unknown Part 2}{6}{section.4.3}
-\contentsline {section}{\numberline {4.4}Section Test Unknown Part 3}{6}{section.4.4}
-\contentsline {section}{\numberline {4.5}Section Test Unknown Part 5}{6}{section.4.5}
-\contentsline {section}{\numberline {4.6}Section Test Unknown Part 6}{6}{section.4.6}
-\contentsline {chapter}{\numberline {5}NUMERICAL SIMULATION}{7}{chapter.5}
-\contentsline {chapter}{\numberline {6}EXPERIMENT IMPLEMENTATION}{8}{chapter.6}
-\contentsline {chapter}{\numberline {7}CONCLUSION}{9}{chapter.7}
-\contentsline {chapter}{REFERENCES}{10}{section*.8}
-\contentsline {chapter}{APPENDIX \numberline {A}MISCELLANEOUS }{11}{APPENDIX.1.A}
+\contentsline {section}{\numberline {4.1}Bayes Estimation}{6}{section.4.1}
+\contentsline {section}{\numberline {4.2}Maximum likelihood estimation}{7}{section.4.2}
+\contentsline {chapter}{\numberline {5}NUMERICAL SIMULATION}{9}{chapter.5}
+\contentsline {chapter}{\numberline {6}EXPERIMENT IMPLEMENTATION}{10}{chapter.6}
+\contentsline {chapter}{\numberline {7}CONCLUSION}{11}{chapter.7}
+\contentsline {chapter}{REFERENCES}{12}{section*.8}
+\contentsline {chapter}{APPENDIX \numberline {A}MISCELLANEOUS }{14}{APPENDIX.1.A}
 \addvspace {14pt}
-\contentsline {section}{\numberline {A.1}Figures/Tables in Appendix}{11}{section.1.A.1}
-\contentsline {subsection}{\numberline {A.1.1}TEST1}{11}{subsection.1.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}TEST2}{11}{subsection.1.A.1.2}
-\contentsline {section}{\numberline {A.2}Random Pictures and Test}{12}{section.1.A.2}
-\contentsline {section}{\numberline {A.3}Misc Test}{12}{section.1.A.3}
-\contentsline {chapter}{APPENDIX \numberline {B}SOURCE CODE}{13}{APPENDIX.1.B}
+\contentsline {section}{\numberline {A.1}Figures/Tables in Appendix}{14}{section.1.A.1}
+\contentsline {subsection}{\numberline {A.1.1}TEST1}{14}{subsection.1.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}TEST2}{14}{subsection.1.A.1.2}
+\contentsline {section}{\numberline {A.2}Random Pictures and Test}{15}{section.1.A.2}
+\contentsline {section}{\numberline {A.3}Misc Test}{15}{section.1.A.3}
+\contentsline {chapter}{APPENDIX \numberline {B}SOURCE CODE}{16}{APPENDIX.1.B}
 \addvspace {14pt}
-\contentsline {section}{\numberline {B.1}Misc Test 2}{13}{section.1.B.1}
-\contentsline {section}{\numberline {B.2}Misc Test 3}{13}{section.1.B.2}
-\contentsline {section}{\numberline {B.3}Resource Usage}{13}{section.1.B.3}
+\contentsline {section}{\numberline {B.1}Misc Test 2}{16}{section.1.B.1}
+\contentsline {section}{\numberline {B.2}Misc Test 3}{16}{section.1.B.2}
+\contentsline {section}{\numberline {B.3}Resource Usage}{16}{section.1.B.3}

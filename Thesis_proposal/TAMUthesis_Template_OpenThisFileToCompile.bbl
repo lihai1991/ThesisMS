@@ -9,6 +9,25 @@ Z.~Ma and A.~B. Chan, ``Crossing the line: Crowd counting by integer
   programming with local features,'' in {\em The IEEE Conference on Computer
   Vision and Pattern Recognition (CVPR)}, June 2013.
 
+\bibitem{Pe_count}
+Y.~Taniguchi, M.~Mizushima, G.~Hasegawa, H.~Nakano, and M.~Matsuoka, ``Counting
+  pedestrians passing through a line in crowded scenes by extracting optical
+  flows,'' {\em International Information Institute (Tokyo).Information},
+  vol.~19, pp.~303--316, 01 2016.
+\newblock Copyright - Copyright International Information Institute Jan 2016;
+  Document feature - Illustrations; Equations; Tables; Graphs; ; Last updated -
+  2016-07-30.
+
+\bibitem{B_ad_hoc}
+R.~Nishide and H.~Takada, ``Exploring efficient methods to extract pedestrian
+  flows on a mobile adhoc network,'' {\em The 6th International Conference on
+  Mobile Ubiquitous Computing, Systems, Services and Technologies}, 2012.
+
+\bibitem{W_power}
+A.~M. Depatla, Saandeep and Y.~Mostofi, ``Occupancy estimation using only wifi
+  power measurements,'' {\em IEEE Journal on Selected Areas in Communications},
+  05 2015.
+
 \bibitem{quteprints71808}
 N.~Abedi, A.~Bhaskar, and E.~Chung, ``Bluetooth and wi-fi mac address based
   crowd data collection and monitoring : benefits, challenges and
