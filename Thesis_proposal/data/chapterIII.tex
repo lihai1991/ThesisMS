@@ -1,5 +1,5 @@
 \chapter{PROBLEM FORMULATION}
-Consider a scenario where several wireless clients randomly located nearby a rectangular region. Four monitoring devices are located at the four corners. Each monitoring device has information of its own location and orientation. The radiation pattern of antenna attached to each monitoring device is known as well. All of the monitoring devices are connected to the Internet. The wireless clients transmit data packets periodically and consequently detected by the monitoring devices. Since each wireless client has different MAC address, the packets transmitted from different clients can be distinguished. Here we use $\mathcal{A}_{\mathrm{t}}$ to represent the target area and $\mathcal{A}_{\mathrm{o}}$ to represent its complement.
+Consider a scenario where several wireless clients randomly located nearby a rectangular region. Four monitoring devices are located at the four corners. Each monitoring device has information of its own location and orientation. The radiation pattern of antenna attached to each monitoring device is known as well. All of the monitoring devices are connected to the Internet and send the captured data to a process center for inference. The wireless clients transmit data packets periodically and consequently detected by the monitoring devices. Since each wireless client has different MAC address, the packets transmitted from different clients can be distinguished. Here we use $\mathcal{A}_{\mathrm{t}}$ to represent the target area and $\mathcal{A}_{\mathrm{o}}$ to represent its complement.
 In this study, we assume the wireless clients are quasi-static and each client is equipped with isotropic antenna. For convenience, we use a single vector to denote the locations of the wireless clients.
 \begin{equation}
 \underline{\mathbf{U}} = (\mathbf{U}_1, \ldots, \mathbf{U}_{n_{\mathrm{a}}}).
@@ -10,7 +10,7 @@ We also assume that the signal captured by a monitoring device comes from a line
 P_{ij} \text{[dBm]}
 = A + B \log_{10}(d_{ij}) + L_{ij} + G_i (\phi_{ij})
 \end{equation}
-where $A$ and $B$ are the mean decay parameters, $d_{ij}$ is the Euclidean distance between the client $j$ and sensing device $i$. $L_{ij}$ is shadow fading parameter and $G_i (\cdot)$ antenna gain function of sensing device. $\phi_{ij}$ is the angle of the signal transmission direction.
+where $A$ and $B$ are the mean decay parameters, $d_{ij}$ is the Euclidean distance between the client $j$ and sensing device $i$. $L_{ij}$ is shadow fading parameter and $G_i (\cdot)$ is antenna gain function of sensing device. $\phi_{ij}$ is the angle of the signal transmission direction.
 The shadow fading components $\{ L_{ij} \}$ are assumed to be independent and identically log-normal distributed random variables. In the logarithmic domain, the probability density function is
 \begin{equation} 
 f_{L_{ij}} (\ell)
