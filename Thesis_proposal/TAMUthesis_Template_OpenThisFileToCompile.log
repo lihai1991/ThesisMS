@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.8.17)  7 SEP 2016 16:10
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.8.17)  7 SEP 2016 18:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1253,12 +1253,12 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 
  (./data/chapterI.tex
 Chapter 1.
-) [1
+[1
 
 
 
 
-]
+])
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
