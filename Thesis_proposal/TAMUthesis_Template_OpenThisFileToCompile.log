@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.8.17)  7 SEP 2016 18:44
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.8.17)  8 SEP 2016 11:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1023,7 +1023,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (./TAMUthesis_Template_OpenThisFileToCompile.aux (./data/cover.aux)
 (./data/Abstract.aux) (./data/chapterI.aux) (./data/chapterII.aux)
-(./data/chapterIII.aux) (./data/chapterIV.aux))
+(./data/chapterIII.aux) (./data/chapterIV.aux) (./data/chapterV.aux))
 \openout1 = `TAMUthesis_Template_OpenThisFileToCompile.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
@@ -1529,7 +1529,16 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\vbox(0.0+0.0)x430.0074
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
-[8] (./TAMUthesis_Template_OpenThisFileToCompile.bbl [9
+[8]
+\openout2 = `data/chapterV.aux'.
+
+ (./data/chapterV.tex
+Chapter 5.
+) [9
+
+
+
+] (./TAMUthesis_Template_OpenThisFileToCompile.bbl [10
 
 
 ])
@@ -1582,10 +1591,10 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue 0.0 plus 1.0fill
 ...\vbox(10.14995+4.35004)x430.0074
-....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.22636fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\hbox(0.0+0.0)x0.0
-.....\EU1/TimesNewRoman(0)/m/n/12 10
+.....\EU1/TimesNewRoman(0)/m/n/12 11
 .....\rule(10.14995+4.35004)x0.0
 .....\penalty 10000
 .....etc.
@@ -1595,11 +1604,11 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\vbox(0.0+0.0)x430.0074
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
-[10]
+[11]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
  (./TAMUthesis_Template_OpenThisFileToCompile.aux (./data/cover.aux)
 (./data/Abstract.aux) (./data/chapterI.aux) (./data/chapterII.aux)
-(./data/chapterIII.aux) (./data/chapterIV.aux))
+(./data/chapterIII.aux) (./data/chapterIV.aux) (./data/chapterV.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 111.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 111.
 
@@ -1609,12 +1618,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 27277 strings out of 493589
- 476025 string characters out of 6146760
- 509299 words of memory out of 5000000
- 30348 multiletter control sequences out of 15000+600000
+ 27285 strings out of 493589
+ 476157 string characters out of 6146760
+ 509903 words of memory out of 5000000
+ 30349 multiletter control sequences out of 15000+600000
  15573 words of font info for 62 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  60i,19n,94p,10481b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on TAMUthesis_Template_OpenThisFileToCompile.pdf (12 pages).
+Output written on TAMUthesis_Template_OpenThisFileToCompile.pdf (13 pages).
