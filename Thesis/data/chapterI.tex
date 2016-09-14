@@ -1,0 +1,35 @@
+\chapter[INTRODUCTION]{INTRODUCTION}
+
+The number of Wi-Fi access points and the number of Wi-Fi client devices have been increasing dramatically in recent years.
+Cisco Systems predicts in their Visual Network Index that 55~percent of total mobile data traffic will be offloaded onto fixed networks through Wi-Fi access points and femtocells by 2020~\cite{CiscoVNI2016}.
+Modern smartphones equipped with Wi-Fi modules transmit Wi-Fi messages periodically.
+Therefore, this provides a means to estimate occupancy by passively listening to Wi-Fi packets.
+More specifically, by deploying Wi-Fi monitoring devices in an area of interest, it is possible to detect these Wi-Fi transmissions.
+Each acquired Wi-Fi packet contains a unique MAC address.
+This information can be augmented by the received signal strength indicator (RSSI) of the captured signal.
+In the current context, the MAC address serves as a device identifier, whereas the RSSI provides partial information about the physical distance between the transmitter and the receiver.
+
+In the research, we focus on occupancy estimation based on Wi-Fi packets and we analyze the benefits associated with using directional antennas.
+We introduce a Bayes estimation algorithm and a maximum likelihood scheme to estimate occupancy.
+We employ numerical simulations to compare the performance corresponding to sensing devices with directional antennas and isotropic antennas.
+In addition, our findings are further supported through field experimentation.
+The testbed is implemented in a line-of-sight environment, with four sensing devices deployed at the corners of the area of interest.
+
+The remainder of this proposal is organized as follows.
+In Section~2, we describe related work.
+In Section~3, we introduce a formal problem formulation.
+In Section~4, we propose two estimation schemes.
+These schemes are evaluated through numerical simulations in Section~5.
+We then discuss experimental result, along with description of experiment setup.
+Finally, we offer concluding remarks in the last section.
+
+ 
+
+
+
+
+
+
+ 
+
+

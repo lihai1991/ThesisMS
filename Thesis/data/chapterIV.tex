@@ -1,0 +1,235 @@
+\chapter{ESTIMATION SCHEMES}
+
+
+\section{Bayes Estimation}
+
+We assume the Poisson intensity parameters $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ are known. Our objective is to estimate the number of clients inside the target area based on observed data $\underline{\mathbf{P}}$. First we need to get the posterior distribution of $R_{\mathrm{t}}$ given $\underline{\mathbf{P}}$
+\begin{equation} \label{equation:PosdistRt}
+\begin{split}
+\Pr \left( R_{\mathrm{t}} = r_{\mathrm{t}}
+| \underline{\mathbf{P}} = \underline{\mathbf{p}} \right)
+&= \int_{ \left\{ \underline{\mathbf{u}}
+	: R_{\mathrm{t}}(\underline{\mathbf{u}}) = r_{\mathrm{t}},
+	R_{\mathrm{o}}(\underline{\mathbf{u}}) = r_{\mathrm{o}}
+	\right\} }
+f_{\underline{\mathbf{U}} | \underline{\mathbf{P}}}
+\left( \underline{\mathbf{u}} | \underline{\mathbf{p}} \right)
+d\underline{\mathbf{u}} \\
+&= \int_{ \left\{ \underline{\mathbf{u}}
+	: R_{\mathrm{t}}(\underline{\mathbf{u}}) = r_{\mathrm{t}},
+	R_{\mathrm{o}}(\underline{\mathbf{u}}) = r_{\mathrm{o}} \right\} }
+\frac{ f_{\underline{\mathbf{P}} | \underline{\mathbf{U}}}
+	\left( \underline{\mathbf{p}} | \underline{\mathbf{u}} \right)
+	f_{\underline{\mathbf{U}}} (\underline{\mathbf{u}}) }
+{ f_{\underline{\mathbf{P}}} \left( \underline{\mathbf{p}} \right) }
+d\underline{\mathbf{u}} .
+\end{split}
+\end{equation}
+Because the Poisson processes are independent, the distribution of $\underline{\mathbf{U}}$ can be written as
+\begin{equation} \label{equation:distU}
+\begin{split}
+f_{\underline{\mathbf{U}}} ( \underline{\mathbf{u}} )
+&= \frac{1}{A_{\mathrm{t}}^{R_{\mathrm{t}}(\underline{\mathbf{u}})}}
+\frac{ ( \lambda_{\mathrm{t}}
+	A_{\mathrm{t}} )^{R_{\mathrm{t}}(\underline{\mathbf{u}})} }
+{ ( R_{\mathrm{t}}(\underline{\mathbf{u}}) )! }
+e^{- A_{\mathrm{t}} \lambda_{\mathrm{t}}} \\
+\frac{1}{A_{\mathrm{o}}^{R_{\mathrm{o}}(\underline{\mathbf{u}})}}
+\frac{ ( \lambda_{\mathrm{o}}
+	A_{\mathrm{o}} )^{R_{\mathrm{o}}(\underline{\mathbf{u}})} }
+{ ( R_{\mathrm{o}}(\underline{\mathbf{u}}) )! }
+e^{- A_{\mathrm{o}} \lambda_{\mathrm{o}}} \\
+&= \frac{ \lambda_{\mathrm{t}}^{R_{\mathrm{t}}(\underline{\mathbf{u}})} }
+{ ( R_{\mathrm{t}}(\underline{\mathbf{u}}) )! }
+\frac{ \lambda_{\mathrm{o}}^{R_{\mathrm{o}}(\underline{\mathbf{u}})} }
+{ ( R_{\mathrm{o}}(\underline{\mathbf{u}}) )! }
+e^{- A_{\mathrm{t}} \lambda_{\mathrm{t}}
+	- A_{\mathrm{o}} \lambda_{\mathrm{o}}} .
+\end{split}
+\end{equation}
+The distribution of the received power vector $\mathbf{P}_j$ given a specific location $\mathbf{u}_j$ is equal to
+\begin{equation} 
+\begin{split}
+f_{\mathbf{P}_j | \mathbf{U}_j} (\mathbf{p}_{j} | \mathbf{u}_j)
+&= \prod_{i=1}^{n_{\mathrm{s}}}
+f_{L_{ij}} ( p_{ij} - A - B \log_{10} (d_{ij}) - G_i(\phi_{ij}) ) \\
+&= \frac{1}{\left( 2 \pi \sigma_{\mathrm{s}}^2 \right)^{\frac{n_{\mathrm{s}}}{2} }}
+\prod_{i=1}^{n_{\mathrm{s}}} e^{- \frac{( p_{ij} - A - B \log_{10} (d_{ij}) - G_i(\phi_{ij}) )^2}{2 \sigma_{\mathrm{s}}^2} } \\
+&= \left( 2 \pi \sigma_{\mathrm{s}}^2 \right)^{- \frac{n_{\mathrm{s}}}{2}}
+e^{- \frac{ \sum_{i=1}^{n_{\mathrm{s}}}
+		(p_{ij} - A - B \log_{10} (d_{ij}) - G_i(\phi_{ij}))^2}
+	{2 \sigma_{\mathrm{s}}^2}} .
+\end{split}
+\end{equation}
+The conditional distribution of $\underline{\mathbf{P}}$ given $\underline{\mathbf{U}}=\underline{\mathbf{u}}$, is
+\begin{equation} \label{equation:CondDistP}
+f_{\underline{\mathbf{P}} | \underline{\mathbf{U}}}
+\left( \underline{\mathbf{p}} | \underline{\mathbf{u}} \right)
+= \prod_{j=1}^{n_{\mathrm{a}}}
+f_{\mathbf{P}_j | \mathbf{U}_j} (\mathbf{p}_{j}|\mathbf{u}_j) .
+\end{equation}
+With the conditional distribution of $\underline{\mathbf{P}}$ given $\underline{\mathbf{U}}=\underline{\mathbf{u}}$ and distribution of $\underline{\mathbf{U}}$, we can compute the marginal distribution of $\underline{\mathbf{P}}$,
+\begin{equation} \label{equation:MarginalDistP}
+\begin{split}
+f_{\underline{\mathbf{P}}} \left( \underline{\mathbf{p}} \right)
+&= \int_{ \left\{ \underline{\mathbf{u}}
+	: R_{\mathrm{t}}(\underline{\mathbf{u}}) 
+	+ R_{\mathrm{o}}(\underline{\mathbf{u}}) = n_{\mathrm{a}} \right\} }
+f_{\underline{\mathbf{P}} | \underline{\mathbf{U}}}
+\left( \underline{\mathbf{p}} | \underline{\mathbf{u}} \right)
+f_{\underline{\mathbf{U}}}(\underline{\mathbf{u}})
+d\underline{\mathbf{u}} \\
+&= \sum_{(r_{\mathrm{t}}, r_{\mathrm{o}}) :
+	r_{\mathrm{t}} + r_{\mathrm{o}} = n_{\mathrm{a}}}
+\sum_{\{ \mathbb{I} \subset [n_{\mathrm{a}}]
+	: |\mathbb{I}| = r_{\mathrm{t}} \}}
+\frac{\lambda_{\mathrm{t}}^{r_{\mathrm{t}}}
+	\lambda_{\mathrm{o}}^{r_{\mathrm{o}}}}
+{r_{\mathrm{t}}! r_{\mathrm{o}}!}
+e^{- A_{\mathrm{t}} \lambda_{\mathrm{t}}
+	- A_{\mathrm{o}} \lambda_{\mathrm{o}}}
+\prod_{j \in \mathbb{I}} \mathcal{I}_{\mathcal{A}_{\mathrm{t}}}(j)
+\prod_{j \in \mathbb{I}^{\mathrm{c}}}
+\mathcal{I}_{\mathcal{A}_{\mathrm{o}}}(j) .
+\end{split}
+\end{equation}
+where the integral components are equal to
+\begin{align} \label{equation:IntegralComponentsT}
+\mathcal{I}_{\mathcal{A}_{\mathrm{t}}}(j)
+&= \int_{\mathcal{A}_{\mathrm{t}}} f_{\mathbf{P}_j|\mathbf{U}_j}
+(\mathbf{p}_j|\mathbf{u}_j) d\mathbf{u}_j \\
+\label{equation:IntegralComponentsO}
+\mathcal{I}_{\mathcal{A}_{\mathrm{o}}}(j)
+&= \int_{\mathcal{A}_{\mathrm{o}}} f_{\mathbf{P}_j|\mathbf{U}_j}
+(\mathbf{p}_j|\mathbf{u}_j) d\mathbf{u}_j .
+\end{align}
+Now, we can compute the posterior distribution of $R_{\mathrm{t}}$ given $\underline{\mathbf{P}}$ by substituting \eqref{equation:distU}, \eqref{equation:CondDistP}, \eqref{equation:MarginalDistP} into \eqref{equation:PosdistRt}.
+\newline
+Thus, the Bayes estimator becomes
+\begin{equation} \label{equation:MMSE}
+\begin{split}
+\hat{R}_{\mathrm{t}} \left( \underline{\mathbf{p}} \right)
+&= \mathrm{E} \left[ R_{\mathrm{t}}
+| \underline{\mathbf{P}} = \underline{\mathbf{p}} \right] \\
+&= \sum_{r_{\mathrm{t}} = 0}^{n_{\mathrm{a}}} r_{\mathrm{t}}
+\Pr \left( R_{\mathrm{t}} = r_{\mathrm{t}}
+| \underline{\mathbf{P}} = \underline{\mathbf{p}} \right) .
+\end{split}
+\end{equation}
+
+
+\section{Maximum likelihood estimation}
+
+In this section, we assume the Poisson intensity parameters $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ are unknown.
+Under this assumption, the distribution of $\underline{\mathbf{U}}$ can be written as
+\begin{equation}
+f_{\underline{\mathbf{U}}} \left( \underline{\mathbf{u}};
+\lambda_{\mathrm{t}}, \lambda_{\mathrm{o}} \right)
+= \frac{ \lambda_{\mathrm{t}}^{R_{\mathrm{t}}(\underline{\mathbf{u}})} }
+{ ( R_{\mathrm{t}}(\underline{\mathbf{u}}) )! }
+\frac{ \lambda_{\mathrm{o}}^{R_{\mathrm{o}}(\underline{\mathbf{u}})} }
+{ ( R_{\mathrm{o}}(\underline{\mathbf{u}}) )! }
+e^{- A_{\mathrm{t}} \lambda_{\mathrm{t}}
+	- A_{\mathrm{o}} \lambda_{\mathrm{o}}} .
+\end{equation}
+The likelihood function is a function with two parameters, $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$
+\begin{equation}
+\begin{split}
+\mathcal{L} \left( \lambda_{\mathrm{t}}, \lambda_{\mathrm{o}};
+\underline{\mathbf{p}}, \underline{\mathbf{u}} \right)
+&= f_{\underline{\mathbf{P}}, \underline{\mathbf{U}}}
+\left( \underline{\mathbf{p}}, \underline{\mathbf{u}};
+\lambda_{\mathrm{t}}, \lambda_{\mathrm{o}} \right) \\
+&= f_{\underline{\mathbf{P}} | \underline{\mathbf{U}}}
+\left( \underline{\mathbf{p}} | \underline{\mathbf{u}} \right)
+f_{\underline{\mathbf{U}}} \left( \underline{\mathbf{u}};
+\lambda_{\mathrm{t}}, \lambda_{\mathrm{o}} \right) .
+\end{split}
+\end{equation}
+By computing the integral over $\underline{\mathbf{u}}$, we get the marginal likelihood function
+\begin{equation} \label{equation:Likelihood}
+\begin{split}
+\mathcal{L} \left( \lambda_{\mathrm{t}}, \lambda_{\mathrm{o}};
+\underline{\mathbf{p}} \right)
+&= \int_{ \left\{ \underline{\mathbf{u}}
+	: R_{\mathrm{t}}(\underline{\mathbf{u}}) +
+	R_{\mathrm{o}}(\underline{\mathbf{u}}) = n_{\mathrm{a}} \right\} }
+f_{\underline{\mathbf{P}} | \underline{\mathbf{U}}}
+\left( \underline{\mathbf{p}} | \underline{\mathbf{u}} \right)
+f_{\underline{\mathbf{U}}} \left( \underline{\mathbf{u}};
+\lambda_{\mathrm{t}}, \lambda_{\mathrm{o}} \right) d\underline{\mathbf{u}} \\
+&= e^{- A_{\mathrm{t}} \lambda_{\mathrm{t}}
+	- A_{\mathrm{o}} \lambda_{\mathrm{o}}}
+\sum_{(r_{\mathrm{t}}, r_{\mathrm{o}}) :
+	r_{\mathrm{t}} + r_{\mathrm{o}} = n_{\mathrm{a}}}
+\frac{\lambda_{\mathrm{t}}^{r_{\mathrm{t}}}
+	\lambda_{\mathrm{o}}^{r_{\mathrm{o}}}}
+{r_{\mathrm{t}}! r_{\mathrm{o}}!}
+\sum_{\{ \mathbb{I} \subset [n_{\mathrm{a}}]
+	: |\mathbb{I}| = r_{\mathrm{t}} \}}
+\prod_{j \in \mathbb{I}}
+\mathcal{I}_{\mathcal{A}_{\mathrm{t}}}(j)
+\prod_{j \in \mathbb{I}^{\mathrm{c}}}
+\mathcal{I}_{\mathcal{A}_{\mathrm{o}}}(j) .
+\end{split}
+\end{equation}
+This is a two-dimensional optimization, but we can simplify it to a one-dimensional optimization problem by following property.
+\begin{equation} 
+\max_{\lambda_{\mathrm{t}}, \lambda_{\mathrm{o}}}
+\mathcal{L} \left( \lambda_{\mathrm{t}}, \lambda_{\mathrm{o}};
+\underline{\mathbf{p}} \right)
+= \max_{\alpha} \mathcal{L} \left(
+\frac{n_{\mathrm{a}}}{A_{\mathrm{t}}} \alpha ,
+\frac{n_{\mathrm{a}}}{A_{\mathrm{o}}} (1 - \alpha) ;
+\underline{\mathbf{p}} \right)
+\end{equation}
+where $\alpha$ within the interval $[0, 1]$.
+Therefore, we rewrite the likelihood function in terms of $\alpha$
+\begin{equation}
+\begin{split}
+&\mathcal{L} \left(
+\frac{n_{\mathrm{a}}}{A_{\mathrm{t}}} \alpha ,
+\frac{n_{\mathrm{a}}}{A_{\mathrm{o}}} (1 - \alpha) ;
+\underline{\mathbf{p}} \right) \\
+&= \sum_{(r_{\mathrm{t}}, r_{\mathrm{o}}) :
+	r_{\mathrm{t}} + r_{\mathrm{o}} = n_{\mathrm{a}}}
+\frac{e^{- n_{\mathrm{a}}} n_{\mathrm{a}}^{n_{\mathrm{a}}}}
+{r_{\mathrm{t}}! r_{\mathrm{o}}!}
+\left( \frac{\alpha}{A_{\mathrm{t}}} \right)^{r_{\mathrm{t}}}
+\left( \frac{1 - \alpha}{A_{\mathrm{o}}} \right)^{r_{\mathrm{o}}} \\
+&\qquad \times \sum_{\{ \mathbb{I} \subset [n_{\mathrm{a}}] : |\mathbb{I}| = r_{\mathrm{t}} \}}
+\prod_{j \in \mathbb{I}} \mathcal{I}_{\mathcal{A}_{\mathrm{t}}}(j)
+\prod_{j \in \mathbb{I}^{\mathrm{c}}}
+\mathcal{I}_{\mathcal{A}_{\mathrm{o}}}(j)
+\end{split}
+\end{equation}
+Now, we can use numerical methods to get the values of $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ which maximize the likelihood function.
+Once $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ are obtained, the maximum likelihood estimator can be calculated as
+\begin{equation} 
+\begin{split}
+\hat{R}_{\mathrm{t}}
+\left( \underline{\mathbf{p}} \right)
+&= \mathrm{E}_{\hat{\lambda}_{\mathrm{t}}, \hat{\lambda}_{\mathrm{o}}}
+\left[ R_{\mathrm{t}} | \underline{\mathbf{P}}
+= \underline{\mathbf{p}} \right] \\
+&= \sum_{r_{\mathrm{t}} = 0}^{n_{\mathrm{a}}} r_{\mathrm{t}}
+\Pr \left( R_{\mathrm{t}} = r_{\mathrm{t}}
+| \underline{\mathbf{P}} = \underline{\mathbf{p}} ;
+\hat{\lambda}_{\mathrm{t}}, \hat{\lambda}_{\mathrm{o}} \right) .
+\end{split}
+\end{equation}
+\ignore{
+\section{Section Test Unknown Part 2}
+Section here is to test toc display only.
+
+\section{Section Test Unknown Part 3}
+Section here is to test toc display only.
+
+
+
+\section{Section Test Unknown Part 5}
+Section here is to test toc display only.
+
+\section{Section Test Unknown Part 6}
+Section here is to test toc display only.}
+
