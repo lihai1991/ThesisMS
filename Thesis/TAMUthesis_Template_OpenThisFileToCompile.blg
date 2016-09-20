@@ -4,65 +4,59 @@ The top-level auxiliary file: TAMUthesis_Template_OpenThisFileToCompile.aux
 A level-1 auxiliary file: data/cover.aux
 A level-1 auxiliary file: data/Abstract.aux
 A level-1 auxiliary file: data/Dedication.aux
+A level-1 auxiliary file: data/Acknowledgment.aux
 A level-1 auxiliary file: data/Nomenclature.aux
 A level-1 auxiliary file: data/chapterI.aux
-A level-1 auxiliary file: data/chapterII.aux
 A level-1 auxiliary file: data/chapterIII.aux
 A level-1 auxiliary file: data/chapterIV.aux
 A level-1 auxiliary file: data/chapterV.aux
 A level-1 auxiliary file: data/chapterVI.aux
 A level-1 auxiliary file: data/chapterVII.aux
 The style file: ieeetr.bst
-A level-1 auxiliary file: data/Appendix.aux
 Database file #1: data/myReference.bib
-I was expecting a `,' or a `}'---line 36 of file data/myReference.bib
- :  
- :  volume={33},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Name 1 in "Nishide, R., and H. Takada" has a comma at the end for entry B_ad_hoc
 while executing---line 969 of file ieeetr.bst
 Name 1 in "Depatla, Saandeep, Arjun Muralidharan, and Yasamin Mostofi" has a comma at the end for entry W_power
 while executing---line 969 of file ieeetr.bst
-You've used 6 entries,
+You've used 14 entries,
             1876 wiz_defined-function locations,
-            564 strings with 5846 characters,
-and the built_in function-call counts, 1137 in all, are:
-= -- 95
-> -- 53
+            619 strings with 7530 characters,
+and the built_in function-call counts, 4184 in all, are:
+= -- 402
+> -- 156
 < -- 0
-+ -- 20
-- -- 14
-* -- 85
-:= -- 176
-add.period$ -- 7
-call.type$ -- 6
-change.case$ -- 5
++ -- 57
+- -- 43
+* -- 305
+:= -- 568
+add.period$ -- 15
+call.type$ -- 14
+change.case$ -- 13
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 65
-empty$ -- 122
-format.name$ -- 14
-if$ -- 268
+cite$ -- 14
+duplicate$ -- 228
+empty$ -- 409
+format.name$ -- 43
+if$ -- 1035
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 5
-newline$ -- 22
-num.names$ -- 5
-pop$ -- 25
+int.to.str$ -- 14
+missing$ -- 13
+newline$ -- 46
+num.names$ -- 13
+pop$ -- 53
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 27
+skip$ -- 162
 stack$ -- 0
-substring$ -- 28
-swap$ -- 14
+substring$ -- 295
+swap$ -- 94
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 7
-width$ -- 7
-write$ -- 54
-(There were 3 error messages)
+while$ -- 36
+width$ -- 16
+write$ -- 139
+(There were 2 error messages)

@@ -9,13 +9,12 @@
 \contentsline {chapter}{LIST OF FIGURES}{vii}{section*.7}
 \contentsline {chapter}{LIST OF TABLES}{viii}{section*.8}
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}RELATED WORK}{3}{chapter.2}
-\contentsline {chapter}{\numberline {3}PROBLEM FORMULATION}{4}{chapter.3}
-\contentsline {chapter}{\numberline {4}ESTIMATION SCHEMES}{6}{chapter.4}
+\contentsline {chapter}{\numberline {2}PROBLEM FORMULATION}{5}{chapter.2}
+\contentsline {chapter}{\numberline {3}ESTIMATION SCHEMES}{7}{chapter.3}
 \addvspace {14pt}
-\contentsline {section}{\numberline {4.1}Bayes Estimation}{6}{section.4.1}
-\contentsline {section}{\numberline {4.2}Maximum likelihood estimation}{7}{section.4.2}
-\contentsline {chapter}{\numberline {5}NUMERICAL SIMULATION}{9}{chapter.5}
-\contentsline {chapter}{\numberline {6}EXPERIMENT IMPLEMENTATION}{10}{chapter.6}
-\contentsline {chapter}{\numberline {7}CONCLUSION}{11}{chapter.7}
-\contentsline {chapter}{REFERENCES}{12}{section*.9}
+\contentsline {section}{\numberline {3.1}Bayes Estimation}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Maximum likelihood estimation}{8}{section.3.2}
+\contentsline {chapter}{\numberline {4}NUMERICAL SIMULATION}{10}{chapter.4}
+\contentsline {chapter}{\numberline {5}EXPERIMENT IMPLEMENTATION}{11}{chapter.5}
+\contentsline {chapter}{\numberline {6}CONCLUSION}{12}{chapter.6}
+\contentsline {chapter}{REFERENCES}{13}{section*.9}

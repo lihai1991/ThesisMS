@@ -1,27 +1,51 @@
 \chapter[INTRODUCTION]{INTRODUCTION}
+Occupancy estimation refers to the problem to estimate the number of people inside a certain area. 
+This topic has attracted lots of interests for years due to its importance.
+There are several potential applications that can benefit from occupancy estimation.
+In smart building automation systems, getting the knowledge of the level of occupancy, it is able to optimize the energy cost over the control of temperature and ventilation.
+This can result in a large amount of energy saving~\cite{Nguyen2013244,Balaji:2013:SOB:2517351.2517370}.
+In navigation systems, providing road occupancy traffic information will allow users find out best route to the destination~\cite{5073548}.
+Under an emergency circumstance, a proper occupancy estimation may help the government guide the evacuation of crowds. 
 
-The number of Wi-Fi access points and the number of Wi-Fi client devices have been increasing dramatically in recent years.
-Cisco Systems predicts in their Visual Network Index that 55~percent of total mobile data traffic will be offloaded onto fixed networks through Wi-Fi access points and femtocells by 2020~\cite{CiscoVNI2016}.
-Modern smartphones equipped with Wi-Fi modules transmit Wi-Fi messages periodically.
+Recent years, the number of Wi-Fi access points and the number of Wi-Fi client devices have been increasing dramatically. This growth in Wi-Fi infrastructure leads to large amounts of data being transmitted over wireless networks. Cisco Systems predicts in their Visual Network Index that 55~percent of total mobile data traffic will be offloaded onto fixed networks through Wi-Fi access points and femtocells by 2020~\cite{CiscoVNI2016}. This means Wi-Fi is becoming a notable data source. Since Wi-Fi signals can tell us about our environment. A lot of attentions are drawn into this area, as well as occupancy estimation.
+
+Current literature on occupancy estimation are mainly based on either images or RF signals. Approaches based on camera use captured images to estimate the number of people in a crowded scene~\cite{Ma_2013_CVPR,Pe_count,li2008estimating}.
+Still, in such camera-based approaches, estimation accuracy can be affected by many factors such as brightness and image resolution.
+In addition, camera-based approaches typically lead to high deployment cost which makes it inconvenient to deploy in reality.
+On the other hand, occupancy estimation based on RF signals is more promising. This category consists several methods. 
+Passive infrared sensor is one of the common technologies use in the past few years. In~\cite{Garg200081}, they proposed an occupancy estimation system which is able to adjust with movement of the people inside the building. The author shows  that about 5\% more energy can be saved by using smart occupancy sensor as compared to non-adapting fixed time-delay sensors.
+In ~\cite{Shih:2015:OEU:2735960.2735969}, an indoor occupancy estimation using ultrasonic chirps is proposed. The author shows that the average error in
+percentage to the maximum capacity of the room is around 5\%. However it is an active sensing system, if multiple transducers are placed in the same room, each transducer will interfere with others.
+Some other methods involved Bluetooth~\cite{B_ad_hoc} and Wi-Fi~\cite{W_power}. However, the short transmission range limits the performance of Bluetooth-based methods.
+A research compared Wi-Fi and Bluetooth approaches~\cite{quteprints71808}.
+In their work, the authors stipulate that Wi-Fi has advantage over Bluetooth in monitoring people, due to shorter discovery time and higher detection rates.
+According to their results, more than 90\% of scanned unique MAC addresses in all places are Wi-Fi addresses; the popularity of using Wi-Fi devices is therefore significantly higher than that of Bluetooth devices, which means occupancy estimation using Wi-Fi is much more convenient in practice.
+In ~\cite{6847958}, the author proposes FCC, a device-Free Crowd Counting approach based on channel state information measurements. In ~\cite{7102673},  the author develops a new approach for estimating the total number of people walking in an area with only Wi-Fi power measurements between a pair of stationary transmitter/receiver antennas. In that case they do not need the measurement of channel state information.
+
+In this paper, we are interested in estimating the number of active devices in a fixed area using Wi-Fi metadatas.
+Modern mobile devices equipped with Wi-Fi modules transmit Wi-Fi messages periodically.
 Therefore, this provides a means to estimate occupancy by passively listening to Wi-Fi packets.
 More specifically, by deploying Wi-Fi monitoring devices in an area of interest, it is possible to detect these Wi-Fi transmissions.
 Each acquired Wi-Fi packet contains a unique MAC address.
 This information can be augmented by the received signal strength indicator (RSSI) of the captured signal.
-In the current context, the MAC address serves as a device identifier, whereas the RSSI provides partial information about the physical distance between the transmitter and the receiver.
+In the current context, the MAC address serves as a device identifier, whereas the RSSI provides partial information about the physical distance between the transmitter and the receiver. This information is helpful in inferring the device location status.
+The existence of pcap, an application programming interface for capturing network traffic, and wireshark, a network protocol analyzer, makes the Wi-Fi traffic analysis more straightforward. 
 
 In the research, we focus on occupancy estimation based on Wi-Fi packets and we analyze the benefits associated with using directional antennas.
-We introduce a Bayes estimation algorithm and a maximum likelihood scheme to estimate occupancy.
-We employ numerical simulations to compare the performance corresponding to sensing devices with directional antennas and isotropic antennas.
-In addition, our findings are further supported through field experimentation.
+On the one hand, we are going to introduce two stochastic estimation schemes.
+One is Bayes estimation scheme and the other is maximum likelihood scheme.
+On the other hand, we will investigate the benefit by using directional antennas in monitoring devices.  Because the radiation pattern of antenna will influence the RF propagation. It is naturally to think of the potential impacts it brings to use directional antennas. 
+We employ numerical simulations to compare the performance of different schemes corresponding to sensing devices with directional antennas and isotropic antennas.
+In the simulation, we assume that four sensing devices are located in the four corners of rectangular target area. The training RSSI values are assumed to obey free-space path loss model as well. Our results indicate if directional antennas are used, the error rate decreases considerably.
+In addition, our findings are further supported through outdoor experimentation.
 The testbed is implemented in a line-of-sight environment, with four sensing devices deployed at the corners of the area of interest.
 
-The remainder of this proposal is organized as follows.
-In Section~2, we describe related work.
-In Section~3, we introduce a formal problem formulation.
-In Section~4, we propose two estimation schemes.
-These schemes are evaluated through numerical simulations in Section~5.
-We then discuss experimental result, along with description of experiment setup.
-Finally, we offer concluding remarks in the last section.
+The remainder of this paper is organized as follows.
+In Section~2, we explain our problem formulation and develop our probability model.
+In Section~3, we propose two algorithms for occupancy estimation.
+These schemes are evaluated through numerical simulations in Section~4.
+We then discuss experimental result, along with description of experiment setup in Section~5.
+Finally, we offer concluding remarks in Section~6.
 
  
 

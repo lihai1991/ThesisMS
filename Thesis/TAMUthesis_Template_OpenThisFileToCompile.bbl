@@ -1,4 +1,22 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Nguyen2013244}
+T.~A. Nguyen and M.~Aiello, ``Energy intelligent buildings based on user
+  activity: A survey,'' {\em Energy and Buildings}, vol.~56, pp.~244 -- 257,
+  2013.
+
+\bibitem{Balaji:2013:SOB:2517351.2517370}
+B.~Balaji, J.~Xu, A.~Nwokafor, R.~Gupta, and Y.~Agarwal, ``Sentinel: Occupancy
+  based hvac actuation using existing wifi infrastructure within commercial
+  buildings,'' in {\em Proceedings of the 11th ACM Conference on Embedded
+  Networked Sensor Systems}, SenSys '13, (New York, NY, USA), pp.~17:1--17:14,
+  ACM, 2013.
+
+\bibitem{5073548}
+D.~Valerio, A.~D'Alconzo, F.~Ricciato, and W.~Wiedermann, ``Exploiting cellular
+  networks for road traffic estimation: A survey and a research roadmap,'' in
+  {\em Vehicular Technology Conference, 2009. VTC Spring 2009. IEEE 69th},
+  pp.~1--5, April 2009.
 
 \bibitem{CiscoVNI2016}
 Cisco Systems, Inc., {\em Visual Networking Index: Global Mobile Data Traffic
@@ -18,6 +36,22 @@ Y.~Taniguchi, M.~Mizushima, G.~Hasegawa, H.~Nakano, and M.~Matsuoka, ``Counting
   Document feature - Illustrations; Equations; Tables; Graphs; ; Last updated -
   2016-07-30.
 
+\bibitem{li2008estimating}
+M.~Li, Z.~Zhang, K.~Huang, and T.~Tan, ``Estimating the number of people in
+  crowded scenes by mid based foreground segmentation and head-shoulder
+  detection,'' in {\em Pattern Recognition, 2008. ICPR 2008. 19th International
+  Conference on}, pp.~1--4, IEEE, 2008.
+
+\bibitem{Garg200081}
+V.~Garg and N.~Bansal, ``Smart occupancy sensors to reduce energy
+  consumption,'' {\em Energy and Buildings}, vol.~32, no.~1, pp.~81 -- 87,
+  2000.
+
+\bibitem{Shih:2015:OEU:2735960.2735969}
+O.~Shih and A.~Rowe, ``Occupancy estimation using ultrasonic chirps,'' in {\em
+  Proceedings of the ACM/IEEE Sixth International Conference on Cyber-Physical
+  Systems}, ICCPS '15, (New York, NY, USA), pp.~149--158, ACM, 2015.
+
 \bibitem{B_ad_hoc}
 R.~Nishide and H.~Takada, ``Exploring efficient methods to extract pedestrian
   flows on a mobile adhoc network,'' {\em The 6th International Conference on
@@ -26,12 +60,22 @@ R.~Nishide and H.~Takada, ``Exploring efficient methods to extract pedestrian
 \bibitem{W_power}
 A.~M. Depatla, Saandeep and Y.~Mostofi, ``Occupancy estimation using only wifi
   power measurements,'' {\em IEEE Journal on Selected Areas in Communications},
-  05 2015.
+  vol.~33, pp.~1381--1393, 05 2015.
 
 \bibitem{quteprints71808}
 N.~Abedi, A.~Bhaskar, and E.~Chung, ``Bluetooth and wi-fi mac address based
   crowd data collection and monitoring : benefits, challenges and
   enhancement,'' in {\em 36th Australasian Transport Research Forum (ATRF)},
   (Queensland University of Technology, Brisbane, QLD), October 2013.
+
+\bibitem{6847958}
+W.~Xi, J.~Zhao, X.~Y. Li, K.~Zhao, S.~Tang, X.~Liu, and Z.~Jiang, ``Electronic
+  frog eye: Counting crowd using wifi,'' in {\em IEEE INFOCOM 2014 - IEEE
+  Conference on Computer Communications}, pp.~361--369, April 2014.
+
+\bibitem{7102673}
+S.~Depatla, A.~Muralidharan, and Y.~Mostofi, ``Occupancy estimation using only
+  wifi power measurements,'' {\em IEEE Journal on Selected Areas in
+  Communications}, vol.~33, pp.~1381--1393, July 2015.
 
 \end{thebibliography}
