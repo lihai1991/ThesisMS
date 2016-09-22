@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.8.17)  20 SEP 2016 01:18
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.8.17)  22 SEP 2016 14:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1471,6 +1471,13 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 
  (./data/chapterI.tex
 Chapter 1.
+
+LaTeX Warning: Citation `Xu:2013:SID:2461381.2461394' on page 1 undefined on in
+put line 10.
+
+
+LaTeX Warning: Citation `6197192' on page 1 undefined on input line 10.
+
 [1
 
 
@@ -2026,13 +2033,16 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 110.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
  ) 
 Here is how much of TeX's memory you used:
- 27336 strings out of 493589
- 477258 string characters out of 6146760
+ 27338 strings out of 493589
+ 477296 string characters out of 6146760
  517895 words of memory out of 5000000
- 30363 multiletter control sequences out of 15000+600000
+ 30365 multiletter control sequences out of 15000+600000
  15573 words of font info for 62 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  60i,19n,94p,10481b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
