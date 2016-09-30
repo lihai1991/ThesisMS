@@ -14,49 +14,44 @@ A level-1 auxiliary file: data/chapterVI.aux
 A level-1 auxiliary file: data/chapterVII.aux
 The style file: ieeetr.bst
 Database file #1: data/myReference.bib
-Name 1 in "Nishide, R., and H. Takada" has a comma at the end for entry B_ad_hoc
-while executing---line 969 of file ieeetr.bst
-Name 1 in "Depatla, Saandeep, Arjun Muralidharan, and Yasamin Mostofi" has a comma at the end for entry W_power
-while executing---line 969 of file ieeetr.bst
-You've used 14 entries,
+You've used 18 entries,
             1876 wiz_defined-function locations,
-            619 strings with 7530 characters,
-and the built_in function-call counts, 4184 in all, are:
-= -- 402
-> -- 156
+            637 strings with 8282 characters,
+and the built_in function-call counts, 5113 in all, are:
+= -- 491
+> -- 193
 < -- 0
-+ -- 57
-- -- 43
-* -- 305
-:= -- 568
-add.period$ -- 15
-call.type$ -- 14
-change.case$ -- 13
++ -- 72
+- -- 54
+* -- 376
+:= -- 692
+add.period$ -- 19
+call.type$ -- 18
+change.case$ -- 15
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 228
-empty$ -- 409
-format.name$ -- 43
-if$ -- 1035
+cite$ -- 18
+duplicate$ -- 277
+empty$ -- 500
+format.name$ -- 54
+if$ -- 1262
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 13
-newline$ -- 46
-num.names$ -- 13
-pop$ -- 53
+int.to.str$ -- 18
+missing$ -- 15
+newline$ -- 58
+num.names$ -- 15
+pop$ -- 63
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 162
+skip$ -- 195
 stack$ -- 0
-substring$ -- 295
-swap$ -- 94
+substring$ -- 355
+swap$ -- 114
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 36
-width$ -- 16
-write$ -- 139
-(There were 2 error messages)
+while$ -- 43
+width$ -- 20
+write$ -- 175

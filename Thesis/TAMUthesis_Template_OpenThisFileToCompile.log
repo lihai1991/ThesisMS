@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.8.17)  22 SEP 2016 14:14
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.8.17)  30 SEP 2016 15:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1471,18 +1471,16 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 
  (./data/chapterI.tex
 Chapter 1.
-
-LaTeX Warning: Citation `Xu:2013:SID:2461381.2461394' on page 1 undefined on in
-put line 10.
-
-
-LaTeX Warning: Citation `6197192' on page 1 undefined on input line 10.
-
 [1
 
 
 
 ]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 15.
+
+
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -1604,7 +1602,7 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\vbox(0.0+0.0)x430.0074
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
-[3])
+[3]
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -1666,15 +1664,67 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
 [4]
-\openout2 = `data/chapterIII.aux'.
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
 
- (./data/chapterIII.tex
-Chapter 2.
-[5
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
 
 
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
 
-])
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 212.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 5
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[5]
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -1735,16 +1785,7 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\vbox(0.0+0.0)x430.0074
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
-[6]
-\openout2 = `data/chapterIV.aux'.
-
- (./data/chapterIV.tex
-Chapter 3.
-[7
-
-
-
-]
+[6])
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -1795,7 +1836,7 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\hbox(10.14995+4.35004)x430.0074, glue set 212.00371fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\hbox(0.0+0.0)x0.0
-.....\EU1/TimesNewRoman(0)/m/n/12 8
+.....\EU1/TimesNewRoman(0)/m/n/12 7
 .....\rule(10.14995+4.35004)x0.0
 .....\penalty 10000
 .....etc.
@@ -1805,7 +1846,16 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\vbox(0.0+0.0)x430.0074
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
-[8])
+[7]
+\openout2 = `data/chapterIII.aux'.
+
+ (./data/chapterIII.tex
+Chapter 2.
+[8
+
+
+
+])
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -1867,11 +1917,142 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
 [9]
+\openout2 = `data/chapterIV.aux'.
+
+ (./data/chapterIV.tex
+Chapter 3.
+[10
+
+
+
+]
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.22636fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 11
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[11])
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 12
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[12]
 \openout2 = `data/chapterV.aux'.
 
  (./data/chapterV.tex
 Chapter 4.
-) [10
+) [13
 
 
 
@@ -1880,7 +2061,7 @@ Chapter 4.
 
  (./data/chapterVI.tex
 Chapter 5.
-) [11
+) [14
 
 
 
@@ -1889,11 +2070,11 @@ Chapter 5.
 
  (./data/chapterVII.tex
 Chapter 6.
-) [12
+) [15
 
 
 
-] (./TAMUthesis_Template_OpenThisFileToCompile.bbl [13
+] (./TAMUthesis_Template_OpenThisFileToCompile.bbl [16
 
 
 ]
@@ -1947,7 +2128,7 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\hbox(0.0+0.0)x0.0
-.....\EU1/TimesNewRoman(0)/m/n/12 14
+.....\EU1/TimesNewRoman(0)/m/n/12 17
 .....\rule(10.14995+4.35004)x0.0
 .....\penalty 10000
 .....etc.
@@ -1957,7 +2138,68 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\vbox(0.0+0.0)x430.0074
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
-[14])
+[17]
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 18
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[18])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
 
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
@@ -2010,7 +2252,7 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\hbox(0.0+0.0)x0.0
-.....\EU1/TimesNewRoman(0)/m/n/12 15
+.....\EU1/TimesNewRoman(0)/m/n/12 19
 .....\rule(10.14995+4.35004)x0.0
 .....\penalty 10000
 .....etc.
@@ -2020,7 +2262,7 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\vbox(0.0+0.0)x430.0074
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
-[15]
+[19]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
  (./TAMUthesis_Template_OpenThisFileToCompile.aux (./data/cover.aux)
 (./data/Abstract.aux) (./data/Dedication.aux) (./data/Acknowledgment.aux)
@@ -2033,18 +2275,15 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 110.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
  ) 
 Here is how much of TeX's memory you used:
- 27338 strings out of 493589
- 477296 string characters out of 6146760
- 517895 words of memory out of 5000000
- 30365 multiletter control sequences out of 15000+600000
+ 27348 strings out of 493589
+ 477426 string characters out of 6146760
+ 516264 words of memory out of 5000000
+ 30375 multiletter control sequences out of 15000+600000
  15573 words of font info for 62 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 60i,19n,94p,10481b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,19n,94p,10481b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on TAMUthesis_Template_OpenThisFileToCompile.pdf (23 pages).
+Output written on TAMUthesis_Template_OpenThisFileToCompile.pdf (27 pages).

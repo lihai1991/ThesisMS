@@ -22,6 +22,27 @@ D.~Valerio, A.~D'Alconzo, F.~Ricciato, and W.~Wiedermann, ``Exploiting cellular
 Cisco Systems, Inc., {\em Visual Networking Index: Global Mobile Data Traffic
   Forecast Update}, 2016.
 
+\bibitem{2461394}
+C.~Xu, B.~Firner, R.~S. Moore, Y.~Zhang, W.~Trappe, R.~Howard, F.~Zhang, and
+  N.~An, ``Scpl: Indoor device-free multi-subject counting and localization
+  using radio signal strength,'' in {\em Proceedings of the 12th International
+  Conference on Information Processing in Sensor Networks}, IPSN '13, (New
+  York, NY, USA), pp.~79--90, ACM, 2013.
+
+\bibitem{6197192}
+M.~Seifeldin, A.~Saeed, A.~E. Kosba, A.~El-Keyi, and M.~Youssef, ``Nuzzer: A
+  large-scale device-free passive localization system for wireless
+  environments,'' {\em IEEE Transactions on Mobile Computing}, vol.~12,
+  pp.~1321--1334, July 2013.
+
+\bibitem{emarketer}
+eMarketer, Inc., {\em Worldwide Internet and Mobile Users: eMarketer’s
+  Updated Estimates for 2015}, 2015.
+
+\bibitem{comscore}
+comScore, {\em comScore Reports December 2015 U.S. Smartphone Subscriber Market
+  Share}, 2015.
+
 \bibitem{Ma_2013_CVPR}
 Z.~Ma and A.~B. Chan, ``Crossing the line: Crowd counting by integer
   programming with local features,'' in {\em The IEEE Conference on Computer
@@ -53,14 +74,15 @@ O.~Shih and A.~Rowe, ``Occupancy estimation using ultrasonic chirps,'' in {\em
   Systems}, ICCPS '15, (New York, NY, USA), pp.~149--158, ACM, 2015.
 
 \bibitem{B_ad_hoc}
-R.~Nishide and H.~Takada, ``Exploring efficient methods to extract pedestrian
-  flows on a mobile adhoc network,'' {\em The 6th International Conference on
-  Mobile Ubiquitous Computing, Systems, Services and Technologies}, 2012.
+{Nishide, R., and H. Takada}, ``Exploring efficient methods to extract
+  pedestrian flows on a mobile adhoc network,'' {\em The 6th International
+  Conference on Mobile Ubiquitous Computing, Systems, Services and
+  Technologies}, 2012.
 
 \bibitem{W_power}
-A.~M. Depatla, Saandeep and Y.~Mostofi, ``Occupancy estimation using only wifi
-  power measurements,'' {\em IEEE Journal on Selected Areas in Communications},
-  vol.~33, pp.~1381--1393, 05 2015.
+{Depatla, Saandeep, Arjun Muralidharan, and Yasamin Mostofi}, ``Occupancy
+  estimation using only wifi power measurements,'' {\em IEEE Journal on
+  Selected Areas in Communications}, vol.~33, pp.~1381--1393, 05 2015.
 
 \bibitem{quteprints71808}
 N.~Abedi, A.~Bhaskar, and E.~Chung, ``Bluetooth and wi-fi mac address based

@@ -7,7 +7,28 @@ This can result in a large amount of energy saving~\cite{Nguyen2013244,Balaji:20
 In navigation systems, providing road occupancy traffic information will allow users find out best route to the destination.In~\cite{5073548}, the author proposed a road monitoring system that encompass UMTS and GPRS data collection.
 Under an emergency circumstance, a proper occupancy estimation may help the government guide the evacuation of crowds. 
 
-Recent years, the number of Wi-Fi access points and the number of Wi-Fi client devices have been increasing dramatically. This growth in Wi-Fi infrastructure leads to large amounts of data being transmitted over wireless networks. Cisco Systems predicts in their Visual Network Index that 55~percent of total mobile data traffic will be offloaded onto fixed networks through Wi-Fi access points and femtocells by 2020~\cite{CiscoVNI2016}. This means Wi-Fi is becoming a notable data source. Since Wi-Fi signals can tell us about our environment. A lot of attentions are drawn into this area, like self-localization, source localization and occupancy estimation~\cite{Xu:2013:SID:2461381.2461394,6197192}.
+Recent years, the number of Wi-Fi access points and the number of Wi-Fi client devices have been increasing dramatically. This growth in Wi-Fi infrastructure leads to large amounts of data being transmitted over wireless networks. Cisco Systems predicts in their Visual Network Index that 55~percent of total mobile data traffic will be offloaded onto fixed networks through Wi-Fi access points and femtocells by 2020~\cite{CiscoVNI2016}. This means Wi-Fi is becoming a notable data source. Since Wi-Fi signals can tell us about our environment. A lot of attentions are drawn into this area, like self-localization, source localization and occupancy estimation~\cite{2461394,6197192}.
+
+As well, we have witnessed the rapid development of mobile technology which is led by large amount of smartphone users. Smartphone supports real-time communication and information access, and it is with an advanced mobile operating system which combines features of a personal computer operating system with other features useful for mobile or handheld use. This will bring influence on human activity. The global smartphone penetration rate has growing fast over these years. According to eMarketer's prediction in~\cite{emarketer}, smartphone user penetration as percentage of total global population will be 34.64\% by 2019. Now in the U.S., 197.4 million people owned smartphones (79.3 percent mobile market penetration) during the three months ending in December 2015 according to comScore's report~\cite{comscore}. This rapid development demands an improved manufacturing process. As the result, mass production involved in smartphone technology have decreased the cost of smartphone components. This fact makes smartphones prize-friendly to users. Notably smartphone operation systems also play important roles in mobile devices. For instance,  Android system provide the manufacturer a tool to produce multi-platform application for smartphone. This makes development procedure heaper and gets devices in the hands of more people.
+
+Overall, the continuously growth in mobile technology attracts more attentions into this field. A good understanding of the wireless channel is the key to analyze the communication systems. With this thought in mind, we will discuss important concepts in channel model like path loss, shadow fading, multipath propagation, types of fading, and time-frequency selectivity.
+\subsection{path loss}
+Path loss refers to the attenuation in the transmitted signal while propagating from the transmitter (Tx) to the receiver (Rx). Typically received signal power is a function of distance between Tx and Rx. The simplest path loss model is used for unobstructed line-of-sight(LOS) signal path in free space propagation. Under this model, the received signal is given as
+%insert equation here
+where PT is the transmitted power, GT and GR are the transmit and receive antennas gains, respectively, λ is the transmitted carrier wavelength, and d is the distance between the Tx and the Rx. Thus, the received power falls off proportional to the ratio of wavelength over distance squared. We also find the relation between path loss and wave length. Shorter wave length, higher path loss.
+Though simple, the free space path loss model cannot be accurate in real environment. 
+\subsection{shadowing}
+In the previous path loss model, we assume the path loss to be a constant if the distance is given. However in reality, the presence of the obstacles like buildings and trees may bring random variations in path loss. This effect due to changes in scattering and reflecting surfaces in the propagation environment is called shadowing. Considering the shadowing, the received signal power is given as
+%insert equation
+where PL and S correspond to the path loss and the shadow fading contributions,respectively
+\subsection{multipath fading}
+Multipath fading occurs when multiple transmission paths are combined
+either constructively or destructively at the receiver, as a result of the transmitted
+signal reflection on objects before reaching the destination. Compared with shadowing fading, multipath fading generally causes smaller effect to the signal power.
+
+Several different models such as Okumura, Hata, Walfish-Ikegami are proposed to model different environments like urban, rural and indoor area.
+Some models like lognormal shadowing model, Rayleigh fading and Ricean fading are widely used.
+
 
 Current literature on occupancy estimation are mainly based on either images or RF signals. Approaches based on camera use captured images to estimate the number of people in a crowded scene~\cite{Ma_2013_CVPR,Pe_count,li2008estimating}.
 Still, in such camera-based approaches, estimation accuracy can be affected by many factors such as brightness and image resolution.
