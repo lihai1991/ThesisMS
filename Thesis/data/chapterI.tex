@@ -11,23 +11,39 @@ Recent years, the number of Wi-Fi access points and the number of Wi-Fi client d
 
 As well, we have witnessed the rapid development of mobile technology which is led by large amount of smartphone users. Smartphone supports real-time communication and information access, and it is with an advanced mobile operating system which combines features of a personal computer operating system with other features useful for mobile or handheld use. This will bring influence on human activity. The global smartphone penetration rate has growing fast over these years. According to eMarketer's prediction in~\cite{emarketer}, smartphone user penetration as percentage of total global population will be 34.64\% by 2019. Now in the U.S., 197.4 million people owned smartphones (79.3 percent mobile market penetration) during the three months ending in December 2015 according to comScore's report~\cite{comscore}. This rapid development demands an improved manufacturing process. As the result, mass production involved in smartphone technology have decreased the cost of smartphone components. This fact makes smartphones prize-friendly to users. Notably smartphone operation systems also play important roles in mobile devices. For instance,  Android system provide the manufacturer a tool to produce multi-platform application for smartphone. This makes development procedure heaper and gets devices in the hands of more people.
 
-Overall, the continuously growth in mobile technology attracts more attentions into this field. A good understanding of the wireless channel is the key to analyze the communication systems. With this thought in mind, we will discuss important concepts in channel model like path loss, shadow fading, multipath propagation, types of fading, and time-frequency selectivity.
-\subsection{path loss}
+Overall, the continuously growth in mobile technology attracts more attentions into this field.  In this work, we are interested in the
+occupancy estimation based on Wi-Fi activity of the users. A good understanding of the wireless channel is the key to analyze the communication systems. With this thought in mind, we will discuss important concepts in channel model like path loss, shadow fading and multipath propagation.
+%\section{path loss}
+
 Path loss refers to the attenuation in the transmitted signal while propagating from the transmitter (Tx) to the receiver (Rx). Typically received signal power is a function of distance between Tx and Rx. The simplest path loss model is used for unobstructed line-of-sight(LOS) signal path in free space propagation. Under this model, the received signal is given as
 %insert equation here
-where PT is the transmitted power, GT and GR are the transmit and receive antennas gains, respectively, λ is the transmitted carrier wavelength, and d is the distance between the Tx and the Rx. Thus, the received power falls off proportional to the ratio of wavelength over distance squared. We also find the relation between path loss and wave length. Shorter wave length, higher path loss.
-Though simple, the free space path loss model cannot be accurate in real environment. 
-\subsection{shadowing}
-In the previous path loss model, we assume the path loss to be a constant if the distance is given. However in reality, the presence of the obstacles like buildings and trees may bring random variations in path loss. This effect due to changes in scattering and reflecting surfaces in the propagation environment is called shadowing. Considering the shadowing, the received signal power is given as
-%insert equation
-where PL and S correspond to the path loss and the shadow fading contributions,respectively
-\subsection{multipath fading}
-Multipath fading occurs when multiple transmission paths are combined
-either constructively or destructively at the receiver, as a result of the transmitted
-signal reflection on objects before reaching the destination. Compared with shadowing fading, multipath fading generally causes smaller effect to the signal power.
+\begin{equation}
+P_{R} = P_{T} G_{T} G_{R} \frac{\lambda^2}{4 \pi d^2}
+\end{equation}
+where $P_{T}$ is the transmitted power, $G_{T}$ and $G_{R}$ are the transmit and receive antennas gains, respectively, $\lambda$ is the transmitted carrier wavelength, and $d$ is the distance between the Tx and the Rx. Thus, the received power falls off proportional to the ratio of wavelength over distance squared. We also find the relation between path loss and wave length. Shorter wave length, higher path loss.
+Though simple, the free space path loss model cannot be accurate in real environment. Therefore we need to take more factors into consideration.
 
-Several different models such as Okumura, Hata, Walfish-Ikegami are proposed to model different environments like urban, rural and indoor area.
-Some models like lognormal shadowing model, Rayleigh fading and Ricean fading are widely used.
+%\section{shadowing}
+In the previous path loss model, we assume the path loss to be a constant if the distance is given. However in reality, the presence of the obstacles like buildings and trees between transmitter and receiver may bring random variations in path loss. This effect due to changes in scattering, reflecting and diffracting surfaces in the propagation environment is called shadowing~\cite{rappaport1996wireless}. Considering the shadowing, the received signal power is given as
+%insert equation
+\begin{equation}
+P_{R} = P_{T} G_{T} G_{R} S
+\end{equation}
+where $P_{L}$ and $S$ correspond to the path loss and the shadow fading factor,respectively. Here $S$ is a random variable.
+Experiment results show that a log-normal distribution function provides a good match to the empirical pdf of the shadow fading component~\cite{bertoni1999radio}. Therefore the pdf of $S$ can be approximated as the pdf of Gaussian random variable when $S$ is expressed in $dB$ domain.
+\begin{equation} 
+f_{S_{s}} (s)
+= \frac{1}{\sqrt{2 \pi} \sigma_{\mathrm{s}}} 
+\exp \left( - \frac{s^2}{2 \sigma_{\mathrm{s}}^2} \right)
+\end{equation}
+where $\sigma_{\mathrm{s}}$ is the standard deviation of shadowing. Typically $\sigma_{\mathrm{s}}$ is between 5-10 $dB$.
+
+%\section{multipath fading}
+Multipath fading occurs when multiple transmission waves are combined
+at the receiver, as a result of the transmitted signal reflection, diffraction, and/or scattering on objects before reaching the destination. Compared with shadowing fading, multipath fading is a short-term factor that generally causes smaller effect to the signal power. Therefore the multipath fading is also called small-scale fading.
+Some model such as Rayleigh fading and Ricean fading can be used for multipath fading~\cite{rappaport1996wireless}. Rayleigh fading is a reasonable model when there are many objects in the environment that scatter the radio signal before it arrives at the receiver. However, when a LOS or a strong
+reflected path, termed specular component, also arrives at the receiver, the fading is more appropriately modeled by a Rician distribution~\cite{stuber2011principles}.
+Several different models such as Okumura, Hata, Walfish-Ikegami are proposed to model different environments like urban, rural and indoor area~\cite{stuber2011principles}.
 
 
 Current literature on occupancy estimation are mainly based on either images or RF signals. Approaches based on camera use captured images to estimate the number of people in a crowded scene~\cite{Ma_2013_CVPR,Pe_count,li2008estimating}.
@@ -43,7 +59,7 @@ In their work, the authors stipulate that Wi-Fi has advantage over Bluetooth in 
 According to their results, more than 90\% of scanned unique MAC addresses in all places are Wi-Fi addresses; the popularity of using Wi-Fi devices is therefore significantly higher than that of Bluetooth devices, which means occupancy estimation using Wi-Fi is much more convenient in practice.
 In ~\cite{6847958}, the author proposes FCC, a device-Free Crowd Counting approach based on channel state information measurements. In ~\cite{7102673},  the author develops a new approach for estimating the total number of people walking in an area with only Wi-Fi power measurements between a pair of stationary transmitter/receiver antennas. In that case they do not need the measurement of channel state information.
 
-In this paper, we are interested in estimating the number of active devices in a fixed area using Wi-Fi metadatas.
+In this thesis, we are interested in estimating the number of active devices in a fixed area using Wi-Fi metadatas.
 Modern mobile devices equipped with Wi-Fi modules transmit Wi-Fi messages periodically.
 Therefore, this provides a means to estimate occupancy by passively listening to Wi-Fi packets.
 More specifically, by deploying Wi-Fi monitoring devices in an area of interest, it is possible to detect these Wi-Fi transmissions.
@@ -61,7 +77,7 @@ In the simulation, we assume that four sensing devices are located in the four c
 In addition, our findings are further supported through outdoor experimentation.
 The testbed is implemented in a line-of-sight environment, with four sensing devices deployed at the corners of the area of interest.
 
-The remainder of this paper is organized as follows.
+The remainder of this thesis is organized as follows.
 In Section~2, we explain our problem formulation and develop our probability model.
 In Section~3, we propose two algorithms for occupancy estimation.
 These schemes are evaluated through numerical simulations in Section~4.

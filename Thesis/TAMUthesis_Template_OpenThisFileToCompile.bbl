@@ -43,6 +43,19 @@ eMarketer, Inc., {\em Worldwide Internet and Mobile Users: eMarketer’s
 comScore, {\em comScore Reports December 2015 U.S. Smartphone Subscriber Market
   Share}, 2015.
 
+\bibitem{rappaport1996wireless}
+T.~S. Rappaport {\em et~al.}, {\em Wireless communications: principles and
+  practice}, vol.~2.
+\newblock Prentice Hall PTR New Jersey, 1996.
+
+\bibitem{bertoni1999radio}
+H.~L. Bertoni, {\em Radio propagation for modern wireless systems}.
+\newblock Pearson Education, 1999.
+
+\bibitem{stuber2011principles}
+G.~L. St{\"u}ber, {\em Principles of mobile communication}.
+\newblock Springer Science \& Business Media, 2011.
+
 \bibitem{Ma_2013_CVPR}
 Z.~Ma and A.~B. Chan, ``Crossing the line: Crowd counting by integer
   programming with local features,'' in {\em The IEEE Conference on Computer
@@ -99,5 +112,8 @@ W.~Xi, J.~Zhao, X.~Y. Li, K.~Zhao, S.~Tang, X.~Liu, and Z.~Jiang, ``Electronic
 S.~Depatla, A.~Muralidharan, and Y.~Mostofi, ``Occupancy estimation using only
   wifi power measurements,'' {\em IEEE Journal on Selected Areas in
   Communications}, vol.~33, pp.~1381--1393, July 2015.
+
+\bibitem{zwillinger1995crc}
+D.~Zwillinger, ``Crc standard mathematical tables and formulae,'' 1995.
 
 \end{thebibliography}

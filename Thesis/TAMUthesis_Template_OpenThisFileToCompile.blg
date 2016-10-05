@@ -14,44 +14,46 @@ A level-1 auxiliary file: data/chapterVI.aux
 A level-1 auxiliary file: data/chapterVII.aux
 The style file: ieeetr.bst
 Database file #1: data/myReference.bib
-You've used 18 entries,
+Warning--empty journal in zwillinger1995crc
+You've used 22 entries,
             1876 wiz_defined-function locations,
-            637 strings with 8282 characters,
-and the built_in function-call counts, 5113 in all, are:
-= -- 491
-> -- 193
+            656 strings with 8709 characters,
+and the built_in function-call counts, 5703 in all, are:
+= -- 545
+> -- 213
 < -- 0
-+ -- 72
-- -- 54
-* -- 376
-:= -- 692
-add.period$ -- 19
-call.type$ -- 18
-change.case$ -- 15
++ -- 81
+- -- 59
+* -- 401
+:= -- 780
+add.period$ -- 26
+call.type$ -- 22
+change.case$ -- 16
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 277
-empty$ -- 500
-format.name$ -- 54
-if$ -- 1262
+cite$ -- 23
+duplicate$ -- 312
+empty$ -- 577
+format.name$ -- 59
+if$ -- 1411
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 15
-newline$ -- 58
-num.names$ -- 15
-pop$ -- 63
+int.to.str$ -- 22
+missing$ -- 22
+newline$ -- 73
+num.names$ -- 19
+pop$ -- 86
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 195
+skip$ -- 201
 stack$ -- 0
 substring$ -- 355
-swap$ -- 114
+swap$ -- 117
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 43
-width$ -- 20
-write$ -- 175
+warning$ -- 1
+while$ -- 47
+width$ -- 24
+write$ -- 210
+(There was 1 warning)

@@ -1,4 +1,29 @@
-\chapter{PROBLEM FORMULATION}
+\chapter{SYSTEM MODEL AND PROBLEM FORMULATION}
+Wi-Fi based occupancy estimation is attractive because it only require simple sensing device Meanwhile it can benefit from local Wi-Fi network and the high penetration rate of smartphone. The existence of tools like pcap and wireshark makes monitoring Wi-Fi environment a straight forward work. In our study, we will extract the RSSI and MAC address for the purpose of occupancy estimation. As is discussed above, the RSSI is related to the distance between Rx and Tx. Therefore we can infer the location information by RSSI. However RSSI does not only depend on distance, some other factors like noise and fading will also influence it. As such, a proper wireless channel model is needed to take care of this situation.
+\section{Wireless Channel Model}
+A common wireless environment can be express by
+\begin{equation*}
+r (t) = g (d) s (t) + w (t)
+\end{equation*}
+where $r (t)$ represents received signal. $g (d)$ the function of distance is the power gain which is related to several factors including the mean path loss, shadow fading and antenna gain. $s (t)$ denotes the sent signal and $w (t)$ is additive white Gaussian noise.
+Here we use the log-normal channel model. So the received power for a given distance between transmitter and receiver can be expressed as
+\begin{equation}
+P_{d} \text{[dBm]}
+= A + B \log_{10}(d) + L_{s} + G_{a} 
+\end{equation}
+where $A$ is a combination of the transmitted signal power and average path loss
+and $B$ represents the path loss coefficient.
+$L_{s}$ is an independent and identically distributed Gaussian random variable which represents shadowing.
+$G_{a}$ is the antenna gain. Note that the mean of $L_{s}$ can be added in $A$, thus we assume $L_{s}$ is a zero mean random variable, $L_{s}\sim\mathcal{N}(0,\sigma_{\mathrm{s}}^2)$. $\sigma_{s}$ is the variance of shadowing component. Therefore in the logarithmic domain, the density function of $L_{s}$ can be written as
+\begin{equation*}
+f_{L_{s}} (\ell)
+= \frac{1}{\sqrt{2 \pi} \sigma_{\mathrm{s}}} 
+\exp \left( - \frac{\ell^2}{2 \sigma_{\mathrm{s}}^2} \right) 
+\end{equation*}
+Here the variance can be estimated by sample data set. An unbiased estimator for the variance is given by~\cite{zwillinger1995crc}
+\begin{equation*}
+\sigma_{\mathrm{s}}^2 = \frac{1}{N-1} \sum_{1}^{N} (l_{k}-\mu_{s})^2
+\end{equation*} 
 
 Consider a scenario where several wireless devices are randomly positioned nearby a rectangular area of interest.
 Four monitoring devices are located at the corners of this region.
