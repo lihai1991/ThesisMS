@@ -1,1 +1,18 @@
-\chapter{NUMERICAL SIMULATION}
+\chapter{NUMERICAL SIMULATION SETUP AND RESULTS}
+In this section, we will introduce our simulation setup including the directional antenna model and the parameters of the channel. The simulation results will be shown after that. The simulation code is written in python. In the simulation framework, the set up consists of four monitoring devices placed
+at the corners of the area of interest. The target area is considered to be a square of dimension 6 $m$ ×6 $m$ inscribed in a larger square of dimension 10 $m$ ×10 $m$. The two square areas share a same center point. We use $A_{t}$ to denote the target area, while $A_{o}$ denotes the complement. 
+
+\section{Antenna Characteristic}
+In our simulation, to analyze the effect of radiation characteristics of the sensing antennas on the estimation, isotropic antennas and directional antennas are considered. The antenna gain of isotropic antennas are zero in all directions. For the directional antennas, we adopt 3GPP antenna model in~\cite{3GPP-antenna}. The directional antenna gains obey the following formula.
+\begin{equation*}
+G_i (\phi_{ij}) = - \min \left\{
+12 \left( \frac{\phi_{ij} - \theta_{i}}{\theta_{\mathrm{3dB}}} \right)^2,
+G_{\mathrm{floor}} \right\} - G_{\mathrm{avg}}
+\end{equation*}
+where $\theta_{i}$ is pointing direction of the antenna which is attached to monitoring devices $i$. $\theta_{\mathrm{3dB}}$ is the 3 $dB$ beam-width of the radiation pattern. $G_{floor}$ is a nominal attenuation floor. $G_{average}$ is a normalization factor which equal to the average gain over $\in (-180^{\circ}, 180^{\circ}]$.
+\begin{equation*}
+10 \log_{10} \left( \int_{-180}^{180}
+\frac{ 10^{ - \frac{1}{10} \min \left\{
+		12 \left( \frac{\phi_{ij} - \theta_{i}}{\theta_{\mathrm{3dB}}} \right)^2,
+		G_{\mathrm{floor}} \right\} } }{360} d \phi_{ij} \right) .
+\end{equation*}

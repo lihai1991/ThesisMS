@@ -1,5 +1,5 @@
 \chapter{SYSTEM MODEL AND PROBLEM FORMULATION}
-Wi-Fi based occupancy estimation is attractive because it only require simple sensing device Meanwhile it can benefit from local Wi-Fi network and the high penetration rate of smartphone. The existence of tools like pcap and wireshark makes monitoring Wi-Fi environment a straight forward work. In our study, we will extract the RSSI and MAC address for the purpose of occupancy estimation. As is discussed above, the RSSI is related to the distance between Rx and Tx. Therefore we can infer the location information by RSSI. However RSSI does not only depend on distance, some other factors like noise and fading will also influence it. As such, a proper wireless channel model is needed to take care of this situation.
+Wi-Fi based occupancy estimation is attractive because it only require simple sensing device Meanwhile it can benefit from local Wi-Fi network and the high penetration rate of smartphone. The existence of tools like pcap and wireshark makes monitoring Wi-Fi environment a straight forward work. In this thesis, we will extract the RSSI and MAC address for the purpose of occupancy estimation. As is discussed above, the RSSI is related to the distance between Rx and Tx. Therefore we can infer the location information by RSSI. However RSSI does not only depend on distance, some other factors like noise and fading will also influence it. As such, a proper wireless channel model is needed to take care of this situation.
 \section{Wireless Channel Model}
 A common wireless environment can be express by
 \begin{equation*}
@@ -7,7 +7,7 @@ r (t) = g (d) s (t) + w (t)
 \end{equation*}
 where $r (t)$ represents received signal. $g (d)$ the function of distance is the power gain which is related to several factors including the mean path loss, shadow fading and antenna gain. $s (t)$ denotes the sent signal and $w (t)$ is additive white Gaussian noise.
 Here we use the log-normal channel model. So the received power for a given distance between transmitter and receiver can be expressed as
-\begin{equation}
+\begin{equation} \label{channel}
 P_{d} \text{[dBm]}
 = A + B \log_{10}(d) + L_{s} + G_{a} 
 \end{equation}
@@ -24,16 +24,71 @@ Here the variance can be estimated by sample data set. An unbiased estimator for
 \begin{equation*}
 \sigma_{\mathrm{s}}^2 = \frac{1}{N-1} \sum_{1}^{N} (l_{k}-\mu_{s})^2
 \end{equation*} 
+where $N$ is the sample size, $l_{k}$ forms the data set, and points are expressed in the logarithmic domain.
 
-Consider a scenario where several wireless devices are randomly positioned nearby a rectangular area of interest.
-Four monitoring devices are located at the corners of this region.
+Now the goal is to estimate the wireless channel parameter $A$ and $B$. Here we are going to use the least square method, which minimizes the sum of the squares of the offsets. For a linear least square problem given by,
+\begin{equation*}
+f(x, \beta) = \sum_{j = 1}^m \beta_j \phi_j(x)
+\end{equation*}
+where the function  $\phi _{j}$ is a function of $x$, $\beta$ is the parameter vector to be estimated.
+Letting 
+\begin{equation*}
+X_{ij}= \frac{\partial f(x_i,\boldsymbol \beta)}{\partial \beta_j} = \phi_j(x_{i})
+\end{equation*}
+$\beta$ is given by
+\begin{equation*}
+\boldsymbol{\hat\beta} =( X ^TX)^{-1}X^{T}\boldsymbol y
+\end{equation*}
+For the least square problem defined in \ref{channel}, letting 
+\begin{equation*}
+\boldsymbol y=
+\begin{bmatrix*}
+	p_{1} \\
+	\vdots \\
+	p_{N} \\
+\end{bmatrix*}
+\end{equation*}
+\begin{equation*}
+X=
+\begin{bmatrix*}
+1 & \log_{10}(d_{1})  \\
+\vdots & \vdots \\
+1 & \log_{10}(d_{N}) \\
+\end{bmatrix*}
+\end{equation*}
+where $y$ denotes the received power at distance d. Then the estimator of $A$ and $B$ is given as
+\begin{equation*}
+\begin{bmatrix*}
+A \\
+B \\
+\end{bmatrix*}
+=( X ^TX)^{-1}X^{T}\boldsymbol y
+\end{equation*}
+The variance of $L_{s}$, the shadow fading component, is computed by normalizing the residual error
+\begin{equation*}
+\sigma_{\mathrm{s}}^2= \frac{1}{N-1} \boldsymbol y^{T}(I-X( X ^TX)^{-1}X^{T})\boldsymbol y
+\end{equation*}
+
+\section{Problem Formulation}
+Consider a scenario where several wireless devices are randomly positioned nearby an area of interest. To simplify the problem, we assume the area to be rectangular shape.
+Four RF monitoring devices are located at the corners of this region.
 Each monitoring device has information concerning its own location and orientation.
 The radiation pattern of antenna attached to each monitoring device is known as well.
-All of the monitoring devices are connected to the Internet and send the captured data to a process center for inference.
+In our system model, all of the monitoring devices are connected to the Internet and send the captured data to a process center for inference.
+Several wireless clients carried by users are randomly located near this area, they can be inside or outside the area of interest.
 The wireless clients transmit data packets periodically and consequently they can be easily detected by the monitoring devices.
 Since each wireless client has a unique MAC address, the packets transmitted from different clients can be distinguished.
-Throughout, we use $\mathcal{A}_{\mathrm{t}}$ to represent the target area and $\mathcal{A}_{\mathrm{o}}$ to represent its complement.
-In this study, we assume the wireless clients are quasi-static and each client is equipped with an isotropic antenna.
+Throughout, we use $\mathcal{A}_{\mathrm{t}}$ to represent the target area and $\mathcal{A}_{\mathrm{o}}$ to represent its complement. A notional diagram of the framework is shown in Fig.~\ref{figure:NotionalDiagram}
+\begin{figure}[t]
+\centerline{\input{Figures/NotionalDiagram}}
+\caption{The periphery of target area delineated by dashed line. 
+Squares at the corners of target area denote the locations of monitoring devices, equipped with directional antennas.
+Clients within the zone of interest are in black, whereas outside agents appear as white.
+The objective is to estimate occupancy within target area.}
+\label{figure:NotionalDiagram}
+\end{figure}
+In this thesis, we assume the wireless clients are quasi-static and each client is equipped with an isotropic antenna.
+Thus the orientation of the wireless clients does not matter.
 For convenience, we use a single vector to denote the locations of the wireless clients.
 \begin{equation}
 \underline{\mathbf{U}} = (\mathbf{U}_1, \ldots, \mathbf{U}_{n_{\mathrm{a}}}).
@@ -41,14 +96,22 @@ For convenience, we use a single vector to denote the locations of the wireless 
 where $n_{\mathrm{a}}$ is the number of the detected clients.
 We also assume that the signal captured by a monitoring device comes from a line-of-sight path.
 Therefore, signal strength subscribes to a free-space transmission model.
-The received signal strength from client $j$ to sensing device $i$ can be expressed as
+The received signal strength from client $j$ to sensing device $i$ can be expressed in log-normal channel model.
 \begin{equation} 
 P_{ij} \text{[dBm]}
 = A + B \log_{10}(d_{ij}) + L_{ij} + G_i (\phi_{ij})
 \end{equation}
 where $A$ and $B$ are the mean decay parameters, $d_{ij}$ is the Euclidean distance between the client~$j$ and sensing device~$i$.
+the distance is equal to
+\begin{equation*}
+d_{ij} = d(\mathbf{s}_i, \mathbf{u}_j)= \sqrt{ (u_{1j} - s_{1i})^2 + (u_{2j} - s_{2i})^2 } 
+\end{equation*}
 $L_{ij}$ represent shadow fading and $G_i (\cdot)$ is the antenna gain function of the sensing device.
-Parameter $\phi_{ij}$ denotes the angle of the signal transmission direction.
+Parameter $\phi_{ij}$ denotes the angle of the signal transmission direction, which can be expressed as
+\begin{equation*}
+\phi_{ij} = \angle (\mathbf{s}_i, \mathbf{u}_j)
+= \operatorname{atan2} ( u_{2j} - s_{2i}, u_{1j} - s_{1i} )
+\end{equation*}
 The shadow fading components $\{ L_{ij} \}$ are assumed to be independent and identically log-normal distributed random variables.
 In the logarithmic domain, the probability density function is
 \begin{equation} 
@@ -60,7 +123,7 @@ where $\sigma_{\mathrm{s}}$ is the standard deviation of shadowing.
 The observed information from the four sensing devices form a power matrix $\underline{\mathbf{P}} = (\mathbf{P}_1, \ldots, \mathbf{P}_{n_{\mathrm{a}}})$.
 The vector element $\mathbf{P}_j = (P_{1j}, P_{2j},P_{3j},P_{4j})$ contains signal strength of wireless client~$j$ detected by four sensing devices.
 We assume the number and locations of wireless clients located inside the area of interest form a Poisson point process with intensity $\lambda_{\mathrm{t}}$.
-Therefore,
+Therefore, the probability of $r_{t}$ wireless clients inside the target area is
 \begin{equation*}
 \Pr ( R_{\mathrm{t}} = r_{\mathrm{t}} )
 = \frac{(\lambda_{\mathrm{t}} A_{\mathrm{t}})^{r_{\mathrm{t}}}}
@@ -69,7 +132,7 @@ Therefore,
 \end{equation*}
 where $R_{\mathrm{t}}$ is the number of clients inside.
 $A_{\mathrm{t}}$ is the area of the target region.
-Similarly, we get
+Similarly, we get the probability of $r_{o}$ wireless clients outside the target area.
 \begin{equation*}
 \Pr ( R_{\mathrm{o}} = r_{\mathrm{o}} )
 = \frac{(\lambda_{\mathrm{o}} A_{\mathrm{o}})^{r_{\mathrm{o}}}}
@@ -79,7 +142,8 @@ Similarly, we get
 where $R_{\mathrm{o}}$ is the number of clients outside.
 $A_{\mathrm{o}}$ is the area of the complimentary of target region.
 $\lambda_{\mathrm{o}}$ is a Poisson intensity parameter.
-The inference task is to estimate occupancy based on the power matrix $\underline{\mathbf{P}}$.
+The inference task is to estimate occupancy based on the power matrix data set $\underline{\mathbf{P}}$ which is collected by the sensing devices.
+
 \ignore{\section{Section Test Example 1 }
 
 

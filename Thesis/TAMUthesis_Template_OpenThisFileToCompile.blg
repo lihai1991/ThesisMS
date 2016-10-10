@@ -15,45 +15,45 @@ A level-1 auxiliary file: data/chapterVII.aux
 The style file: ieeetr.bst
 Database file #1: data/myReference.bib
 Warning--empty journal in zwillinger1995crc
-You've used 22 entries,
+You've used 25 entries,
             1876 wiz_defined-function locations,
-            656 strings with 8709 characters,
-and the built_in function-call counts, 5703 in all, are:
-= -- 545
-> -- 213
+            674 strings with 9202 characters,
+and the built_in function-call counts, 6154 in all, are:
+= -- 589
+> -- 233
 < -- 0
-+ -- 81
-- -- 59
-* -- 401
-:= -- 780
-add.period$ -- 26
-call.type$ -- 22
-change.case$ -- 16
++ -- 89
+- -- 64
+* -- 426
+:= -- 844
+add.period$ -- 32
+call.type$ -- 25
+change.case$ -- 18
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 312
-empty$ -- 577
-format.name$ -- 59
-if$ -- 1411
+cite$ -- 26
+duplicate$ -- 336
+empty$ -- 630
+format.name$ -- 64
+if$ -- 1525
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 22
-newline$ -- 73
-num.names$ -- 19
-pop$ -- 86
+int.to.str$ -- 25
+missing$ -- 26
+newline$ -- 85
+num.names$ -- 21
+pop$ -- 98
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 201
+skip$ -- 206
 stack$ -- 0
 substring$ -- 355
-swap$ -- 117
+swap$ -- 120
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 47
-width$ -- 24
-write$ -- 210
+while$ -- 49
+width$ -- 27
+write$ -- 239
 (There was 1 warning)

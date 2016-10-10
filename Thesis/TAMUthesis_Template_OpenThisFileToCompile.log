@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.8.17)  5 OCT 2016 00:55
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.8.17)  10 OCT 2016 00:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1021,59 +1021,552 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(./TAMUthesis_Template_OpenThisFileToCompile.aux (./data/cover.aux)
-(./data/Abstract.aux) (./data/Dedication.aux) (./data/Acknowledgment.aux)
-(./data/Nomenclature.aux) (./data/chapterI.aux) (./data/chapterIII.aux)
-(./data/chapterIV.aux) (./data/chapterV.aux) (./data/chapterVI.aux)
-(./data/chapterVII.aux))
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen274
+\pgfutil@tempdimb=\dimen275
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
+) (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box56
+
+(c:/texlive/2016/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks35
+))
+\pgf@x=\dimen276
+\pgf@y=\dimen277
+\pgf@xa=\dimen278
+\pgf@ya=\dimen279
+\pgf@xb=\dimen280
+\pgf@yb=\dimen281
+\pgf@xc=\dimen282
+\pgf@yc=\dimen283
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count189
+\c@pgf@countb=\count190
+\c@pgf@countc=\count191
+\c@pgf@countd=\count192
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+ (c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2014/07/09  (rcs-revision 1.11)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)
+\pgfsys@objnum=\count193
+)))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count194
+\pgfsyssoftpath@bigbuffer@items=\count195
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (c:/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(c:/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen284
+\pgfmath@count=\count196
+\pgfmath@box=\box57
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count197
+))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen285
+\pgf@picmaxx=\dimen286
+\pgf@picminy=\dimen287
+\pgf@picmaxy=\dimen288
+\pgf@pathminx=\dimen289
+\pgf@pathmaxx=\dimen290
+\pgf@pathminy=\dimen291
+\pgf@pathmaxy=\dimen292
+\pgf@xx=\dimen293
+\pgf@xy=\dimen294
+\pgf@yx=\dimen295
+\pgf@yy=\dimen296
+\pgf@zx=\dimen297
+\pgf@zy=\dimen298
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+e.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen299
+\pgf@path@lasty=\dimen300
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+x
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen301
+\pgf@shorten@start@additional=\dimen302
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box58
+\pgf@hbox=\box59
+\pgf@layerbox@main=\box60
+\pgf@picture@serial@count=\count198
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen303
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen304
+\pgf@pt@y=\dimen305
+\pgf@pt@temp=\dimen306
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen307
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen308
+\pgf@sys@shading@range@num=\count199
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box61
+))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box62
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+y
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen309
+\pgf@nodesepend=\dimen310
+)
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) (c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen311
+\pgffor@skip=\dimen312
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
+))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+de.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count266
+\pgfplotmarksize=\dimen313
+)
+\tikz@lastx=\dimen314
+\tikz@lasty=\dimen315
+\tikz@lastxsaved=\dimen316
+\tikz@lastysaved=\dimen317
+\tikzleveldistance=\dimen318
+\tikzsiblingdistance=\dimen319
+\tikz@figbox=\box63
+\tikz@figbox@bg=\box64
+\tikz@tempbox=\box65
+\tikz@tempbox@bg=\box66
+\tikztreelevel=\count267
+\tikznumberofchildren=\count268
+\tikznumberofcurrentchild=\count269
+\tikz@fig@count=\count270
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count271
+\pgfmatrixcurrentcolumn=\count272
+\pgf@matrix@numberofcolumns=\count273
+)
+\tikz@expandcount=\count274
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(c:/texlive/2016/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2016/08/10 v1.14 Data Visualization (1.14)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks44
+\t@pgfplots@tokb=\toks45
+\t@pgfplots@tokc=\toks46
+\pgfplots@tmpa=\dimen320
+\c@pgfplots@coordindex=\count275
+\c@pgfplots@scanlineindex=\count276
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.te
+x))
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfs
+upp_loader.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfs
+upp_pgflibraryfpu.code.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfs
+upp_pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count277
+))
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststru
+cture.code.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststru
+ctureext.code.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.co
+de.tex
+\c@pgfplotsarray@tmp=\count278
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.c
+ode.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.c
+ode.tex
+\c@pgfplotstable@counta=\count279
+\t@pgfplotstable@a=\toks47
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.co
+de.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.
+tex))
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.te
+x)
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfsh
+ading.code.tex
+\c@pgfplotslibrarysurf@no=\count280
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfsha
+ding.pgfsys-xetex.def
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfsha
+ding.pgfsys-dvipdfmx.def
+\c@pgfplotslibrarysurf@streamlen=\count281
+))))
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex))
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.t
+ex
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex
+))) (c:/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.t
+ex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarydecorations.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.t
+ex
+\pgfdecoratedcompleteddistance=\dimen321
+\pgfdecoratedremainingdistance=\dimen322
+\pgfdecoratedinputsegmentcompleteddistance=\dimen323
+\pgfdecoratedinputsegmentremainingdistance=\dimen324
+\pgf@decorate@distancetomove=\dimen325
+\pgf@decorate@repeatstate=\count282
+\pgfdecorationsegmentamplitude=\dimen326
+\pgfdecorationsegmentlength=\dimen327
+)
+\tikz@lib@dec@box=\box67
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarydecorations.pathmorphing.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydec
+orations.pathmorphing.code.tex))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarydecorations.pathreplacing.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydec
+orations.pathreplacing.code.tex))
+\pgfplots@numplots=\count283
+\pgfplots@xmin@reg=\dimen328
+\pgfplots@xmax@reg=\dimen329
+\pgfplots@ymin@reg=\dimen330
+\pgfplots@ymax@reg=\dimen331
+\pgfplots@zmin@reg=\dimen332
+\pgfplots@zmax@reg=\dimen333
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.
+tex
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+)))
+(c:/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.polar
+.code.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.c
+ode.tex
+File: pgflibraryshapes.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.g
+eometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+isc.code.tex
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.s
+ymbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1a (rcs-revision 1.6)
+))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen334
+))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.a
+rrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.callouts.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.c
+allouts.code.tex))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+ultipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+
+\pgfnodepartlowerbox=\box68
+\pgfnodeparttwobox=\box69
+\pgfnodepartthreebox=\box70
+\pgfnodepartfourbox=\box71
+\pgfnodeparttwentybox=\box72
+\pgfnodepartnineteenbox=\box73
+\pgfnodeparteighteenbox=\box74
+\pgfnodepartseventeenbox=\box75
+\pgfnodepartsixteenbox=\box76
+\pgfnodepartfifteenbox=\box77
+\pgfnodepartfourteenbox=\box78
+\pgfnodepartthirteenbox=\box79
+\pgfnodeparttwelvebox=\box80
+\pgfnodepartelevenbox=\box81
+\pgfnodeparttenbox=\box82
+\pgfnodepartninebox=\box83
+\pgfnodeparteightbox=\box84
+\pgfnodepartsevenbox=\box85
+\pgfnodepartsixbox=\box86
+\pgfnodepartfivebox=\box87
+)))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarychains.code.tex
+File: tikzlibrarychains.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.6)
+
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryscopes.code.tex
+File: tikzlibraryscopes.code.tex 2008/06/27 v3.0.1a (rcs-revision 1.2)
+)
+\tikzheight=\skip105
+\tikzwidth=\skip106
+ (./TAMUthesis_Template_OpenThisFileToCompile.aux
+(./data/cover.aux) (./data/Abstract.aux) (./data/Dedication.aux)
+(./data/Acknowledgment.aux) (./data/Nomenclature.aux) (./data/chapterI.aux)
+(./data/chapterIII.aux) (./data/chapterIV.aux) (./data/chapterV.aux)
+(./data/chapterVI.aux) (./data/chapterVII.aux))
 \openout1 = `TAMUthesis_Template_OpenThisFileToCompile.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 42.
- (c:/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 51.
+
+(c:/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 42.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 42.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 51.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 51.
 
 (c:/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    ... okay on input line 51.
 \symgns@font=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
 (Font)                  TS1/TimesNewRoman(0)/m/n --> TS1/TimesNewRoman(0)/bx/n 
-on input line 42.
-Package gensymb Info: Math companion symbols declared on input line 42.
-LaTeX Info: Redefining \degree on input line 42.
-LaTeX Info: Redefining \celsius on input line 42.
+on input line 51.
+Package gensymb Info: Math companion symbols declared on input line 51.
+LaTeX Info: Redefining \degree on input line 51.
+LaTeX Info: Redefining \celsius on input line 51.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 42.
-LaTeX Info: Redefining \ohm on input line 42.
-Package gensymb Info: Using \textohm for \ohm on input line 42.
-Package gensymb Info: Using \textmu for \micro on input line 42.
-\c@lstlisting=\count189
-\AtBeginShipoutBox=\box56
-Package hyperref Info: Link coloring OFF on input line 42.
+erthousand on input line 51.
+LaTeX Info: Redefining \ohm on input line 51.
+Package gensymb Info: Using \textohm for \ohm on input line 51.
+Package gensymb Info: Using \textmu for \micro on input line 51.
+\c@lstlisting=\count284
+\AtBeginShipoutBox=\box88
+Package hyperref Info: Link coloring OFF on input line 51.
 
 (c:/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1081,16 +1574,16 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count190
+\c@section@level=\count285
 )
-LaTeX Info: Redefining \ref on input line 42.
-LaTeX Info: Redefining \pageref on input line 42.
-LaTeX Info: Redefining \nameref on input line 42.
+LaTeX Info: Redefining \ref on input line 51.
+LaTeX Info: Redefining \pageref on input line 51.
+LaTeX Info: Redefining \nameref on input line 51.
 
 (./TAMUthesis_Template_OpenThisFileToCompile.out)
 (./TAMUthesis_Template_OpenThisFileToCompile.out)
-\@outlinefile=\write3
-\openout3 = `TAMUthesis_Template_OpenThisFileToCompile.out'.
+\@outlinefile=\write4
+\openout4 = `TAMUthesis_Template_OpenThisFileToCompile.out'.
 
 
 *geometry* driver: auto-detecting
@@ -1129,50 +1622,54 @@ LaTeX Info: Redefining \nameref on input line 42.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+ABD: EveryShipout initializing macros
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.14}).
+
 \openout2 = `data/cover.aux'.
 
 (./data/cover.tex)
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 47
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 56
 .
  (c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 47
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 56
 .
 
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 47
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 56
 .
 
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 47
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 56
 .
 
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 47.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 56.
 
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
 LaTeX Font Info:    Try loading font information for TS1+TimesNewRoman(0) on in
-put line 47.
-LaTeX Font Info:    No file TS1TimesNewRoman(0).fd. on input line 47.
+put line 56.
+LaTeX Font Info:    No file TS1TimesNewRoman(0).fd. on input line 56.
 
 
 LaTeX Font Warning: Font shape `TS1/TimesNewRoman(0)/m/n' undefined
-(Font)              using `TS1/cmr/m/n' instead on input line 47.
+(Font)              using `TS1/cmr/m/n' instead on input line 56.
 
 (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
@@ -1451,22 +1948,82 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 
 
 ] (./TAMUthesis_Template_OpenThisFileToCompile.toc)
-\tf@toc=\write4
-\openout4 = `TAMUthesis_Template_OpenThisFileToCompile.toc'.
+\tf@toc=\write5
+\openout5 = `TAMUthesis_Template_OpenThisFileToCompile.toc'.
 
  [6
 
 ]
-(./TAMUthesis_Template_OpenThisFileToCompile.lof)
-\tf@lof=\write5
-\openout5 = `TAMUthesis_Template_OpenThisFileToCompile.lof'.
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
 
- [7]
-(./TAMUthesis_Template_OpenThisFileToCompile.lot)
-\tf@lot=\write6
-\openout6 = `TAMUthesis_Template_OpenThisFileToCompile.lot'.
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 208.66972fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 vii
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[7] (./TAMUthesis_Template_OpenThisFileToCompile.lof)
+\tf@lof=\write6
+\openout6 = `TAMUthesis_Template_OpenThisFileToCompile.lof'.
 
  [8]
+(./TAMUthesis_Template_OpenThisFileToCompile.lot)
+\tf@lot=\write7
+\openout7 = `TAMUthesis_Template_OpenThisFileToCompile.lot'.
+
+ [9]
 \openout2 = `data/chapterI.aux'.
 
  (./data/chapterI.tex
@@ -1851,6 +2408,11 @@ Chapter 2.
 
 
 ]
+
+LaTeX Font Warning: Font shape `TS1/TimesNewRoman(0)/bx/n' undefined
+(Font)              using `TS1/TimesNewRoman(0)/m/n' instead on input line 36.
+
+
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -1911,7 +2473,7 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\vbox(0.0+0.0)x430.0074
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
-[9]
+[9] (./Figures/NotionalDiagram.tex)
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -1972,7 +2534,7 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\vbox(0.0+0.0)x430.0074
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
-[10])
+[10]
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -2034,15 +2596,67 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
 [11]
-\openout2 = `data/chapterIV.aux'.
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
 
- (./data/chapterIV.tex
-Chapter 3.
-[12
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
 
 
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
 
-]
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 12
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[12])
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -2103,7 +2717,16 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\vbox(0.0+0.0)x430.0074
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
-[13])
+[13]
+\openout2 = `data/chapterIV.aux'.
+
+ (./data/chapterIV.tex
+Chapter 3.
+[14
+
+
+
+]
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -2154,7 +2777,7 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\hbox(0.0+0.0)x0.0
-.....\EU1/TimesNewRoman(0)/m/n/12 14
+.....\EU1/TimesNewRoman(0)/m/n/12 15
 .....\rule(10.14995+4.35004)x0.0
 .....\penalty 10000
 .....etc.
@@ -2164,98 +2787,199 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\vbox(0.0+0.0)x430.0074
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
-[14]
+[15]
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 16
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[16]
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 17
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[17])
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 18
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[18]
 \openout2 = `data/chapterV.aux'.
 
  (./data/chapterV.tex
 Chapter 4.
-) [15
+[19
 
 
 
-]
-\openout2 = `data/chapterVI.aux'.
-
- (./data/chapterVI.tex
-Chapter 5.
-) [16
-
-
-
-]
-\openout2 = `data/chapterVII.aux'.
-
- (./data/chapterVII.tex
-Chapter 6.
-) [17
-
-
-
-] (./TAMUthesis_Template_OpenThisFileToCompile.bbl [18
-
-
-]
-Overfull \hbox (4.0pt too wide) has occurred while \output is active
-  []
-
-\hbox(0.0+0.0)x430.0074, glue set - 1.0
-.\glue 3.0 plus 1.5 minus 1.0
-.\glue 3.0 plus 1.5 minus 1.0
-.\vbox(0.0+0.0)x430.0074
-..\hbox(0.0+0.0)x430.0074
-...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
-....\vbox(0.0+0.0)x430.0074
-.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
-....\glue 0.0 plus 1.0fil minus 1.0fil
-...\glue 0.0 plus 1.0fill
-...\vbox(0.0+0.0)x430.0074
-....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
-.....\glue(\leftskip) 0.0 plus 1.0fil
-.....\hbox(0.0+0.0)x0.0
-.....\penalty 10000
-.....\glue(\parfillskip) 0.0
-.....\glue(\rightskip) 0.0 plus 1.0fil
-...\glue 0.0 plus 1.0fill
-...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
-....\glue 0.0 plus 1.0fil minus 1.0fil
-....\vbox(0.0+0.0)x430.0074
-.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
-..\rule(0.0+0.0)x430.0074
-..\glue 0.0
-
-
-Overfull \hbox (4.0pt too wide) has occurred while \output is active
-  []
-
-\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
-.\glue 3.0 plus 1.5 minus 1.0
-.\glue 3.0 plus 1.5 minus 1.0
-.\vbox(10.14995+4.35004)x430.0074
-..\glue -4.35004
-..\glue 0.0
-..\rule(0.0+0.0)x430.0074
-..\glue 4.35004
-..\hbox(10.14995+4.35004)x430.0074
-...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
-....\vbox(0.0+0.0)x430.0074
-.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
-....\glue 0.0 plus 1.0fil minus 1.0fil
-...\glue 0.0 plus 1.0fill
-...\vbox(10.14995+4.35004)x430.0074
-....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
-.....\glue(\leftskip) 0.0 plus 1.0fil
-.....\hbox(0.0+0.0)x0.0
-.....\EU1/TimesNewRoman(0)/m/n/12 19
-.....\rule(10.14995+4.35004)x0.0
-.....\penalty 10000
-.....etc.
-...\glue 0.0 plus 1.0fill
-...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
-....\glue 0.0 plus 1.0fil minus 1.0fil
-....\vbox(0.0+0.0)x430.0074
-.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
-
-[19]
+])
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -2316,9 +3040,28 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\vbox(0.0+0.0)x430.0074
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
-[20])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
+[20]
+\openout2 = `data/chapterVI.aux'.
 
+ (./data/chapterVI.tex
+Chapter 5.
+) [21
+
+
+
+]
+\openout2 = `data/chapterVII.aux'.
+
+ (./data/chapterVII.tex
+Chapter 6.
+) [22
+
+
+
+] (./TAMUthesis_Template_OpenThisFileToCompile.bbl [23
+
+
+]
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -2369,7 +3112,7 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\hbox(0.0+0.0)x0.0
-.....\EU1/TimesNewRoman(0)/m/n/12 21
+.....\EU1/TimesNewRoman(0)/m/n/12 24
 .....\rule(10.14995+4.35004)x0.0
 .....\penalty 10000
 .....etc.
@@ -2379,28 +3122,151 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\vbox(0.0+0.0)x430.0074
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
-[21]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
+[24]
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 25
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[25])
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 26
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[26]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
  (./TAMUthesis_Template_OpenThisFileToCompile.aux (./data/cover.aux)
 (./data/Abstract.aux) (./data/Dedication.aux) (./data/Acknowledgment.aux)
 (./data/Nomenclature.aux) (./data/chapterI.aux) (./data/chapterIII.aux)
 (./data/chapterIV.aux) (./data/chapterV.aux) (./data/chapterVI.aux)
 (./data/chapterVII.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 110.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 110.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 119.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 119.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
  ) 
 Here is how much of TeX's memory you used:
- 27345 strings out of 493589
- 477390 string characters out of 6146760
- 518309 words of memory out of 5000000
- 30372 multiletter control sequences out of 15000+600000
+ 49579 strings out of 493589
+ 1094361 string characters out of 6146760
+ 1261243 words of memory out of 5000000
+ 52187 multiletter control sequences out of 15000+600000
  15573 words of font info for 62 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 60i,19n,94p,10481b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,19n,120p,10481b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on TAMUthesis_Template_OpenThisFileToCompile.pdf (29 pages).
+Output written on TAMUthesis_Template_OpenThisFileToCompile.pdf (35 pages).

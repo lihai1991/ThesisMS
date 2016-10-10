@@ -1,9 +1,9 @@
 \chapter{ESTIMATION SCHEMES}
-
+In this section, we introduce two estimation schemes employed in this thesis. Bayes estimation and maximum likelihood estimation are considered to be applied under different scenarios. If the estimation process is applied repetitively over time, then acquired data can be employed to gain accurate estimates for $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$. In other words, $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ are considered known. In this case the Bayes estimation is employed. On the other hand, if the occupancy estimation is applied to an area of interest once, then we should use classic scheme, such as maximum likelihood estimation which assumes a uniform prior distribution of the parameters
 
 \section{Bayes Estimation}
 
-We assume the Poisson intensity parameters $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ are known. Our objective is to estimate the number of clients inside the target area based on observed data $\underline{\mathbf{P}}$. First we need to get the posterior distribution of $R_{\mathrm{t}}$ given $\underline{\mathbf{P}}$
+In Bayes estimation scheme, we assume the Poisson intensity parameters $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ are known. Our objective is to estimate the number of clients inside the target area based on observed data $\underline{\mathbf{P}}$. First we need to get the posterior distribution of $R_{\mathrm{t}}$, given $\underline{\mathbf{P}}$
 \begin{equation} \label{equation:PosdistRt}
 \begin{split}
 \Pr \left( R_{\mathrm{t}} = r_{\mathrm{t}}
@@ -22,10 +22,11 @@ d\underline{\mathbf{u}} \\
 	\left( \underline{\mathbf{p}} | \underline{\mathbf{u}} \right)
 	f_{\underline{\mathbf{U}}} (\underline{\mathbf{u}}) }
 { f_{\underline{\mathbf{P}}} \left( \underline{\mathbf{p}} \right) }
-d\underline{\mathbf{u}} .
+d\underline{\mathbf{u}} 
 \end{split}
 \end{equation}
-Because the Poisson processes are independent, the distribution of $\underline{\mathbf{U}}$ can be written as
+where $\underline{\mathbf{U}}$ is the location vector containing the random positions of the wireless clients. The location vector includes lots of information. For example, the size of $\underline{\mathbf{U}}$ is the number of active wireless clients. According to location vector, we can get the number of wireless clients inside or outside the target area. Thus $R_{t}$ and $R_{o}$ are functions of $\underline{\mathbf{U}}$.
+Because the outside and inside Poisson processes are independent, the distribution of $\underline{\mathbf{U}}$ can be written as
 \begin{equation} \label{equation:distU}
 \begin{split}
 f_{\underline{\mathbf{U}}} ( \underline{\mathbf{u}} )
@@ -44,10 +45,10 @@ e^{- A_{\mathrm{o}} \lambda_{\mathrm{o}}} \\
 \frac{ \lambda_{\mathrm{o}}^{R_{\mathrm{o}}(\underline{\mathbf{u}})} }
 { ( R_{\mathrm{o}}(\underline{\mathbf{u}}) )! }
 e^{- A_{\mathrm{t}} \lambda_{\mathrm{t}}
-	- A_{\mathrm{o}} \lambda_{\mathrm{o}}} .
+	- A_{\mathrm{o}} \lambda_{\mathrm{o}}} 
 \end{split}
 \end{equation}
-The distribution of the received power vector $\mathbf{P}_j$ given a specific location $\mathbf{u}_j$ is equal to
+For a wireless client $j$, the distribution of the received power vector $\mathbf{P}_j$ given a specific location $\mathbf{u}_j$ is equal to
 \begin{equation} 
 \begin{split}
 f_{\mathbf{P}_j | \mathbf{U}_j} (\mathbf{p}_{j} | \mathbf{u}_j)
@@ -58,7 +59,7 @@ f_{L_{ij}} ( p_{ij} - A - B \log_{10} (d_{ij}) - G_i(\phi_{ij}) ) \\
 &= \left( 2 \pi \sigma_{\mathrm{s}}^2 \right)^{- \frac{n_{\mathrm{s}}}{2}}
 e^{- \frac{ \sum_{i=1}^{n_{\mathrm{s}}}
 		(p_{ij} - A - B \log_{10} (d_{ij}) - G_i(\phi_{ij}))^2}
-	{2 \sigma_{\mathrm{s}}^2}} .
+	{2 \sigma_{\mathrm{s}}^2}} 
 \end{split}
 \end{equation}
 The conditional distribution of $\underline{\mathbf{P}}$ given $\underline{\mathbf{U}}=\underline{\mathbf{u}}$, is
@@ -66,46 +67,51 @@ The conditional distribution of $\underline{\mathbf{P}}$ given $\underline{\math
 f_{\underline{\mathbf{P}} | \underline{\mathbf{U}}}
 \left( \underline{\mathbf{p}} | \underline{\mathbf{u}} \right)
 = \prod_{j=1}^{n_{\mathrm{a}}}
-f_{\mathbf{P}_j | \mathbf{U}_j} (\mathbf{p}_{j}|\mathbf{u}_j) .
+f_{\mathbf{P}_j | \mathbf{U}_j} (\mathbf{p}_{j}|\mathbf{u}_j) 
 \end{equation}
 With the conditional distribution of $\underline{\mathbf{P}}$ given $\underline{\mathbf{U}}=\underline{\mathbf{u}}$ and distribution of $\underline{\mathbf{U}}$, we can compute the marginal distribution of $\underline{\mathbf{P}}$,
-\begin{equation} \label{equation:MarginalDistP}
+\begin{equation*}
 \begin{split}
-f_{\underline{\mathbf{P}}} \left( \underline{\mathbf{p}} \right)
+\Pr & \left( R_{\mathrm{t}} = r_{\mathrm{t}}
+| \underline{\mathbf{P}} = \underline{\mathbf{p}} \right) \\
 &= \int_{ \left\{ \underline{\mathbf{u}}
-	: R_{\mathrm{t}}(\underline{\mathbf{u}}) 
-	+ R_{\mathrm{o}}(\underline{\mathbf{u}}) = n_{\mathrm{a}} \right\} }
-f_{\underline{\mathbf{P}} | \underline{\mathbf{U}}}
-\left( \underline{\mathbf{p}} | \underline{\mathbf{u}} \right)
-f_{\underline{\mathbf{U}}}(\underline{\mathbf{u}})
+	: R_{\mathrm{t}}(\underline{\mathbf{u}}) = r_{\mathrm{t}},
+	R_{\mathrm{o}}(\underline{\mathbf{u}}) = r_{\mathrm{o}} \right\} }
+\frac{ f_{\underline{\mathbf{P}} | \underline{\mathbf{U}}}
+	\left( \underline{\mathbf{p}} | \underline{\mathbf{u}} \right)
+	f_{\underline{\mathbf{U}}} (\underline{\mathbf{u}}) }
+{ f_{\underline{\mathbf{P}}} \left( \underline{\mathbf{p}} \right) }
 d\underline{\mathbf{u}} \\
-&= \sum_{(r_{\mathrm{t}}, r_{\mathrm{o}}) :
-	r_{\mathrm{t}} + r_{\mathrm{o}} = n_{\mathrm{a}}}
-\sum_{\{ \mathbb{I} \subset [n_{\mathrm{a}}]
-	: |\mathbb{I}| = r_{\mathrm{t}} \}}
-\frac{\lambda_{\mathrm{t}}^{r_{\mathrm{t}}}
-	\lambda_{\mathrm{o}}^{r_{\mathrm{o}}}}
-{r_{\mathrm{t}}! r_{\mathrm{o}}!}
+&= \int_{ \left\{ \underline{\mathbf{u}}
+	: R_{\mathrm{t}}(\underline{\mathbf{u}}) = r_{\mathrm{t}},
+	R_{\mathrm{o}}(\underline{\mathbf{u}}) = r_{\mathrm{o}} \right\} }
+\prod_{j=1}^{n_{\mathrm{a}}} \frac{ f_{\mathbf{P}_j | \mathbf{U}_j}
+	(\mathbf{p}_{j}|\mathbf{u}_j) }
+{f_{\underline{\mathbf{P}}}(\underline{\mathbf{p}})} \\
+&\qquad \times
+\frac{ \lambda_{\mathrm{t}}^{R_{\mathrm{t}}(\underline{\mathbf{u}})} }
+{ ( R_{\mathrm{t}}(\underline{\mathbf{u}}) )! }
+\frac{ \lambda_{\mathrm{o}}^{R_{\mathrm{o}}(\underline{\mathbf{u}})} }
+{ ( R_{\mathrm{o}}(\underline{\mathbf{u}}) )! }
 e^{- A_{\mathrm{t}} \lambda_{\mathrm{t}}
 	- A_{\mathrm{o}} \lambda_{\mathrm{o}}}
+d\underline{\mathbf{u}} \\
+&= \sum_{\{ \mathbb{I} \subset [n_{\mathrm{a}}]
+	: |\mathbb{I}| = r_{\mathrm{t}} \}}
+\frac{\lambda_{\mathrm{t}}^{r_{\mathrm{t}}}
+	\lambda_{\mathrm{o}}^{r_{\mathrm{o}}}
+	e^{- A_{\mathrm{t}} \lambda_{\mathrm{t}}
+		- A_{\mathrm{o}} \lambda_{\mathrm{o}}}}
+{r_{\mathrm{t}}! r_{\mathrm{o}}!
+	f_{\underline{\mathbf{P}}}(\underline{\mathbf{p}})} \\
+&\qquad \times
 \prod_{j \in \mathbb{I}} \mathcal{I}_{\mathcal{A}_{\mathrm{t}}}(j)
-\prod_{j \in \mathbb{I}^{\mathrm{c}}}
-\mathcal{I}_{\mathcal{A}_{\mathrm{o}}}(j) .
+\prod_{j \in \mathbb{I}^{\mathrm{c}}} \mathcal{I}_{\mathcal{A}_{\mathrm{o}}}(j)
 \end{split}
-\end{equation}
-where the integral components are equal to
-\begin{align} \label{equation:IntegralComponentsT}
-\mathcal{I}_{\mathcal{A}_{\mathrm{t}}}(j)
-&= \int_{\mathcal{A}_{\mathrm{t}}} f_{\mathbf{P}_j|\mathbf{U}_j}
-(\mathbf{p}_j|\mathbf{u}_j) d\mathbf{u}_j \\
-\label{equation:IntegralComponentsO}
-\mathcal{I}_{\mathcal{A}_{\mathrm{o}}}(j)
-&= \int_{\mathcal{A}_{\mathrm{o}}} f_{\mathbf{P}_j|\mathbf{U}_j}
-(\mathbf{p}_j|\mathbf{u}_j) d\mathbf{u}_j .
-\end{align}
-Now, we can compute the posterior distribution of $R_{\mathrm{t}}$ given $\underline{\mathbf{P}}$ by substituting \eqref{equation:distU}, \eqref{equation:CondDistP}, \eqref{equation:MarginalDistP} into \eqref{equation:PosdistRt}.
-\newline
-Thus, the Bayes estimator becomes
+\end{equation*}
+Computing this conditional distribution of $R_{t}$ given $\underline{\mathbf{P}}$ may appear difficult as it needs to take sums over subsets of $\{ 1, \ldots, n_{\mathrm{a}} \}$. However, by using generating functions, the posterior distribution can be calculated more efficiently~\cite{graham1994concrete}.
+
+Thus, the mean of the posterior distribution of $R_{t}$ condition upon $\underline{\mathbf{P}}$ is the Bayes estimator.
 \begin{equation} \label{equation:MMSE}
 \begin{split}
 \hat{R}_{\mathrm{t}} \left( \underline{\mathbf{p}} \right)
@@ -113,15 +119,27 @@ Thus, the Bayes estimator becomes
 | \underline{\mathbf{P}} = \underline{\mathbf{p}} \right] \\
 &= \sum_{r_{\mathrm{t}} = 0}^{n_{\mathrm{a}}} r_{\mathrm{t}}
 \Pr \left( R_{\mathrm{t}} = r_{\mathrm{t}}
-| \underline{\mathbf{P}} = \underline{\mathbf{p}} \right) .
+| \underline{\mathbf{P}} = \underline{\mathbf{p}} \right) 
 \end{split}
 \end{equation}
-
-
+We adopt Bayesian mean squared error to evaluate the performance of the estimator, which is given below.
+\begin{equation} \label{equation:BMSE}
+\mathrm{BMSE} \left[ \hat{R}_{\mathrm{t}} \right]
+= \mathrm{E} \left[ \left(
+\hat{R}_{\mathrm{t}} \left( \underline{\mathbf{P}} \right)
+- R_{\mathrm{t}} \right)^2 \right] .
+\end{equation}
+This BMSE can be approximated by taking the average over samples numerically.
+\begin{equation} \label{equation:EmpiricalBMSE}
+\mathrm{BMSE} \left[ \hat{R}_{\mathrm{t}} \right]
+\approx \frac{1}{M} \sum_{m=1}^M \left(
+\hat{R}_{\mathrm{t}}^{(m)} \left( \underline{\mathbf{P}}^{(m)} \right)
+- R_{\mathrm{t}}^{(m)} \right)^2 
+\end{equation}
 \section{Maximum likelihood estimation}
 
-In this section, we assume the Poisson intensity parameters $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ are unknown.
-Under this assumption, the distribution of $\underline{\mathbf{U}}$ can be written as
+In this section, we assume the Poisson intensity parameters $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ are unavailable. In this case we will deploy classical approach and adopt maximum-likelihood estimation~\cite{casella2001statistical}.
+The distribution of $\underline{\mathbf{U}}$ can be written as
 \begin{equation}
 f_{\underline{\mathbf{U}}} \left( \underline{\mathbf{u}};
 \lambda_{\mathrm{t}}, \lambda_{\mathrm{o}} \right)
@@ -130,7 +148,7 @@ f_{\underline{\mathbf{U}}} \left( \underline{\mathbf{u}};
 \frac{ \lambda_{\mathrm{o}}^{R_{\mathrm{o}}(\underline{\mathbf{u}})} }
 { ( R_{\mathrm{o}}(\underline{\mathbf{u}}) )! }
 e^{- A_{\mathrm{t}} \lambda_{\mathrm{t}}
-	- A_{\mathrm{o}} \lambda_{\mathrm{o}}} .
+	- A_{\mathrm{o}} \lambda_{\mathrm{o}}} 
 \end{equation}
 The likelihood function is a function with two parameters, $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$
 \begin{equation}
@@ -143,10 +161,10 @@ The likelihood function is a function with two parameters, $\lambda_{\mathrm{t}}
 &= f_{\underline{\mathbf{P}} | \underline{\mathbf{U}}}
 \left( \underline{\mathbf{p}} | \underline{\mathbf{u}} \right)
 f_{\underline{\mathbf{U}}} \left( \underline{\mathbf{u}};
-\lambda_{\mathrm{t}}, \lambda_{\mathrm{o}} \right) .
+\lambda_{\mathrm{t}}, \lambda_{\mathrm{o}} \right) 
 \end{split}
 \end{equation}
-By computing the integral over $\underline{\mathbf{u}}$, we get the marginal likelihood function
+By computing the integral over $\underline{\mathbf{U}}$, we can get the marginal likelihood function
 \begin{equation} \label{equation:Likelihood}
 \begin{split}
 \mathcal{L} \left( \lambda_{\mathrm{t}}, \lambda_{\mathrm{o}};
@@ -170,7 +188,7 @@ f_{\underline{\mathbf{U}}} \left( \underline{\mathbf{u}};
 \prod_{j \in \mathbb{I}}
 \mathcal{I}_{\mathcal{A}_{\mathrm{t}}}(j)
 \prod_{j \in \mathbb{I}^{\mathrm{c}}}
-\mathcal{I}_{\mathcal{A}_{\mathrm{o}}}(j) .
+\mathcal{I}_{\mathcal{A}_{\mathrm{o}}}(j) 
 \end{split}
 \end{equation}
 This is a two-dimensional optimization, but we can simplify it to a one-dimensional optimization problem by following property.
@@ -215,8 +233,22 @@ Once $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ are obtained, the maximum
 &= \sum_{r_{\mathrm{t}} = 0}^{n_{\mathrm{a}}} r_{\mathrm{t}}
 \Pr \left( R_{\mathrm{t}} = r_{\mathrm{t}}
 | \underline{\mathbf{P}} = \underline{\mathbf{p}} ;
-\hat{\lambda}_{\mathrm{t}}, \hat{\lambda}_{\mathrm{o}} \right) .
+\hat{\lambda}_{\mathrm{t}}, \hat{\lambda}_{\mathrm{o}} \right) 
 \end{split}
+\end{equation}
+We adopt mean squared error to evaluate the performance of estimator
+\begin{equation} \label{equation:MSE}
+\mathrm{MSE} \left[ \hat{R}_{\mathrm{t}} \right]
+= \mathrm{E} \left[ \left(
+\hat{R}_{\mathrm{t}} \left( \underline{\mathbf{P}} \right)
+- R_{\mathrm{t}} \right)^2 \right] 
+\end{equation}
+MSE can be approximated by taking the average over samples numerically.
+\begin{equation} \label{equation:EmpiricalMSE}
+\mathrm{MSE} \left[ \hat{R}_{\mathrm{t}} \right]
+\approx \frac{1}{M} \sum_{m=1}^M \left(
+\hat{R}_{\mathrm{t}}^{(m)} \left( \underline{\mathbf{P}}^{(m)} \right)
+- R_{\mathrm{t}}^{(m)} \right)^2 
 \end{equation}
 \ignore{
 \section{Section Test Unknown Part 2}

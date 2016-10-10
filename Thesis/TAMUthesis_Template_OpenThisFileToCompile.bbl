@@ -116,4 +116,19 @@ S.~Depatla, A.~Muralidharan, and Y.~Mostofi, ``Occupancy estimation using only
 \bibitem{zwillinger1995crc}
 D.~Zwillinger, ``Crc standard mathematical tables and formulae,'' 1995.
 
+\bibitem{graham1994concrete}
+R.~L. Graham, D.~E. Knuth, and O.~Patashnik, {\em Concrete Mathematics: A
+  Foundation for Computer Science}.
+\newblock Addison-Wesley, 2 edition~ed., 1994.
+
+\bibitem{casella2001statistical}
+G.~Casella and R.~L. Berger, {\em Statistical Inference}.
+\newblock Duxbury Thomson Learning, 2nd edition~ed., 2001.
+
+\bibitem{3GPP-antenna}
+Technical Specification Group Radio Access Network, 3rd Generation Partnership
+  Project, {\em Spatial Channel Model for Multiple Input Multiple Output (MIMO)
+  Simulations}, 2011.
+\newblock release 10.
+
 \end{thebibliography}
