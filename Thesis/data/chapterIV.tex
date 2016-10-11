@@ -1,7 +1,7 @@
 \chapter{ESTIMATION SCHEMES}
 In this section, we introduce two estimation schemes employed in this thesis. Bayes estimation and maximum likelihood estimation are considered to be applied under different scenarios. If the estimation process is applied repetitively over time, then acquired data can be employed to gain accurate estimates for $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$. In other words, $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ are considered known. In this case the Bayes estimation is employed. On the other hand, if the occupancy estimation is applied to an area of interest once, then we should use classic scheme, such as maximum likelihood estimation which assumes a uniform prior distribution of the parameters
 
-\section{Bayes Estimation}
+\section{Bayes Estimation} \label{section:BayesEstimation}
 
 In Bayes estimation scheme, we assume the Poisson intensity parameters $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ are known. Our objective is to estimate the number of clients inside the target area based on observed data $\underline{\mathbf{P}}$. First we need to get the posterior distribution of $R_{\mathrm{t}}$, given $\underline{\mathbf{P}}$
 \begin{equation} \label{equation:PosdistRt}

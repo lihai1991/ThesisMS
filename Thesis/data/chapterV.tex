@@ -1,6 +1,6 @@
 \chapter{NUMERICAL SIMULATION SETUP AND RESULTS}
-In this section, we will introduce our simulation setup including the directional antenna model and the parameters of the channel. The simulation results will be shown after that. The simulation code is written in python. In the simulation framework, the set up consists of four monitoring devices placed
-at the corners of the area of interest. The target area is considered to be a square of dimension 6 $m$ ×6 $m$ inscribed in a larger square of dimension 10 $m$ ×10 $m$. The two square areas share a same center point. We use $A_{t}$ to denote the target area, while $A_{o}$ denotes the complement. 
+In this section, we will introduce our simulation setup including the directional antenna model, the parameters of the channel and how we generate RSSI samples. The simulation results will be shown after that. The simulation code is written in python. In the simulation framework, the set up consists of four monitoring devices placed
+at the corners of the area of interest. All antennas attached to monitoring devices are pointing to the center of the area of interest. The target area is considered to be a square of dimension 6 $m$ ×6 $m$ inscribed in a larger square of dimension 10 $m$ ×10 $m$. The two square areas share a same center point. We use $A_{t}$ to denote the target area, while $A_{o}$ denotes its complement. We will call target area inside region and call its complement outside region in the following text.
 
 \section{Antenna Characteristic}
 In our simulation, to analyze the effect of radiation characteristics of the sensing antennas on the estimation, isotropic antennas and directional antennas are considered. The antenna gain of isotropic antennas are zero in all directions. For the directional antennas, we adopt 3GPP antenna model in~\cite{3GPP-antenna}. The directional antenna gains obey the following formula.
@@ -16,3 +16,85 @@ where $\theta_{i}$ is pointing direction of the antenna which is attached to mon
 		12 \left( \frac{\phi_{ij} - \theta_{i}}{\theta_{\mathrm{3dB}}} \right)^2,
 		G_{\mathrm{floor}} \right\} } }{360} d \phi_{ij} \right) .
 \end{equation*}
+The antenna radiation pattern for various 3 $dB$ beam-widths is shown in Fig.\ref{figure:AntennaCandidates}.
+\begin{figure}[t]
+	\centerline{\input{Figures/AntennaCandidates2}}
+	\caption{This graph depicts normalized antenna radiation patterns. The pointing direction is set to $ 0^{\circ}$ and $G_{\mathrm{floor}} = 20~\mathrm{dB}$.}
+	\label{figure:AntennaCandidates}
+\end{figure}
+
+\section{Channel Characteristic}
+As mentioned in chapter 2, the channel model we applied is log-normal path loss model. The received signal power can be expressed as
+\begin{equation} \label{equation:Power}
+P \text{[dBm]}
+= A + B \log_{10}(d) + L + G (\phi)
+\end{equation}
+In this equation, the physical parameters are based on regulation issued by the Federal Communications Commission (FCC) and profiles of typical wireless environments. According to Friis transmission equation given below~\cite{friis1946note},
+\begin{equation*}
+A = P_{\mathrm{t}} + 20 \log_{10} \left( \frac{3 \times 10^8}{f_{\mathrm{carrier}}} \right) - 20\log_{10}(4\pi) 
+\end{equation*}
+where $P_{t}$ is the mobile devices transmission power. Here we set it to be 20 $dBm$. $f_{carrier}$ is the frequency of Wi-Fi signal wave which is 2.462 $GHz$~\cite{goldsmith2005wireless}. So $A = -20.27 dBm$.
+We adopt path-loss parameter $B$ to be -20 $dBm$ which is the coefficient of free-space path loss. The logarithmic $\sigma_{s}$ which represents variation in shadow fading, is set to 2.0 $dBm$.
+
+\section{Generating Data Set}
+As mentioned above, the inference task is based on received power matrix which is collected by monitoring devices. In the simulation, we need to create the sample data ourselves according to the antenna gain model and channel model discussed above. The parameter values we use to generate data set are summarized in Table ~\ref{table:PhysicalParameters}.
+\begin{table}[bht]
+	\caption{System parameters used during simulations.} \label{table:PhysicalParameters}
+	\centerline{
+		\begin{tabular}{|l|l|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{Physical Parameters}} &
+			\multicolumn{1}{|c|}{\textbf{Values}} \\
+			\hline
+			Nominal Power & $A = -20.27$~dBm \\
+			\hline
+			Free-Space Loss parameter & $B = - 20$~dBm \\
+			\hline
+			Logarithmic Standard Deviation & $\sigma_{\mathrm{s}} = 2.0$~dBm \\
+			\hline
+			3~dB Beam-width (directional) & $\theta_{\mathrm{3dB}} = 90^{\circ}$ \\
+			\hline
+			Antenna Floor & $G_{\mathrm{floor}} = 20$~dB \\
+			\hline
+		\end{tabular}}
+\end{table}
+We generate data set as follow.
+We denote the location of the four monitoring devices as $\{ \mathbf{s}_i \}$ $i \in{1,2,3,4}$.
+First, we set a certain value $\lambda$ which represents the aggregate Poisson rate across the two monitored regions(inside region and outside region) equal to 32. The splitting parameter between two regions is $\alpha$. Thus
+\begin{xalignat*}{2}
+	\lambda_{\mathrm{t}}
+	&= \alpha \frac{\lambda}{A_{\mathrm{t}}}
+	&\lambda_{\mathrm{o}}
+	&= (1 - \alpha) \frac{\lambda}{A_{\mathrm{o}}} .
+\end{xalignat*}
+where $\lambda_{t}$ is the Poisson rate of inside region and $\lambda_{o}$ is the Poisson rate of outside region.
+Once $\lambda_{t}$ and $\lambda_{o}$ are set, $r_{t}$ the number of devices inside and $r_{o}$ the number of devices outside are established using Poisson trials,
+\begin{xalignat*}{2}
+	R_{\mathrm{t}} &\sim
+	\frac{\left( A_{\mathrm{t}} \lambda_{\mathrm{t}} \right)^k}{k!}
+	e^{- A_{\mathrm{t}} \lambda_{\mathrm{t}}}
+	&R_{\mathrm{o}} &\sim
+	\frac{\left( A_{\mathrm{o}} \lambda_{\mathrm{o}} \right)^k}{k!}
+	e^{- A_{\mathrm{o}} \lambda_{\mathrm{o}}} .
+\end{xalignat*}
+Each of $R_{{t}} = r_{{t}}$ devices inside the target area is independently assigned a location according to a uniform distribution. Likewise, each of $R_{\mathrm{o}} = r_{\mathrm{o}}$ devices outside is independently assigned a location according to another uniform distribution. Therefore, we obtain the location vector $\underline{\mathbf{U}} = \underline{\mathbf{u}}$ of the wireless clients. For each of the wireless clients, a collection of four received signal strength corresponding to four monitoring devices is computed according to \ref{equation:Power}. The shadow fading component $L$ is generated following a log-normal distribution whose standard deviation $\sigma_{s}=2.0 dBm$. Finally, we get the sequence of power vectors $\underline{\mathbf{p}} = (\mathbf{p}_1, \ldots, \mathbf{p}_{n_{\mathrm{a}}})$, where vector $\mathbf{p}_j$ corresponding to wireless client $j$ contains four power strength received by four monitoring devices respectively. The proposed estimators will act on vector $\mathbf{p}$
+
+\section{Performance Analysis}
+\subsection{Bayes Estimation}
+We first consider the performance of Bayes estimation framework introduced in ~\ref{section:BayesEstimation}. As is discussed in the previous section, the Poisson rate of the two regions $\lambda$, the Poisson rate of inside region $\lambda_{t}$ and the Poisson rate of outside region $\lambda_{o}$ have the following relation along with the splitting parameter $\alpha$.
+\begin{xalignat*}{2}
+	\lambda_{\mathrm{t}}
+	&= \alpha \frac{\lambda}{A_{\mathrm{t}}}
+	&\lambda_{\mathrm{o}}
+	&= (1 - \alpha) \frac{\lambda}{A_{\mathrm{o}}} .
+\end{xalignat*}
+Where $A_{t}$ the area of inside region is equal to 36, $A_{o}$ the area of outside region is equal to 64.
+We can plot performance results as a function of the splitting coefficient $\alpha$. The vertical axis represents the BMSE of Bayes estimator. The black curve in Fig. \ref{figure: BayesRt} shows the BMSE when the Bayes estimator operates on data collected using isotropic antennas. The red curve in Fig. \ref{figure: BayesRt} corresponds to four directional antennas located at the four corners of the target area and pointing directly at the center.
+These antennas have a 3 $dB$ beam-width of $\theta_{\mathrm{3dB}} = 90^{\circ}$ and a nominal attenuation floor of $G_{\mathrm{floor}} = 20~\mathrm{dB}$.
+Every point is obtained by averaging over fifty thousand trials.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.6]{Figures/bayesRt.png}
+	\caption{This graph shows Bayesian mean squared error as functions of splitting parameter.Black line correspond to performance of system equipped with isotropic antennas, whereas red line correspond to the performance of systems with directional antennas. }
+	\label{figure: BayesRt}
+\end{figure}

@@ -131,4 +131,12 @@ Technical Specification Group Radio Access Network, 3rd Generation Partnership
   Simulations}, 2011.
 \newblock release 10.
 
+\bibitem{friis1946note}
+H.~T. Friis, ``A note on a simple transmission formula,'' {\em Proceedings of
+  the IRE}, vol.~34, no.~5, pp.~254--256, 1946.
+
+\bibitem{goldsmith2005wireless}
+A.~Goldsmith, {\em Wireless Communications}.
+\newblock Cambridge University Press, 2005.
+
 \end{thebibliography}

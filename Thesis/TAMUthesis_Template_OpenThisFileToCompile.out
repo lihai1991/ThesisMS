@@ -14,6 +14,10 @@
 \BOOKMARK [1][-]{section.3.2}{Maximum\040likelihood\040estimation}{chapter.3}% 14
 \BOOKMARK [0][-]{chapter.4}{NUMERICAL\040SIMULATION\040SETUP\040AND\040RESULTS}{}% 15
 \BOOKMARK [1][-]{section.4.1}{Antenna\040Characteristic}{chapter.4}% 16
-\BOOKMARK [0][-]{chapter.5}{EXPERIMENT\040IMPLEMENTATION}{}% 17
-\BOOKMARK [0][-]{chapter.6}{CONCLUSION}{}% 18
-\BOOKMARK [0][-]{section*.10}{REFERENCES}{}% 19
+\BOOKMARK [1][-]{section.4.2}{Channel\040Characteristic}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.3}{Generating\040Data\040Set}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.4}{Performance\040Analysis}{chapter.4}% 19
+\BOOKMARK [2][-]{subsection.4.4.1}{Bayes\040Estimation}{section.4.4}% 20
+\BOOKMARK [0][-]{chapter.5}{EXPERIMENT\040IMPLEMENTATION}{}% 21
+\BOOKMARK [0][-]{chapter.6}{CONCLUSION}{}% 22
+\BOOKMARK [0][-]{section*.13}{REFERENCES}{}% 23

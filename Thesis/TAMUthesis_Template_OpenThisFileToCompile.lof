@@ -7,5 +7,7 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces The periphery of target area delineated by dashed line. Squares at the corners of target area denote the locations of monitoring devices, equipped with directional antennas. Clients within the zone of interest are in black, whereas outside agents appear as white. The objective is to estimate occupancy within target area.\relax }}{11}{figure.caption.9}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces This graph depicts normalized antenna radiation patterns. The pointing direction is set to $ 0^{\circ }$ and $G_{\mathrm {floor}} = 20\nobreakspace {}\mathrm {dB}$.\relax }}{20}{figure.caption.10}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces This graph shows Bayesian mean squared error as functions of splitting parameter.Black line correspond to performance of system equipped with isotropic antennas, whereas red line correspond to the performance of systems with directional antennas. \relax }}{24}{figure.caption.12}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -20,6 +20,10 @@
 \contentsline {chapter}{\numberline {4}NUMERICAL SIMULATION SETUP AND RESULTS}{19}{chapter.4}
 \addvspace {14pt}
 \contentsline {section}{\numberline {4.1}Antenna Characteristic}{19}{section.4.1}
-\contentsline {chapter}{\numberline {5}EXPERIMENT IMPLEMENTATION}{21}{chapter.5}
-\contentsline {chapter}{\numberline {6}CONCLUSION}{22}{chapter.6}
-\contentsline {chapter}{REFERENCES}{23}{section*.10}
+\contentsline {section}{\numberline {4.2}Channel Characteristic}{20}{section.4.2}
+\contentsline {section}{\numberline {4.3}Generating Data Set}{21}{section.4.3}
+\contentsline {section}{\numberline {4.4}Performance Analysis}{22}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Bayes Estimation}{22}{subsection.4.4.1}
+\contentsline {chapter}{\numberline {5}EXPERIMENT IMPLEMENTATION}{25}{chapter.5}
+\contentsline {chapter}{\numberline {6}CONCLUSION}{26}{chapter.6}
+\contentsline {chapter}{REFERENCES}{27}{section*.13}
