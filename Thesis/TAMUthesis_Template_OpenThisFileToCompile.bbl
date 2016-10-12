@@ -116,6 +116,15 @@ S.~Depatla, A.~Muralidharan, and Y.~Mostofi, ``Occupancy estimation using only
 \bibitem{zwillinger1995crc}
 D.~Zwillinger, ``Crc standard mathematical tables and formulae,'' 1995.
 
+\bibitem{kay1993fundamentals}
+S.~M. Kay, {\em Fundamentals of Statistical Signal Processing: Estimation
+  Theory}, vol.~1.
+\newblock Prentice Hall, 1993.
+
+\bibitem{poor1998introduction}
+H.~V. Poor, {\em An Introduction to Signal Detection and Estimation}.
+\newblock Springer, 2nd edition~ed., 1998.
+
 \bibitem{graham1994concrete}
 R.~L. Graham, D.~E. Knuth, and O.~Patashnik, {\em Concrete Mathematics: A
   Foundation for Computer Science}.
@@ -138,5 +147,10 @@ H.~T. Friis, ``A note on a simple transmission formula,'' {\em Proceedings of
 \bibitem{goldsmith2005wireless}
 A.~Goldsmith, {\em Wireless Communications}.
 \newblock Cambridge University Press, 2005.
+
+\bibitem{altman2013statistics}
+D.~Altman, D.~Machin, T.~Bryant, and M.~Gardner, {\em Statistics with
+  confidence: confidence intervals and statistical guidelines}.
+\newblock John Wiley \& Sons, 2013.
 
 \end{thebibliography}

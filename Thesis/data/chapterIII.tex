@@ -1,6 +1,6 @@
 \chapter{SYSTEM MODEL AND PROBLEM FORMULATION}
 Wi-Fi based occupancy estimation is attractive because it only require simple sensing device Meanwhile it can benefit from local Wi-Fi network and the high penetration rate of smartphone. The existence of tools like pcap and wireshark makes monitoring Wi-Fi environment a straight forward work. In this thesis, we will extract the RSSI and MAC address for the purpose of occupancy estimation. As is discussed above, the RSSI is related to the distance between Rx and Tx. Therefore we can infer the location information by RSSI. However RSSI does not only depend on distance, some other factors like noise and fading will also influence it. As such, a proper wireless channel model is needed to take care of this situation.
-\section{Wireless Channel Model}
+\section{Wireless Channel Model} \label{section:channel}
 A common wireless environment can be express by
 \begin{equation*}
 r (t) = g (d) s (t) + w (t)
@@ -24,7 +24,7 @@ Here the variance can be estimated by sample data set. An unbiased estimator for
 \begin{equation*}
 \sigma_{\mathrm{s}}^2 = \frac{1}{N-1} \sum_{1}^{N} (l_{k}-\mu_{s})^2
 \end{equation*} 
-where $N$ is the sample size, $l_{k}$ forms the data set, and points are expressed in the logarithmic domain.
+where $N$ is the sample size, $l_{k}$ forms the data set, and points are expressed in the logarithmic domain \cite{kay1993fundamentals,poor1998introduction}.
 
 Now the goal is to estimate the wireless channel parameter $A$ and $B$. Here we are going to use the least square method, which minimizes the sum of the squares of the offsets. For a linear least square problem given by,
 \begin{equation*}

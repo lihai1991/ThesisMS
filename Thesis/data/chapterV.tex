@@ -89,12 +89,112 @@ We first consider the performance of Bayes estimation framework introduced in ~\
 	&= (1 - \alpha) \frac{\lambda}{A_{\mathrm{o}}} .
 \end{xalignat*}
 Where $A_{t}$ the area of inside region is equal to 36, $A_{o}$ the area of outside region is equal to 64.
-We can plot performance results as a function of the splitting coefficient $\alpha$. The vertical axis represents the BMSE of Bayes estimator. The black curve in Fig. \ref{figure: BayesRt} shows the BMSE when the Bayes estimator operates on data collected using isotropic antennas. The red curve in Fig. \ref{figure: BayesRt} corresponds to four directional antennas located at the four corners of the target area and pointing directly at the center.
+We can plot performance results as a function of the splitting coefficient $\alpha$. The vertical axis represents the BMSE of Bayes estimator. The black curve in Fig. \ref{figure: BayesRt} shows the BMSE when the Bayes estimator operates on data collected using isotropic antennas. The red curve in Fig. \ref{figure: BayesRt} corresponds to four directional antennas located at the four corners of the target area and pointing directly to the center.
 These antennas have a 3 $dB$ beam-width of $\theta_{\mathrm{3dB}} = 90^{\circ}$ and a nominal attenuation floor of $G_{\mathrm{floor}} = 20~\mathrm{dB}$.
 Every point is obtained by averaging over fifty thousand trials.
-\begin{figure}[ht]
+\begin{figure}[]
 	\centering
 	\includegraphics[scale=0.6]{Figures/bayesRt.png}
-	\caption{This graph shows Bayesian mean squared error as functions of splitting parameter.Black line correspond to performance of system equipped with isotropic antennas, whereas red line correspond to the performance of systems with directional antennas. }
+	\caption{This graph shows Bayesian mean squared error as functions of splitting parameter under scheme of \ref{section:BayesEstimation}. Black line correspond to performance of system equipped with isotropic antennas, whereas red line correspond to the performance of systems with directional antennas. }
 	\label{figure: BayesRt}
 \end{figure}
+According to Fig. \ref{figure: BayesRt}, systems with directional antennas perform better than systems with isotropic antennas.
+
+In order to further compare the performances, we introduce confidence interval here. A confidence level refers to the percentage of all possible samples that can be expected to include the true population parameter~\cite{altman2013statistics}. Suppose we used the same sampling method to select different samples and to compute a different interval estimate for each sample. Some interval estimates would include the true population parameter and some would not. A 95\% confidence level means that 95\% of the intervals would include the parameter. Generally the confidence interval is computed as below.
+Select a confidence level which describes the uncertainty of a sampling method. Compute $\alpha$
+\begin{equation*}
+\alpha = 1 - (confidence\ level / 100)
+\end{equation*}
+Find the critical probability $p^*$
+\begin{equation*}
+p^* = 1 - \alpha/2
+\end{equation*}
+Express the critical value as a t statistic by using degree of freedom and critical probability. Where degree of freedom equals to
+\begin{equation*}
+df = N-1
+\end{equation*}
+where N is the sample size.
+The standard error $SE$ is given as
+\begin{equation*}
+SE= \dfrac{\sigma}{\sqrt{N}}
+\end{equation*}
+where $\sigma$ is the standard deviation of the sample.
+The magin of error is the product of critical value $t^*$ and $SE$.
+The confidence interval is expressed as
+\begin{equation*}
+Confidence\ interval = \mu \pm Margin\ of\ error
+\end{equation*}
+where $\mu$ is the mean of sample.
+In this simulation, we analyze the absolute difference between real number of active devices inside $r_{t}$ and estimator result $\hat{r_{t}}$.
+The confidence intervals of $|r_{t}-\hat{r_{t}}|$ corresponding to isotropic antennas and directional antennas are summarized in Table \ref{table:ConfidenceBayes}.
+The result is based on fifty thousand samples.
+\begin{table}[bht]
+	\caption{Confidence interval of $|r_{t}-\hat{r_{t}}|$ for simulation Bayes scheme} \label{table:ConfidenceBayes}
+	\centerline{
+		\begin{tabular}{|l|l|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{Antenna type}} &
+			\multicolumn{1}{|c|}{\textbf{Confidence interval}} \\
+			\hline
+			Directional & $1.412411 \pm 0.002166$ \\
+			\hline
+			Isotropic & $2.454623 \pm 0.003450$ \\
+			\hline
+		\end{tabular}}
+	\end{table}
+To make the result more straightforward, we use Gaussian kernel density estimation to plot the approximation of probability density function of $|r_{t}-\hat{r_{t}}|$.
+The horizontal axis represents value of $|r_{t}-\hat{r_{t}}|$.
+\begin{figure}[]
+	\centering
+	\includegraphics[scale=0.5]{Figures/bayesrtdir.png}
+	\caption{This graph shows the approximation probability density function of $|r_{t}-\hat{r_{t}}|$ corresponding to system equipped with directional antennas under scheme of \ref{section:BayesEstimation}. }
+	\label{figure: BayesRtdir}
+\end{figure}
+\begin{figure}[]
+	\centering
+	\includegraphics[scale=0.5]{Figures/bayesrtomni.png}
+	\caption{This graph shows the approximation probability density function of $|r_{t}-\hat{r_{t}}|$ corresponding to system equipped with isotropic antennas under scheme of \ref{section:BayesEstimation}. }
+	\label{figure: BayesRtomni}
+\end{figure}
+Compared the pdf curves in Fig. \ref{figure: BayesRtdir} and Fig. \ref{figure: BayesRtomni}, the distribution of error occurs in system with directional antennas appears more closely to zero. This results along with fact that BMSE of directional systems is smaller show systems with directional antennas perform better. This performance improvement results from the directional antennas is more discriminating than the isotropic antennas. 
+
+\subsection{Maximum Likelihood Estimation}
+In this section, we look into maximum likelihood estimation framework mentioned in \ref{section:Maxestimation}. We use average mean squared error to evaluate performance of estimator. As before, the total Poisson rates is set to be 32 and the curves are functions of splitting coefficient $\alpha$.
+\begin{figure}[]
+	\centering
+	\includegraphics[scale=0.6]{Figures/MaxRt.png}
+	\caption{This figure shows mean squared error as functions of splitting parameter under scheme of \ref{section:Maxestimation}. Black line correspond to performance of system equipped with isotropic antennas, whereas red line correspond to the performance of systems with directional antennas. }
+	\label{figure: MaxRt}
+\end{figure}
+The black curve in Fig. \ref{figure: MaxRt} shows the MSE when the maximum likelihood estimator operates on data collected using isotropic antennas. The red curve in Fig. \ref{figure: BayesRt} corresponds to estimator operates on data collected by directional antennas. Four directional antennas located at the four corners of the target area and pointing directly to the center.
+These antennas have a 3 $dB$ beam-width of $\theta_{\mathrm{3dB}} = 90^{\circ}$ and a nominal attenuation floor of $G_{\mathrm{floor}} = 20~\mathrm{dB}$.
+Every point is obtained by averaging over fifty thousand trials. The MSE is smaller with system using directional antennas.
+
+The confidence interval of absolute error $|r_{t}-\hat{r_{t}}|$ corresponding to isotropic antennas and directional antennas are summarized in Table \ref{table:ConfidenceMax}.
+\begin{table}[bht]
+	\caption{Confidence interval of $|r_{t}-\hat{r_{t}}|$ for simulation Maximum likelihood scheme} \label{table:ConfidenceMax}
+	\centerline{
+		\begin{tabular}{|l|l|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{Antenna type}} &
+			\multicolumn{1}{|c|}{\textbf{Confidence interval}} \\
+			\hline
+			Directional & $2.080484 \pm 0.002809$ \\
+			\hline
+			Isotropic & $4.972427 \pm 0.006020$ \\
+			\hline
+		\end{tabular}}
+	\end{table}
+\begin{figure}[]
+	\centering
+	\includegraphics[scale=0.5]{Figures/maxrtdir.png}
+	\caption{This graph shows the approximation probability density function of $|r_{t}-\hat{r_{t}}|$ corresponding to system equipped with directional antennas under scheme of \ref{section:Maxestimation}. }
+	\label{figure: MaxRtdir}
+\end{figure}
+\begin{figure}[]
+	\centering
+	\includegraphics[scale=0.5]{Figures/maxrtomni.png}
+	\caption{This graph shows the approximation probability density function of $|r_{t}-\hat{r_{t}}|$ corresponding to system equipped with isotropic antennas under scheme of \ref{section:Maxestimation}. }
+	\label{figure: MaxRtomni}
+\end{figure}
+Compared the pdf curves in Fig. \ref{figure: MaxRtdir} and Fig. \ref{figure: MaxRtomni}, the distribution of error occurs in system with directional antennas appears more closely to zero. This results along with fact that MSE of directional systems is smaller show systems with directional antennas outperform the ones with isotropic antennas. Again, these results indicate that the information obtained from the directional antennas is more discriminating than the isotropic antennas. 

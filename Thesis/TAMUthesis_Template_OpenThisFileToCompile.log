@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.8.17)  11 OCT 2016 03:36
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.8.17)  12 OCT 2016 06:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1950,15 +1950,15 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ] (./TAMUthesis_Template_OpenThisFileToCompile.toc [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
-[]   
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+ []   
 
-\hbox(0.0+0.0)x430.0074, glue set 284.6716
-.\hbox(0.0+0.0)x0.0
+\hbox(0.0+0.0)x430.0074, glue set 260.6716
+.\glue(\leftskip) 18.0
+.\hbox(0.0+0.0)x18.0
 .\penalty 10000
 .\glue 3.0 plus 1.5 minus 1.0
 .\penalty 10000
-.\glue(\parfillskip) -30.60004
 .etc.
 
 )
@@ -2030,15 +2030,149 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 
 LaTeX Warning: Command \nobreakspace invalid in math mode on input line 10.
 
-)
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+ []   
+
+\hbox(0.0+0.0)x430.0074, glue set 260.6716
+.\glue(\leftskip) 18.0
+.\hbox(0.0+0.0)x18.0
+.\penalty 10000
+.\glue 3.0 plus 1.5 minus 1.0
+.\penalty 10000
+.etc.
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 210.33672fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 ix
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[9])
 \tf@lof=\write6
 \openout6 = `TAMUthesis_Template_OpenThisFileToCompile.lof'.
 
- [8] (./TAMUthesis_Template_OpenThisFileToCompile.lot)
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 212.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 x
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[10] (./TAMUthesis_Template_OpenThisFileToCompile.lot)
 \tf@lot=\write7
 \openout7 = `TAMUthesis_Template_OpenThisFileToCompile.lot'.
 
- [9]
+ [11]
 \openout2 = `data/chapterI.aux'.
 
 
@@ -3198,27 +3332,12 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 
 LaTeX Warning: Command \nobreakspace invalid in math mode on input line 93.
 
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 95.
+
 File: Figures/bayesRt.png Graphic file (type QTm)
 <use  "Figures/bayesRt.png" >
-Overfull \hbox (3.61238pt too wide) in paragraph at lines 97--98
- [][] 
-
-\hbox(325.21486+0.0)x430.0074
-.\glue(\leftskip) 0.0 plus 1.0fil
-.\hbox(0.0+0.0)x0.0
-.\hbox(325.21486+0.0)x433.61978
-..\hbox(325.21486+0.0)x433.61978
-...\hbox(325.21565+0.0)x433.62085
-....\hbox(325.21565+0.0)x433.62085
-.....\special{x:gsave}
-.....\special{x:scale 0.75 0.75}
-.....\hbox(433.62088+0.0)x0.0, glue set - 578.16113fil []
-.....\special{x:grestore}
-.\penalty 10000
-.\glue(\parfillskip) 0.0
-.etc.
-
-)
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -3341,27 +3460,223 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
 [24]
-\openout2 = `data/chapterVI.aux'.
 
- (./data/chapterVI.tex
-Chapter 5.
-) [25
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 147.
+
+File: Figures/bayesrtdir.png Graphic file (type QTm)
+<use  "Figures/bayesrtdir.png" >
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 153.
+
+File: Figures/bayesrtomni.png Graphic file (type QTm)
+<use  "Figures/bayesrtomni.png" >
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
 
 
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
 
-]
-\openout2 = `data/chapterVII.aux'.
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 25
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
- (./data/chapterVII.tex
-Chapter 6.
-) [26
+[25]
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
 
 
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
 
-] (./TAMUthesis_Template_OpenThisFileToCompile.bbl [27
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 26
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[26]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 163.
+
+File: Figures/MaxRt.png Graphic file (type QTm)
+<use  "Figures/MaxRt.png" >
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 170.
 
 
-]
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 27
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[27]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 188.
+
+File: Figures/maxrtdir.png Graphic file (type QTm)
+<use  "Figures/maxrtdir.png" >
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 194.
+
+File: Figures/maxrtomni.png Graphic file (type QTm)
+<use  "Figures/maxrtomni.png" >)
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -3483,7 +3798,26 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\vbox(0.0+0.0)x430.0074
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
-[29])
+[29]
+\openout2 = `data/chapterVI.aux'.
+
+ (./data/chapterVI.tex
+Chapter 5.
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 9.
+(c:/texlive/2016/texmf-dist/tex/latex/euenc/eu1lmtt.fd
+File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+(./Figures/Directionalantenna.tex)
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 19.
+
+File: Figures/DeviceSetup.jpg Graphic file (type QTm)
+<use  "Figures/DeviceSetup.jpg" > [30
+
+
+
+]
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -3534,7 +3868,7 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\hbox(0.0+0.0)x0.0
-.....\EU1/TimesNewRoman(0)/m/n/12 30
+.....\EU1/TimesNewRoman(0)/m/n/12 31
 .....\rule(10.14995+4.35004)x0.0
 .....\penalty 10000
 .....etc.
@@ -3544,7 +3878,802 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 ....\vbox(0.0+0.0)x430.0074
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
-[30]
+[31]
+
+LaTeX Warning: Command \r invalid in math mode on input line 31.
+
+Missing character: There is no ̊ in font zptmcm7m!
+
+LaTeX Warning: Command \r invalid in math mode on input line 31.
+
+Missing character: There is no ̊ in font zptmcm7m!
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 32
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[32]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 43.
+
+File: Figures/Googlemap.png Graphic file (type QTm)
+<use  "Figures/Googlemap.png" >
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 53.
+
+File: Figures/bayesex.png Graphic file (type QTm)
+<use  "Figures/bayesex.png" >
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 75.
+
+File: Figures/bayesdirex.png Graphic file (type QTm)
+<use  "Figures/bayesdirex.png" >
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 81.
+
+File: Figures/bayesomniex.png Graphic file (type QTm)
+<use  "Figures/bayesomniex.png" >
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 33
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[33]
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 34
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[34]
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 35
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[35]
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 36
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[36]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 90.
+
+File: Figures/maxRTex.png Graphic file (type QTm)
+<use  "Figures/maxRTex.png" >
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 112.
+
+File: Figures/maxdirex.png Graphic file (type QTm)
+<use  "Figures/maxdirex.png" >
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 118.
+
+File: Figures/maxomniex.png Graphic file (type QTm)
+<use  "Figures/maxomniex.png" >)
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 37
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[37]
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 38
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[38]
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 39
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[39]
+\openout2 = `data/chapterVII.aux'.
+
+ (./data/chapterVII.tex
+Chapter 6.
+) [40
+
+
+
+] (./TAMUthesis_Template_OpenThisFileToCompile.bbl [41
+
+
+]
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 42
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[42]
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 43
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[43]
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 44
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[44])
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(0.0+0.0)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(0.0+0.0)x430.0074
+..\hbox(0.0+0.0)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(0.0+0.0)x430.0074
+....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+..\rule(0.0+0.0)x430.0074
+..\glue 0.0
+
+
+Overfull \hbox (4.0pt too wide) has occurred while \output is active
+  []
+
+\hbox(10.14995+4.35004)x430.0074, glue set - 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\glue 3.0 plus 1.5 minus 1.0
+.\vbox(10.14995+4.35004)x430.0074
+..\glue -4.35004
+..\glue 0.0
+..\rule(0.0+0.0)x430.0074
+..\glue 4.35004
+..\hbox(10.14995+4.35004)x430.0074
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 215.00371fil []
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fill
+...\vbox(10.14995+4.35004)x430.0074
+....\hbox(10.14995+4.35004)x430.0074, glue set 209.00371fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\EU1/TimesNewRoman(0)/m/n/12 45
+.....\rule(10.14995+4.35004)x0.0
+.....\penalty 10000
+.....etc.
+...\glue 0.0 plus 1.0fill
+...\hbox(0.0+0.0)x0.0, glue set - 430.0074fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
+....\vbox(0.0+0.0)x430.0074
+.....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
+
+[45]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
  (./TAMUthesis_Template_OpenThisFileToCompile.aux (./data/cover.aux)
@@ -3561,12 +4690,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
  ) 
 Here is how much of TeX's memory you used:
- 50613 strings out of 493589
- 1117849 string characters out of 6146760
- 1450491 words of memory out of 5000000
- 53208 multiletter control sequences out of 15000+600000
- 29418 words of font info for 100 fonts, out of 8000000 for 9000
+ 51024 strings out of 493589
+ 1128812 string characters out of 6146760
+ 1454148 words of memory out of 5000000
+ 53597 multiletter control sequences out of 15000+600000
+ 29426 words of font info for 101 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  69i,20n,120p,10481b,2275s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on TAMUthesis_Template_OpenThisFileToCompile.pdf (39 pages).
+Output written on TAMUthesis_Template_OpenThisFileToCompile.pdf (56 pages).
