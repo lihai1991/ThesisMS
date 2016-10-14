@@ -1,0 +1,409 @@
+%\RequirePackage{atbegshi}
+\documentclass{beamer}
+
+\usepackage{hyperref}
+\usetheme{default}
+\usepackage{amssymb}
+%\usepackage[cmex10]{amsmath}
+\usepackage{stmaryrd}
+\usepackage[english]{babel}
+\usepackage{tikz,pgf,pgfplots}
+\pgfplotsset{compat=newest}
+\usepgflibrary{shapes,patterns}
+\usepgfplotslibrary{fillbetween}
+\usepgfplotslibrary{polar}
+\usetikzlibrary{%
+  arrows,%
+  mindmap,%mindmap
+  calendar,%calendar
+  decorations,%decorations
+  snakes,%snakes
+  shapes.misc,% wg. rounded rectangle
+  shapes.arrows,%
+	shapes.callouts, %
+  shapes,%
+  chains,%
+  matrix,%
+  positioning,% wg. " of "
+  scopes,%
+  decorations.pathmorphing,% /pgf/decoration/random steps | erste Graphik
+	decorations.text, %
+  shadows,%
+  backgrounds,%
+  fit,%
+  petri%
+}
+
+% Radius of regular polygons
+\newdimen\R
+\R=0.8cm
+
+\definecolor{tutorial}{RGB}{50,93,61}
+\definecolor{forest}{RGB}{34,139,34}
+\definecolor{tamu}{RGB}{80,0,0}
+
+
+\title{Estimating the Number of Active Devices \\ Within a Fixed area \\Using Wi-Fi Monitoring}
+\author{Hai Li \textcolor{gray}}
+\institute{Electrical and Computer Engineering \\ Texas A\&M University}
+\date{ October 18, 2016}
+
+\setbeamertemplate{footline}[page number]
+\setbeamertemplate{navigation symbols}{}
+%\textcolor{black}{\insertframenumber / \inserttotalframenumber}}
+
+\newlength\tikzheight
+\newlength\tikzwidth
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Outline}
+
+
+\begin{columns}
+\column{.5\textwidth}
+\begin{block}{Experiential Learning}
+\begin{enumerate}
+\item Problem Description
+\item Estimation Scheme
+\item Simulation and Result
+\item Experimental Implementation
+\item Conclusion
+\end{enumerate}
+\end{block}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Notional Diagram of Inference Task}
+\framesubtitle{\textcolor{gray}{\scriptsize Prof.~Gregory Huff}}
+\begin{columns}
+\column{.55\textwidth}
+  \begin{center}
+  \scalebox{0.8}{\input{Figures/NotionalDiagram}}
+  \end{center}
+\column{.43\textwidth}
+\begin{enumerate}
+\item Monitoring devices
+\item Directional antennas
+\item Agents inside zone of interest
+\item Agents outside area
+\end{enumerate}
+\end{columns}
+\vfill
+\begin{itemize}
+  \item Periphery of target area delineated by dashed line
+  \item \textbf{Estimate occupancy} inside target area
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Acquisition with Atypical Antennas}
+\framesubtitle{\textcolor{gray}{\scriptsize Prof.~Gregory Huff}}
+\begin{block}{\textcolor{magenta}{\textbf{Research Questions}}}
+\begin{itemize}
+  \item What are good designs for occupancy estimation?
+  \item How should one design antennas for inference tasks?
+\end{itemize}
+\end{block}
+\begin{center}
+  \input{Figures/SignalSampling}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Antenna Gain as Function of Azimuth Angle}
+\framesubtitle{\textcolor{gray}{\scriptsize Hong Pan, Prof.~Gregory Huff}}
+\begin{columns}
+\column{.60\textwidth}
+  \begin{center}
+  \scalebox{0.70}{\input{Figures/SignalStrength}}
+  \end{center}
+\column{.38\textwidth}
+\begin{block}{Experimental Setting}
+  \begin{itemize}
+  \item Typical devices
+  \item 3 $\times$ same model
+  \item $\mathrm{E}_{\theta}$-polarization\\
+    $\theta = 90^{\circ}$\\
+    $0^{\circ} < \phi < 360^{\circ}$
+  \item Measurements obtained in TAMU anechoic chamber
+  \end{itemize}
+\end{block}
+\end{columns}
+\vfill
+\begin{block}{Guideline}
+  \begin{itemize}
+  \item  Antenna pattern, along with device orientation, can be integrated in inference algorithm for enhanced performance.
+  \end{itemize}
+\end{block}
+\vfill
+\textcolor{gray}{\tiny ECEN~638, ECEN~626}
+\end{frame}
+
+\begin{frame}
+\frametitle{Wireless Channel Characterization}
+\begin{block}{Mathematical Model}
+  \begin{itemize}
+  \item Variations in received signal strength are governed by several factors including \textbf{mean path loss} and shadow fading
+    \begin{equation*}
+    P_{ij} \mathrm{[dB]}
+    = A + B \log_{10} (d_{ij}) + L_{ij} + G_i(\phi_{ij})
+    \end{equation*}
+  \item $A$ and $B$ are mean decay parameters
+  \item $d_{ij}$ represents Euclidean distance between device and monitor
+  \item $L_{ij}$ denotes shadow fading
+  \item $G_i (\cdot)$ is antenna gain of sensing unit
+  \item Shadow fading components are independent log-normal random variables
+  \end{itemize}
+\end{block}
+\vfill
+\textcolor{gray}{\tiny ECEN~601, ECEN~683}
+\end{frame}
+
+\begin{frame}
+\frametitle{Channel Characterization -- Parameter Estimation}
+\framesubtitle{\textcolor{gray}{\scriptsize Daniel Tunon, Prof.~Gregory Huff}}
+  \begin{center}
+  \setlength\tikzheight{0.5\textwidth}
+  \setlength\tikzwidth{0.8\textwidth}
+  \input{Figures/LeastSquares}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Channel Parameters -- Estimation Algorithms}
+\begin{itemize}
+    \item Least-squares estimation infer $A$ and $B$
+      \begin{align*}
+      (A, B) &= \operatorname*{arg\;min}_{a,b}
+      \left\| \vphantom{ \begin{bmatrix} p_1 \\ \vdots \\
+      p_n \end{bmatrix}} \right.
+      \underbrace{\begin{bmatrix} p_1 \\ \vdots \\
+      p_n \end{bmatrix}}_{\mathbf{p}}
+      - \underbrace{\begin{bmatrix} 1 & \log_{10} (d_1) \\
+      \vdots & \vdots \\ 1 & \log_{10} (d_n) \end{bmatrix}}_{M}
+      \begin{bmatrix} a \\ b \end{bmatrix}
+      \left. \vphantom{ \begin{bmatrix} p_1 \\ \vdots \\
+      p_n \end{bmatrix}} \right\|^2 \\
+      &= (M^{\mathrm{H}} M)^{-1} M^{\mathrm{H}} \mathbf{p}
+      \end{align*}
+    \item Variance of $L$ obtained by normalizing residual error
+      \begin{equation*}
+      \sigma_{\mathrm{s}}^2
+      = \frac{1}{(n-1)} \mathbf{p}^{\mathrm{H}}
+      \left( I - M(M^{\mathrm{H}} M)^{-1} M^{\mathrm{H}} \right) \mathbf{p}
+      \end{equation*}
+    \item Variance of $G$ is obtained in similar fashion
+\end{itemize}
+\vfill
+\textcolor{gray}{\tiny ECEN~601, ECEN~646, ECEN~662, STAT~611}
+\end{frame}
+
+\input{ecen2015statistics}
+\input{ecen2015parallel}
+\input{ecen2015iterativealgo}
+
+\begin{frame}
+\frametitle{Acquisition with Atypical Antennas (again)}
+\begin{block}{\textcolor{magenta}{\textbf{Research Questions}}}
+\begin{itemize}
+  \item \textcolor{gray}{What are good designs for occupancy estimation?}
+  \item How should one design antennas for inference tasks?
+\end{itemize}
+\end{block}
+\begin{center}
+  \input{Figures/SignalSampling}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Antenna Gain as Function of Azimuth Angle}
+\framesubtitle{\textcolor{gray}{\scriptsize Pranay Eedara, Hai Li, Anudeep Tungala, Nagaraj Janakiraman}}
+\begin{columns}
+\column{.6\textwidth}
+  \begin{center}
+  \scalebox{0.70}{\input{Figures/SignalStrength2}}
+  \end{center}
+\column{.38\textwidth}
+\begin{block}{Antenna Model}
+  \begin{itemize}
+  \item Direction (boresight)
+  \item 3~dB beamwidth
+  \item $\mathrm{E}_{\theta}$-polarization\\
+    $\theta = 90^{\circ}$\\
+    $0^{\circ} < \phi < 360^{\circ}$
+  \item Asymmetrical radiation pattern
+  \end{itemize}
+\end{block}
+\end{columns}
+\vfill
+\begin{block}{Established 3GPP Antenna Model}
+  \begin{itemize}
+  \item Antenna radiation pattern is characterized by pointing direction of maximum gain and beamwidth
+  \end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Simulation Results: Isotropic versus Directional}
+\framesubtitle{\textcolor{gray}{\scriptsize Pranay Eedara, Hai Li, Anudeep Tungala, Nagaraj Janakiraman}}
+\begin{columns}
+\column{.6\textwidth}
+  \begin{center}
+  \scalebox{0.65}{\input{Figures/bmse16}}
+  \end{center}
+\column{.38\textwidth}
+  \begin{itemize}
+  \item ML estimation
+  \item \textbf{Intensity} $\lambda = 16$
+  \item 101 values of $\alpha$
+  \item 10,000 trials per point
+  \item Numerical integration based on $100 \times 100$ grid
+  \end{itemize}
+\end{columns}
+\vfill
+\begin{block}{Research Outcome}
+  \begin{itemize}
+  \item Directional antennas outperform isotropic system
+  \item RF design considerations are significantly different for inference when compared to wireless communication
+  \end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Simulation Results: Isotropic versus Directional}
+\framesubtitle{\textcolor{gray}{\scriptsize Pranay Eedara, Hai Li, Anudeep Tungala, Nagaraj Janakiraman}}
+\begin{columns}
+\column{.6\textwidth}
+  \begin{center}
+  \scalebox{0.65}{\input{Figures/bmse64}}
+  \end{center}
+\column{.38\textwidth}
+  \begin{itemize}
+  \item ML estimation
+  \item \textbf{Intensity} $\lambda = 64$
+  \item 101 values of $\alpha$
+  \item 10,000 trials per point
+  \item Numerical integration based on $100 \times 100$ grid
+  \end{itemize}
+\end{columns}
+\vfill
+\begin{block}{Research Outcome}
+  \begin{itemize}
+  \item Directional antennas outperform isotropic system
+  \item RF design considerations are significantly different for inference when compared to wireless communication
+  \end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Architecture of Physical Experiment}
+\framesubtitle{\textcolor{gray}{\scriptsize Pranay Eedara, Hai Li, Anudeep Tungala, Nagaraj Janakiraman}}
+\begin{center}
+  \includegraphics[width=0.35\textwidth]{Figures/nuc.jpg}
+\end{center}
+\begin{itemize}
+\item Experimental setup consists of three components
+  \begin{itemize}
+  \item Alpha network card AWUS036NHA
+  \item Local processing units: Intel Next Unit of Computing
+  \item Cloud server
+  \end{itemize}
+\item NIC operates in monitor mode to capture WiFi packets
+\item Local processing units parses information: MAC addresses, RSSI values, time stamps
+\item Central server aggregates data from monitoring devices
+\item RSSI values are employed as basis for inference
+ \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Architecture of Physical Experiment}
+\framesubtitle{\textcolor{gray}{\scriptsize Pranay Eedara, Hai Li, Anudeep Tungala, Nagaraj Janakiraman}}
+\begin{center}
+  \includegraphics[width=0.6\textwidth]{Figures/qrcode.png}
+\end{center}
+\begin{center}
+    \url{https://plot.ly/~epranaykumar/29.embed}
+\end{center}
+\end{frame}
+
+\input{ecen2015graph}
+
+\begin{frame}
+\frametitle{Acquisition with Reconfigurable Antennas}
+\begin{block}{\textcolor{magenta}{\textbf{Research Opportunity}}}
+\begin{itemize}
+  \item Distinct antenna configurations create additional samples
+  \item Reconfigurable system is statistically superior
+  \item Design of reconfigurable antennas for inference is fundamentally different from communication infrastructures
+\end{itemize}
+\end{block}
+\begin{center}
+  \input{Figures/SignalSampling2}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Basic Notion of Reconfigurable Antennas}
+\framesubtitle{\textcolor{gray}{\scriptsize Hong Pan, Prof.~Gregory Huff}}
+\begin{block}{Radiation Patterns}
+  \begin{center}
+  \scalebox{0.92}{\input{Figures/ReconfigurableAntennas}}
+  \hfill
+  \scalebox{0.8}{\input{Figures/ReconfigurableAntennas2}}
+  \end{center}
+\end{block}
+\begin{block}{Notional Response}
+  Notional diagram of two-state radiation-reconfigurable antenna,
+  radiation patterns (left) and matched impedance bandwidth (right)
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Pragmatic Reconfigurable Antennas Systems}
+\framesubtitle{\textcolor{gray}{\scriptsize Hong Pan, Prof.~Gregory Huff }}
+  \includegraphics[width=0.38\textwidth]{Figures/PinDiode.png}
+  \hfill
+  \includegraphics[width=0.4275\textwidth]{Figures/FluidMechanism.png}
+\begin{columns}
+\column{.48\textwidth}
+  \begin{itemize}
+    \item PIN Diode
+    \item Bias voltage switches polarization
+  \end{itemize}
+\column{.48\textwidth}
+  \begin{itemize}
+    \item Liquid metal tuning
+    \item Segmented microfluidic network
+  \end{itemize}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Discussion and Concluding Remarks}
+
+    \begin{block}{Main Contributions}
+    \begin{itemize}
+    \item Inference using context-aware monitoring devices
+    \item Occupancy estimation, algorithms, efficiency and stability
+    \item Socio-physical networks of interactions
+    \end{itemize}
+    \end{block}
+
+    \begin{block}{Bonuses}
+    \begin{itemize}
+    \item Video of \emph{Medusa} acquisition structure
+    \item Demo at \url{https://plot.ly/~epranaykumar/29.embed}
+    \item Real-time simulation and visualization platform
+    \end{itemize}
+    \end{block}
+\end{frame}
+
+\end{document}
