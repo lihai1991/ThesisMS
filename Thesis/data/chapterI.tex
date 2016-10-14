@@ -1,95 +1,130 @@
 \chapter[INTRODUCTION]{INTRODUCTION}
+
 Occupancy estimation refers to the problem to estimate the number of people inside a certain area. 
 This topic has attracted lots of interests for years due to its importance.
 There are several potential applications that can benefit from occupancy estimation.
-In smart building automation systems, getting the knowledge of the level of occupancy, it is able to optimize the energy cost over the control of temperature and ventilation.
+In smart building automation systems, using knowledge of the level of occupancy, it is possible to optimize the energy cost over the control of temperature and ventilation.
 This can result in a large amount of energy saving~\cite{Nguyen2013244,Balaji:2013:SOB:2517351.2517370}.
-In navigation systems, providing road occupancy traffic information will allow users find out best route to the destination.In~\cite{5073548}, the author proposed a road monitoring system that encompass UMTS and GPRS data collection.
+In navigation systems, providing road occupancy traffic information will allow users to find out the best route to the destination.
+In~\cite{5073548}, the author proposed a road monitoring system that encompass UMTS and GPRS data collection.
 Under an emergency circumstance, a proper occupancy estimation may help the government guide the evacuation of crowds. 
 
-Recent years, the number of Wi-Fi access points and the number of Wi-Fi client devices have been increasing dramatically. This growth in Wi-Fi infrastructure leads to large amounts of data being transmitted over wireless networks. Cisco Systems predicts in their Visual Network Index that 55~percent of total mobile data traffic will be offloaded onto fixed networks through Wi-Fi access points and femtocells by 2020~\cite{CiscoVNI2016}. This means Wi-Fi is becoming a notable data source. Since Wi-Fi signals can tell us about our environment. A lot of attentions are drawn into this area, like self-localization, source localization and occupancy estimation~\cite{2461394,6197192}.
+In recent years, the number of Wi-Fi access points and the number of Wi-Fi client devices have been increasing dramatically.
+This growth in Wi-Fi infrastructure leads to large amounts of data being transmitted over wireless networks.
+Cisco Systems predicts in their Visual Network Index that 55~percent of total mobile data traffic will be offloaded onto fixed networks through Wi-Fi access points and femtocells by 2020~\cite{CiscoVNI2016}.
+This means Wi-Fi is increasingly becoming a prime data source since Wi-Fi signals can tell us about our environment.
+A lot of attention is drawn into this area, with topics such as self-localization, source localization and occupancy estimation~\cite{2461394,6197192}.
 
-As well, we have witnessed the rapid development of mobile technology which is led by large amount of smartphone users. Smartphone supports real-time communication and information access, and it is with an advanced mobile operating system which combines features of a personal computer operating system with other features useful for mobile or handheld use. This will bring influence on human activity. The global smartphone penetration rate has growing fast over these years. According to eMarketer's prediction in~\cite{emarketer}, smartphone user penetration as percentage of total global population will be 34.64\% by 2019. Now in the U.S., 197.4 million people owned smartphones (79.3 percent mobile market penetration) during the three months ending in December 2015 according to comScore's report~\cite{comscore}. This rapid development demands an improved manufacturing process. As the result, mass production involved in smartphone technology have decreased the cost of smartphone components. This fact makes smartphones prize-friendly to users. Notably smartphone operation systems also play important roles in mobile devices. For instance,  Android system provide the manufacturer a tool to produce multi-platform application for smartphone. This makes development procedure heaper and gets devices in the hands of more people.
+At the same time, we have witnessed the rapid development of mobile technology which is fuelled by a large amount of smartphone users.
+Smartphone supports real-time communication and information access, with an advanced mobile operating system that combines features of a personal computer and other features useful for mobile use.
+Smartphones are influencing human activity significantly.
+The global smartphone penetration rate has grown fast over past years.
+According to eMarketer's prediction in~\cite{emarketer}, smartphone user penetration as percentage of total global population will be 34.64 percent by 2019.
+In the U.S., 197.4 million people owned smartphones (79.3 percent mobile market penetration) during the three months ending in December 2015 according to comScore's report~\cite{comscore}.
+This rapid development demands an improved manufacturing process.
+As the result, mass production involved in smartphone technology have decreased the cost of smartphone components.
+This fact makes smartphones prize-friendly to users.
+Notably smartphone operation systems also play important roles in mobile devices.
+For instance, Android system provides the manufacturer a tool to produce multi-platform application for smartphone.
+This makes the development procedure cheaper and it gets devices in the hands of more people.
+Overall, the continuous growth in mobile technology attracts more attention into this field.
 
-Overall, the continuously growth in mobile technology attracts more attentions into this field.  In this work, we are interested in the
-occupancy estimation based on Wi-Fi activity of the users. A good understanding of the wireless channel is the key to analyze the communication systems. With this thought in mind, we will discuss important concepts in channel model like path loss, shadow fading and multipath propagation.
-%\section{path loss}
 
-Path loss refers to the attenuation in the transmitted signal while propagating from the transmitter (Tx) to the receiver (Rx). Typically received signal power is a function of distance between Tx and Rx. The simplest path loss model is used for unobstructed line-of-sight(LOS) signal path in free space propagation. Under this model, the received signal is given as
-%insert equation here
+\section{The Wireless Environment}
+
+In this work, we are interested in the occupancy estimation based on Wi-Fi activity of the users.
+A good understanding of the wireless channel is key to analyze communication systems.
+With this in mind, we will discuss important concepts in channel modeling like path loss, shadow fading and multipath propagation.
+Path loss refers to the attenuation in the transmitted signal while propagating from the transmitter (Tx) to the receiver (Rx).
+Received signal power is a function of the distance between Tx and Rx.
+The simplest path loss model is used for unobstructed line-of-sight (LOS) signal path in free space propagation.
+Under this model, the received signal is given by
 \begin{equation}
 P_{R} = P_{T} G_{T} G_{R} \frac{\lambda^2}{4 \pi d^2}
 \end{equation}
-where $P_{T}$ is the transmitted power, $G_{T}$ and $G_{R}$ are the transmit and receive antennas gains, respectively, $\lambda$ is the transmitted carrier wavelength, and $d$ is the distance between the Tx and the Rx. Thus, the received power falls off proportional to the ratio of wavelength over distance squared. We also find the relation between path loss and wave length. Shorter wave length, higher path loss.
-Though simple, the free space path loss model cannot be accurate in real environment. Therefore we need to take more factors into consideration.
+where $P_{T}$ is the transmitted power, $G_{T}$ and $G_{R}$ are the transmit and receive antenna gains, respectively, $\lambda$ is the transmitted carrier wavelength, and $d$ is the distance between Tx and Rx.
+Thus, the received power falls off proportional to the ratio of wavelength over distance squared.
+This also establishes the relation between path loss and wave length: shorter wave length, higher path loss.
+Though simple, the free space path loss model cannot be accurate in real environments.
+Therefore, we need to take more factors into consideration.
 
 %\section{shadowing}
-In the previous path loss model, we assume the path loss to be a constant if the distance is given. However in reality, the presence of the obstacles like buildings and trees between transmitter and receiver may bring random variations in path loss. This effect due to changes in scattering, reflecting and diffracting surfaces in the propagation environment is called shadowing~\cite{rappaport1996wireless}. Considering the shadowing, the received signal power is given as
-%insert equation
+In the previous path loss model, we assume the path loss to be a constant if the distance is given.
+However in reality, the presence of obstacles like buildings and trees between transmitter and receiver may bring random variations in path loss.
+This effect is due to changes in scattering, reflecting and diffracting surfaces in the propagation environment and it is called shadowing~\cite{rappaport1996wireless}.
+Considering shadowing, the received signal power becomes
 \begin{equation}
 P_{R} = P_{T} G_{T} G_{R} S
 \end{equation}
-where $P_{L}$ and $S$ correspond to the path loss and the shadow fading factor,respectively. Here $S$ is a random variable.
-Experiment results show that a log-normal distribution function provides a good match to the empirical pdf of the shadow fading component~\cite{bertoni1999radio}. Therefore the pdf of $S$ can be approximated as the pdf of Gaussian random variable when $S$ is expressed in $dB$ domain.
+where $P_{L}$ and $S$ correspond to the path loss and the shadow fading factor,respectively.
+Above, $S$ is a random variable.
+Experiment results show that a log-normal distribution function provides a good match to the empirical pdf of the shadow fading component~\cite{bertoni1999radio}.
+Therefore, the pdf of $S$ can be approximated as the pdf of a Gaussian random variable when $S$ is expressed in $dB$ domain.
 \begin{equation} 
 f_{S_{s}} (s)
 = \frac{1}{\sqrt{2 \pi} \sigma_{\mathrm{s}}} 
 \exp \left( - \frac{s^2}{2 \sigma_{\mathrm{s}}^2} \right)
 \end{equation}
-where $\sigma_{\mathrm{s}}$ is the standard deviation of shadowing. Typically $\sigma_{\mathrm{s}}$ is between 5-10 $dB$.
+where $\sigma_{\mathrm{s}}$ is the standard deviation of shadowing. Typically $\sigma_{\mathrm{s}}$ is between 5-10~dB.
 
 %\section{multipath fading}
-Multipath fading occurs as a result of the transmitted signal reflection, diffraction, and/or scattering on objects before reaching the destination. Multiple copies of signal may arrive at different phases. Multipath fading may also cause inter symbol interface. Compared with shadowing fading, multipath fading is a short-term factor that generally causes smaller effect to the signal power. Therefore the multipath fading is also called small-scale fading.
-Some model such as Rayleigh fading and Ricean fading can be used for multipath fading~\cite{rappaport1996wireless}. Rayleigh fading is a reasonable model when there are many objects in the environment that scatter the radio signal before it arrives at the receiver. However, when a LOS or a strong
-reflected path, termed specular component, also arrives at the receiver, the fading is more appropriately modeled by a Rician distribution~\cite{stuber2011principles}.
-Several different models such as Okumura, Hata, Walfish-Ikegami are proposed to model different environments like urban, rural and indoor area~\cite{stuber2011principles}.
+Multipath fading occurs as a result of the transmitted signal reflection, diffraction, and/or scattering on objects before reaching the destination.
+Multiple copies of the signal may arrive at different phases.
+Multipath fading may also cause inter-symbol interference.
+Compared with shadowing fading, multipath fading is a short-term factor that generally causes smaller effects to the signal power.
+Therefore, the multipath fading is also called small-scale fading.
+Some model such as Rayleigh fading and Ricean fading can be used for multipath fading~\cite{rappaport1996wireless}.
+Rayleigh fading is a reasonable model when there are many objects in the environment that scatter the radio signal before it arrives at the receiver.
+However, when a LOS exists or a strong reflected path, termed specular component, also arrives at the receiver, the fading is more appropriately modeled by a Rician distribution~\cite{stuber2011principles}.
+Several different models such as Okumura, Hata, Walfish-Ikegami have been proposed to model different environments like urban, rural and indoor areas~\cite{stuber2011principles}.
 
-
-Current literature on occupancy estimation are mainly based on either images or RF signals. Approaches based on camera use captured images to estimate the number of people in a crowded scene~\cite{Ma_2013_CVPR,Pe_count,li2008estimating}.
+Current literature on occupancy estimation is largely based on either images or RF signals.
+Approaches based on cameras use captured images to estimate the number of people in a crowded scene~\cite{Ma_2013_CVPR,Pe_count,li2008estimating}.
 Still, in such camera-based approaches, estimation accuracy can be affected by many factors such as brightness and image resolution.
-In addition, camera-based approaches typically lead to high deployment cost which makes it inconvenient to deploy in reality.
-On the other hand, occupancy estimation based on RF signals is more promising. This category consists several methods. 
-Passive infrared sensor is one of the common technologies use in the past few years. In~\cite{Garg200081}, they proposed an occupancy estimation system which is able to adjust with movement of the people inside the building. The author shows  that about 5\% more energy can be saved by using smart occupancy sensor as compared to non-adapting fixed time-delay sensors.
-In ~\cite{Shih:2015:OEU:2735960.2735969}, an indoor occupancy estimation using ultrasonic chirps is proposed. The author shows that the average error in
-percentage to the maximum capacity of the room is around 5\%. However it is an active sensing system, if multiple transducers are placed in the same room, each transducer will interfere with others.
+In addition, camera-based approaches typically lead to high deployment cost, which makes it inconvenient to deploy in reality.
+On the other hand, occupancy estimation based on RF signals is more promising.
+This category encompasses several methods. 
+Passive infrared sensor is one of the common technologies used in the past few years.
+In~\cite{Garg200081}, they proposed an occupancy estimation system which is able to adjust with movement of the people inside the building.
+The author shows  that about 5\% more energy can be saved by using smart occupancy sensor as compared to non-adapting fixed time-delay sensors.
+In~\cite{Shih:2015:OEU:2735960.2735969}, an indoor occupancy estimation using ultrasonic chirps is proposed.
+The author shows that the average error in percentage to the maximum capacity of the room is around 5\%.
+However, this option is an active sensing system; if multiple transducers are placed in the same room, each transducer will interfere with others.
 Some other methods involved Bluetooth~\cite{B_ad_hoc} and Wi-Fi~\cite{W_power}. However, the short transmission range limits the performance of Bluetooth-based methods.
 A research compared Wi-Fi and Bluetooth approaches~\cite{quteprints71808}.
 In their work, the authors stipulate that Wi-Fi has advantage over Bluetooth in monitoring people, due to shorter discovery time and higher detection rates.
 According to their results, more than 90\% of scanned unique MAC addresses in all places are Wi-Fi addresses; the popularity of using Wi-Fi devices is therefore significantly higher than that of Bluetooth devices, which means occupancy estimation using Wi-Fi is much more convenient in practice.
-In ~\cite{6847958}, the author proposes FCC, a device-Free Crowd Counting approach based on channel state information measurements. In ~\cite{7102673},  the author develops a new approach for estimating the total number of people walking in an area with only Wi-Fi power measurements between a pair of stationary transmitter/receiver antennas. In that case they do not need the measurement of channel state information.
+In~\cite{6847958}, the author proposes FCC, a device-Free Crowd Counting approach based on channel state information measurements.
+In~\cite{7102673}, the author develops a new approach for estimating the total number of people walking in an area with only Wi-Fi power measurements between a pair of stationary transmitter/receiver antennas.
+In that case, they do not need the measurement of channel state information.
 
-In this thesis, we are interested in estimating the number of active devices in a fixed area using Wi-Fi metadatas.
+In this thesis, we are interested in estimating the number of active devices in a fixed area using Wi-Fi metadata.
 Modern mobile devices equipped with Wi-Fi modules transmit Wi-Fi messages periodically.
 Therefore, this provides a means to estimate occupancy by passively listening to Wi-Fi packets.
 More specifically, by deploying Wi-Fi monitoring devices in an area of interest, it is possible to detect these Wi-Fi transmissions.
 Each acquired Wi-Fi packet contains a unique MAC address.
 This information can be augmented by the received signal strength indicator (RSSI) of the captured signal.
-In the current context, the MAC address serves as a device identifier, whereas the RSSI provides partial information about the physical distance between the transmitter and the receiver. This information is helpful in inferring the device location status.
-The existence of pcap, an application programming interface for capturing network traffic, and wireshark, a network protocol analyzer, makes the Wi-Fi traffic analysis more straightforward. 
+In the current context, the MAC address serves as a device identifier, whereas the RSSI provides partial information about the physical distance between the transmitter and the receiver.
+This information is helpful in inferring the device location status.
+The existence of \texttt{pcap}, an application programming interface for capturing network traffic, and wireshark, a network protocol analyzer, makes the Wi-Fi traffic analysis straightforward. 
 
 In the research, we focus on occupancy estimation based on Wi-Fi packets and we analyze the benefits associated with using directional antennas.
 On the one hand, we are going to introduce two stochastic estimation schemes.
-One is Bayes estimation scheme and the other is maximum likelihood scheme.
-On the other hand, we will investigate the benefit by using directional antennas in monitoring devices.  Because the radiation pattern of antenna will influence the RF propagation. It is naturally to think of the potential impacts it brings to use directional antennas. 
+One is a Bayes estimation scheme and the other is a maximum likelihood scheme.
+On the other hand, we will investigate the benefit by using directional antennas in monitoring devices.
+Because the radiation pattern of antenna will influence the RF propagation, it is naturally to think of the potential impacts it brings to use directional antennas. 
 We employ numerical simulations to compare the performance of different schemes corresponding to sensing devices with directional antennas and isotropic antennas.
-In the simulation, we assume that four sensing devices are located in the four corners of rectangular target area. The training RSSI values are assumed to obey free-space path loss model as well. Our results indicate if directional antennas are used, the error rate decreases considerably.
+In the simulation, we assume that four sensing devices are located in the four corners of a rectangular target area.
+The training RSSI values are assumed to obey free-space path loss model as well.
+Our results indicate if directional antennas are used, the error rate decreases considerably.
 In addition, our findings are further supported through outdoor experimentation.
 The testbed is implemented in a line-of-sight environment, with four sensing devices deployed at the corners of the area of interest.
 
 The remainder of this thesis is organized as follows.
-In Section~2, we explain our problem formulation and develop our probability model.
+In Section~2, we explain our problem formulation and develop a probability model.
 In Section~3, we propose two algorithms for occupancy estimation.
 These schemes are evaluated through numerical simulations in Section~4.
-We then discuss experimental result, along with description of experiment setup in Section~5.
+We then discuss experimental results, along with description of experiment setup in Section~5.
 Finally, we offer concluding remarks in Section~6.
-
- 
-
-
-
-
-
-
- 
 
 
