@@ -42,7 +42,7 @@ The antenna radiation pattern for various 3~dB beam-widths is shown in Fig.~\ref
 
 \section{Channel Characteristic}
 
-As mentioned in Chapter~\ref{chapter:SystemModel}, the channel model we adopt is the log-normal path loss model.
+As mentioned in Chapter~\ref{section:channel}, the channel model we adopt is the log-normal path loss model.
 The received signal power can be expressed as
 \begin{equation} \label{equation:Power}
 P \text{[dBm]}
@@ -181,14 +181,15 @@ The result is based on fifty thousand samples.
 \begin{table}[bht]
 	\caption{Confidence interval of $|r_{t}-\hat{r_{t}}|$ for simulation Bayes scheme} \label{table:ConfidenceBayes}
 	\centerline{
-		\begin{tabular}{|l|l|}
+		\begin{tabular}{|l|l|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{Antenna type}} &
-			\multicolumn{1}{|c|}{\textbf{Confidence interval}} \\
+			\multicolumn{1}{|c|}{\textbf{Confidence interval}}&
+			\multicolumn{1}{|c|}{\textbf{Confidence level}} \\
 			\hline
-			Directional & $1.412411 \pm 0.002166$ \\
+			Directional & $1.412411 \pm 0.002166$&95\% \\
 			\hline
-			Isotropic & $2.454623 \pm 0.003450$ \\
+			Isotropic & $2.454623 \pm 0.003450$&95\% \\
 			\hline
 		\end{tabular}}
 	\end{table}
@@ -233,14 +234,15 @@ The confidence interval of the absolute error $|r_{t}-\hat{r_{t}}|$ correspondin
 \begin{table}[bht]
 	\caption{Confidence interval of $|r_{t}-\hat{r_{t}}|$ for simulation corresponding to the Maximum likelihood scheme.} \label{table:ConfidenceMax}
 	\centerline{
-		\begin{tabular}{|l|l|}
+		\begin{tabular}{|l|l|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{Antenna type}} &
-			\multicolumn{1}{|c|}{\textbf{Confidence interval}} \\
+			\multicolumn{1}{|c|}{\textbf{Confidence interval}} &
+			\multicolumn{1}{|c|}{\textbf{Confidence level}} \\
 			\hline
-			Directional & $2.080484 \pm 0.002809$ \\
+			Directional & $2.080484 \pm 0.002809$&95\% \\
 			\hline
-			Isotropic & $4.972427 \pm 0.006020$ \\
+			Isotropic & $4.972427 \pm 0.006020$&95\% \\
 			\hline
 		\end{tabular}}
 \end{table}

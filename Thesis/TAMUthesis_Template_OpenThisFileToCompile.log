@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.8.17)  14 OCT 2016 08:27
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2016.8.17)  14 OCT 2016 16:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1951,14 +1951,14 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 30--30
- []   
+[]   
 
-\hbox(0.0+0.0)x430.0074, glue set 260.6716
-.\glue(\leftskip) 18.0
-.\hbox(0.0+0.0)x18.0
+\hbox(0.0+0.0)x430.0074, glue set 284.6716
+.\hbox(0.0+0.0)x0.0
 .\penalty 10000
 .\glue 3.0 plus 1.5 minus 1.0
 .\penalty 10000
+.\glue(\parfillskip) -30.60004
 .etc.
 
 )
@@ -2427,6 +2427,11 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
 [5]
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 109
+.
+ (c:/texlive/2016/texmf-dist/tex/latex/euenc/eu1lmtt.fd
+File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -2560,7 +2565,7 @@ Chapter 2.
 ]
 
 LaTeX Font Warning: Font shape `TS1/TimesNewRoman(0)/bx/n' undefined
-(Font)              using `TS1/TimesNewRoman(0)/m/n' instead on input line 36.
+(Font)              using `TS1/TimesNewRoman(0)/m/n' instead on input line 55.
 
 
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
@@ -3140,10 +3145,10 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 522.
 )
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 22.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 38.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 22.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 38.
 
 
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
@@ -3330,11 +3335,8 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 
 [22]
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 93.
-
-
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 95.
+               Default added (so using `tbp') on input line 139.
 
 File: Figures/bayesRt.png Graphic file (type QTm)
 <use  "Figures/bayesRt.png" >
@@ -3462,13 +3464,13 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 [24]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 147.
+               Default added (so using `tbp') on input line 198.
 
 File: Figures/bayesrtdir.png Graphic file (type QTm)
 <use  "Figures/bayesrtdir.png" >
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 153.
+               Default added (so using `tbp') on input line 204.
 
 File: Figures/bayesrtomni.png Graphic file (type QTm)
 <use  "Figures/bayesrtomni.png" >
@@ -3533,6 +3535,12 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
 [25]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 220.
+
+File: Figures/MaxRt.png Graphic file (type QTm)
+<use  "Figures/MaxRt.png" >
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -3594,16 +3602,6 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 .....\hbox(0.0+0.0)x430.0074, glue set 430.0074fil []
 
 [26]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 163.
-
-File: Figures/MaxRt.png Graphic file (type QTm)
-<use  "Figures/MaxRt.png" >
-
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 170.
-
-
 Overfull \hbox (4.0pt too wide) has occurred while \output is active
   []
 
@@ -3667,13 +3665,13 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 [27]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 188.
+               Default added (so using `tbp') on input line 249.
 
 File: Figures/maxrtdir.png Graphic file (type QTm)
 <use  "Figures/maxrtdir.png" >
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 194.
+               Default added (so using `tbp') on input line 255.
 
 File: Figures/maxrtomni.png Graphic file (type QTm)
 <use  "Figures/maxrtomni.png" >)
@@ -3803,10 +3801,6 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 
  (./data/chapterVI.tex
 Chapter 5.
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 9.
-(c:/texlive/2016/texmf-dist/tex/latex/euenc/eu1lmtt.fd
-File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
 (./Figures/Directionalantenna.tex)
 
 LaTeX Warning: No positions in optional float specifier.
@@ -3963,13 +3957,13 @@ File: Figures/bayesex.png Graphic file (type QTm)
 <use  "Figures/bayesex.png" >
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 75.
+               Default added (so using `tbp') on input line 76.
 
 File: Figures/bayesdirex.png Graphic file (type QTm)
 <use  "Figures/bayesdirex.png" >
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 81.
+               Default added (so using `tbp') on input line 82.
 
 File: Figures/bayesomniex.png Graphic file (type QTm)
 <use  "Figures/bayesomniex.png" >
@@ -4219,19 +4213,19 @@ Overfull \hbox (4.0pt too wide) has occurred while \output is active
 [36]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 90.
+               Default added (so using `tbp') on input line 91.
 
 File: Figures/maxRTex.png Graphic file (type QTm)
 <use  "Figures/maxRTex.png" >
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 112.
+               Default added (so using `tbp') on input line 114.
 
 File: Figures/maxdirex.png Graphic file (type QTm)
 <use  "Figures/maxdirex.png" >
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 118.
+               Default added (so using `tbp') on input line 120.
 
 File: Figures/maxomniex.png Graphic file (type QTm)
 <use  "Figures/maxomniex.png" >)
@@ -4690,10 +4684,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
  ) 
 Here is how much of TeX's memory you used:
- 51026 strings out of 493589
- 1128872 string characters out of 6146760
- 1454345 words of memory out of 5000000
- 53599 multiletter control sequences out of 15000+600000
+ 51027 strings out of 493589
+ 1128883 string characters out of 6146760
+ 1454489 words of memory out of 5000000
+ 53600 multiletter control sequences out of 15000+600000
  29426 words of font info for 101 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  69i,20n,120p,10481b,2275s stack positions out of 5000i,500n,10000p,200000b,80000s

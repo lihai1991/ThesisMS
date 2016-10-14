@@ -7,7 +7,7 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces System parameters used during simulations.\relax }}{21}{table.caption.11}
 \contentsline {table}{\numberline {4.2}{\ignorespaces Confidence interval of $|r_{t}-\mathaccentV {hat}05E{r_{t}}|$ for simulation Bayes scheme\relax }}{25}{table.caption.13}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Confidence interval of $|r_{t}-\mathaccentV {hat}05E{r_{t}}|$ for simulation Maximum likelihood scheme\relax }}{28}{table.caption.17}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Confidence interval of $|r_{t}-\mathaccentV {hat}05E{r_{t}}|$ for simulation corresponding to the Maximum likelihood scheme.\relax }}{28}{table.caption.17}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Confidence interval of $|r_{t}-\mathaccentV {hat}05E{r_{t}}|$ for experimental Bayes scheme\relax }}{35}{table.caption.24}
 \contentsline {table}{\numberline {5.2}{\ignorespaces Confidence interval of $|r_{t}-\mathaccentV {hat}05E{r_{t}}|$ for experimental Maximum estimation scheme\relax }}{37}{table.caption.28}
