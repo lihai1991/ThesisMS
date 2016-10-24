@@ -5,7 +5,7 @@ A Bayes estimation scheme and a maximum likelihood estimation algorithm are cons
 If the estimation process is applied repetitively over time, then acquired data can be employed to gain accurate estimates for $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$.
 In other words, $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ are considered known.
 In such scenarios, Bayes estimation is employed.
-On the other hand, if the occupancy estimation is applied to an area of interest once, then we should use a classic framework such as maximum likelihood estimation.
+On the other hand, if the occupancy estimation is applied to an area of interest once, then we can use a classic framework such as maximum likelihood estimation.
 
 
 \section{Bayes Estimation} \label{section:BayesEstimation}
@@ -35,8 +35,8 @@ d\underline{\mathbf{u}}
 \end{split}
 \end{equation}
 where $\underline{\mathbf{U}}$ is the location vector containing the random positions of the wireless clients. The location vector includes lots of information. For example, the size of $\underline{\mathbf{U}}$ is the number of active wireless clients.
-According to location vector, we can get the number of wireless clients inside or outside the target area.
-Thus, $R_{t}$ and $R_{o}$ are functions of $\underline{\mathbf{U}}$.
+According to the location vector, we can get the number of wireless clients inside or outside the target area.
+Thus, $R_{t}$ and $R_{o}$ can be viewed as functions of $\underline{\mathbf{U}}$.
 Because the outside and inside Poisson processes are independent, the distribution of $\underline{\mathbf{U}}$ can be written as
 \begin{equation} \label{equation:distU}
 \begin{split}
@@ -73,18 +73,18 @@ e^{- \frac{ \sum_{i=1}^{n_{\mathrm{s}}}
 {2 \sigma_{\mathrm{s}}^2}} .
 \end{split}
 \end{equation}
-The conditional distribution of $\underline{\mathbf{P}}$ given $\underline{\mathbf{U}}=\underline{\mathbf{u}}$, is
+The conditional distribution of $\underline{\mathbf{P}}$ given $\underline{\mathbf{U}}=\underline{\mathbf{u}}$, is then
 \begin{equation} \label{equation:CondDistP}
 f_{\underline{\mathbf{P}} | \underline{\mathbf{U}}}
 \left( \underline{\mathbf{p}} | \underline{\mathbf{u}} \right)
 = \prod_{j=1}^{n_{\mathrm{a}}}
 f_{\mathbf{P}_j | \mathbf{U}_j} (\mathbf{p}_{j}|\mathbf{u}_j)  .
 \end{equation}
-With the conditional distribution of $\underline{\mathbf{P}}$ given $\underline{\mathbf{U}}=\underline{\mathbf{u}}$ and distribution of $\underline{\mathbf{U}}$, we can compute the marginal distribution of $\underline{\mathbf{P}}$,
+With the conditional distribution of $\underline{\mathbf{P}}$ given $\underline{\mathbf{U}}=\underline{\mathbf{u}}$ and the distribution of $\underline{\mathbf{U}}$, we can compute the marginal distribution of $\underline{\mathbf{P}}$,
 \begin{equation*}
 \begin{split}
-&f_{\underline{\mathbf{P}}} \left( \underline{\mathbf{p}} \right)
-= \int_{ \left\{ \underline{\mathbf{u}}
+f_{\underline{\mathbf{P}}} \left( \underline{\mathbf{p}} \right)
+&= \int_{ \left\{ \underline{\mathbf{u}}
 	: R_{\mathrm{t}}(\underline{\mathbf{u}}) 
 	+ R_{\mathrm{o}}(\underline{\mathbf{u}}) = n_{\mathrm{a}} \right\} }
 f_{\underline{\mathbf{P}} | \underline{\mathbf{U}}}
@@ -99,8 +99,7 @@ d\underline{\mathbf{u}} \\
 	\lambda_{\mathrm{o}}^{r_{\mathrm{o}}}}
 {r_{\mathrm{t}}! r_{\mathrm{o}}!}
 e^{- A_{\mathrm{t}} \lambda_{\mathrm{t}}
-	- A_{\mathrm{o}} \lambda_{\mathrm{o}}} \\
-&\qquad \times
+	- A_{\mathrm{o}} \lambda_{\mathrm{o}}}
 \prod_{j \in \mathbb{I}} \mathcal{I}_{\mathcal{A}_{\mathrm{t}}}(j)
 \prod_{j \in \mathbb{I}^{\mathrm{c}}}
 \mathcal{I}_{\mathcal{A}_{\mathrm{o}}}(j) ,
@@ -116,7 +115,7 @@ where the integral components are defined by
 &= \int_{\mathcal{A}_{\mathrm{o}}} f_{\mathbf{P}_j|\mathbf{U}_j}
 (\mathbf{p}_j|\mathbf{u}_j) d\mathbf{u}_j .
 \end{align}
-Finally the posterior distribution of $R_{t}$, conditional on the gathered data is given as
+Finally the posterior distribution of $R_{t}$, conditional on the gathered data is given by
 \begin{equation*}
 \begin{split}
 	\Pr & \left( R_{\mathrm{t}} = r_{\mathrm{t}}
@@ -133,9 +132,10 @@ Finally the posterior distribution of $R_{t}$, conditional on the gathered data 
 	\prod_{j \in \mathbb{I}^{\mathrm{c}}} \mathcal{I}_{\mathcal{A}_{\mathrm{o}}}(j) .
 \end{split}
 \end{equation*}
-Computing this conditional distribution of $R_{t}$ given $\underline{\mathbf{P}}$ may appear difficult as it needs to take sums over subsets of $\{ 1, \ldots, n_{\mathrm{a}} \}$. However, by using generating functions, the posterior distribution can be calculated more efficiently~\cite{graham1994concrete}.
+Computing this conditional distribution of $R_{t}$ given $\underline{\mathbf{P}}$ may appear difficult as it entails taking sums over subsets of $\{ 1, \ldots, n_{\mathrm{a}} \}$.
+However, by using generating functions, the posterior distribution can be calculated more efficiently~\cite{graham1994concrete}.
 
-Thus, the mean of the posterior distribution of $R_{t}$ condition upon $\underline{\mathbf{P}}$ is the Bayes estimator,
+The mean of the posterior distribution of $R_{t}$ condition upon $\underline{\mathbf{P}}$ is the Bayes estimator,
 \begin{equation} \label{equation:MMSE}
 \hat{R}_{\mathrm{t}} \left( \underline{\mathbf{p}} \right)
 = \mathrm{E} \left[ R_{\mathrm{t}}
@@ -144,14 +144,14 @@ Thus, the mean of the posterior distribution of $R_{t}$ condition upon $\underli
 \Pr \left( R_{\mathrm{t}} = r_{\mathrm{t}}
 | \underline{\mathbf{P}} = \underline{\mathbf{p}} \right)  .
 \end{equation}
-We adopt Bayesian mean squared error to evaluate the performance of the estimator, which is given below.
+We adopt the Bayesian mean squared error (BMSE) to evaluate the performance of the estimator,
 \begin{equation} \label{equation:BMSE}
 \mathrm{BMSE} \left[ \hat{R}_{\mathrm{t}} \right]
 = \mathrm{E} \left[ \left(
 \hat{R}_{\mathrm{t}} \left( \underline{\mathbf{P}} \right)
 - R_{\mathrm{t}} \right)^2 \right] .
 \end{equation}
-This BMSE can be approximated by taking the average over samples numerically.
+This BMSE can be approximated by taking the average over samples,
 \begin{equation} \label{equation:EmpiricalBMSE}
 \mathrm{BMSE} \left[ \hat{R}_{\mathrm{t}} \right]
 \approx \frac{1}{M} \sum_{m=1}^M \left(
@@ -163,7 +163,7 @@ This BMSE can be approximated by taking the average over samples numerically.
 \section{Maximum likelihood estimation} \label{section:Maxestimation}
 
 In this section, we assume the Poisson intensity parameters $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ are unavailable.
-In this case we will employ a classical approach and adopt maximum-likelihood estimation~\cite{casella2001statistical}.
+For this scenario, we employ a classical approach and adopt maximum-likelihood estimation~\cite{casella2001statistical}.
 The distribution of $\underline{\mathbf{U}}$ can be written as
 \begin{equation}
 f_{\underline{\mathbf{U}}} \left( \underline{\mathbf{u}};
@@ -177,17 +177,15 @@ e^{- A_{\mathrm{t}} \lambda_{\mathrm{t}}
 \end{equation}
 The likelihood function is a function with two parameters, $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$
 \begin{equation}
-\begin{split}
 \mathcal{L} \left( \lambda_{\mathrm{t}}, \lambda_{\mathrm{o}};
 \underline{\mathbf{p}}, \underline{\mathbf{u}} \right)
-&= f_{\underline{\mathbf{P}}, \underline{\mathbf{U}}}
+= f_{\underline{\mathbf{P}}, \underline{\mathbf{U}}}
 \left( \underline{\mathbf{p}}, \underline{\mathbf{u}};
-\lambda_{\mathrm{t}}, \lambda_{\mathrm{o}} \right) \\
-&= f_{\underline{\mathbf{P}} | \underline{\mathbf{U}}}
+\lambda_{\mathrm{t}}, \lambda_{\mathrm{o}} \right)
+= f_{\underline{\mathbf{P}} | \underline{\mathbf{U}}}
 \left( \underline{\mathbf{p}} | \underline{\mathbf{u}} \right)
 f_{\underline{\mathbf{U}}} \left( \underline{\mathbf{u}};
 \lambda_{\mathrm{t}}, \lambda_{\mathrm{o}} \right) .
-\end{split}
 \end{equation}
 By computing the integral over $\underline{\mathbf{U}}$, we can get the marginal likelihood function
 \begin{equation} \label{equation:Likelihood}
@@ -216,7 +214,8 @@ f_{\underline{\mathbf{U}}} \left( \underline{\mathbf{u}};
 \mathcal{I}_{\mathcal{A}_{\mathrm{o}}}(j) .
 \end{split}
 \end{equation}
-This is a two-dimensional optimization, but we can simplify it to a one-dimensional optimization problem by following property,
+This results in a two-dimensional optimization for maximizing the likelihood.
+But, we can simplify it to a one-dimensional optimization problem by the following property,
 \begin{equation} 
 \max_{\lambda_{\mathrm{t}}, \lambda_{\mathrm{o}}}
 \mathcal{L} \left( \lambda_{\mathrm{t}}, \lambda_{\mathrm{o}};
@@ -227,7 +226,7 @@ This is a two-dimensional optimization, but we can simplify it to a one-dimensio
 \underline{\mathbf{p}} \right)
 \end{equation}
 where $\alpha$ within the interval $[0, 1]$.
-Therefore, we rewrite the likelihood function in terms of $\alpha$
+Under this property, we can rewrite the likelihood function in terms of $\alpha$ as
 \begin{equation}
 \begin{split}
 &\mathcal{L} \left(
@@ -246,7 +245,7 @@ Therefore, we rewrite the likelihood function in terms of $\alpha$
 \mathcal{I}_{\mathcal{A}_{\mathrm{o}}}(j) .
 \end{split}
 \end{equation}
-Now, we can use numerical methods to get the values of $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ which maximize the likelihood function.
+At this point, we can use standard numerical methods to get the values of $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ that maximize the likelihood function.
 Once $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ are obtained, the maximum likelihood estimator can be calculated as
 \begin{equation} 
 \begin{split}
@@ -261,7 +260,7 @@ Once $\lambda_{\mathrm{t}}$ and $\lambda_{\mathrm{o}}$ are obtained, the maximum
 \hat{\lambda}_{\mathrm{t}}, \hat{\lambda}_{\mathrm{o}} \right) .
 \end{split}
 \end{equation}
-We adopt the mean squared error to evaluate the performance of our estimator,
+We adopt the mean squared error (MSE) to evaluate the performance of our estimator,
 \begin{equation} \label{equation:MSE}
 \mathrm{MSE} \left[ \hat{R}_{\mathrm{t}} \right]
 = \mathrm{E} \left[ \left(
