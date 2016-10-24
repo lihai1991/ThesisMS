@@ -1,21 +1,30 @@
 \chapter{EXPERIMENTAL IMPLEMENTATION}
-To complement the numerical findings based on our theoretical framework. We take an experimental implementation to assess two schemes proposed in this work.
-The RSSI signal strength data set is collected during experiment. This information is also used to provide statistical evidence for the wireless channel model adopted
-throughout. This model is used to determine the characteristics of the environment. The system is designed to work on the 2.4 $GHz$ ISM radio band which is used by Wi-Fi technology. In this experiment, all wireless clients are connected to a wireless access point.
-This chapter details the way the experiments are designed, and explains the
+To complement the numerical findings based on our theoretical framework, we take an experimental implementation to assess the two schemes proposed in this work.
+The RSSI signal strength data set is collected during this experiment. This information is also used to provide statistical evidence for the wireless channel model adopted
+throughout. This model is used to determine the characteristics of the environment. The system is designed to work on the 2.4~GHz ISM radio band, which is used by Wi-Fi technology. In this experiment, all the wireless clients are connected to a wireless access point.
+This chapter details the way the experiments are designed, and it explains the
 analysis of the gathered information.
 
+
 \section{Monitoring Devices}
-Every sensing device takes the form of a Next Unit of Computing (NUC) by Intel{\texttrademark}, and runs on Ubuntu 14.04 operation system. Wireless monitoring is enabled through an Alfa{\texttrademark}~\texttt{AWUS036NHA} wireless interface with a detachable antenna.
-The Atheros{\texttrademark} chipset is able to listen to transmission packets on a channel if turned on monitoring mode. The sub-miniature version A antenna connectors are used to attach either isotropic antennas or directional antennas. Each monitoring device is attached with one directional antenna and one isotropic antenna. Wooden sticks are also used to fix the two antennas attached to one monitoring devices at different heights in order to reduce the interference influence between two antennas. The radiation pattern of directional antenna is shown in Fig. \ref{figure:Directionalantenna}.
+
+Every sensing device takes the form of a Next Unit of Computing (NUC) by Intel{\texttrademark}, and runs the Ubuntu 14.04 operation system.
+Wireless monitoring is enabled through an Alfa{\texttrademark}~\texttt{AWUS036NHA} wireless interface with a detachable antenna.
+The Atheros{\texttrademark} chipset is able to listen to transmission packets on a channel if monitoring mode is turned on.
+The sub-miniature version A (SMA) antenna connectors are used to attach either isotropic antennas or directional antennas.
+Each monitoring device is equipped with one directional antenna and one isotropic antenna.
+Wooden sticks are also employed to fix the two antennas attached to a monitoring devices, and they are positioned at different heights to reduce the interactions and the coupling effect between the two antennas.
+The radiation pattern of the directional antenna is shown in Fig.~\ref{figure:Directionalantenna}.
 \begin{figure}[t]
 	\centerline{\input{Figures/Directionalantenna}}
-	\caption{This graph depicts directional antenna radiation patterns}
+	\caption{This graph depicts the radiation pattern of the directional antenna radiations.}
 	\label{figure:Directionalantenna}
 \end{figure}
-A sniffing software build on the $pcap$ application programming interface captures and filters wireless packets.
+
+A sniffing software built on the \texttt{pcap} application programming interface captures and filters wireless packets.
 For filtering, we employ a hash table for removing the duplicates in the detected MAC addresses. 
-The software creates a local database to store MAC address and RSSI extracted from the wireless packets it receives. Finally the local database is sent to a central server for processing.
+The software creates a local database to store the MAC addresses and RSSI values extracted from the wireless packets observed by the system.
+Finally the local database is sent to a central server for processing.
 \begin{figure}[]
 	\centering
 	\includegraphics[scale=0.5]{Figures/DeviceSetup.jpg}
@@ -24,32 +33,55 @@ The software creates a local database to store MAC address and RSSI extracted fr
 \end{figure}
 The monitoring device we used during experiment is shown in Fig. \ref{figure: Device}.
 
-\section{Wireless client}
-In our experiment, the wireless clients are Android{\texttrademark} smartphones. All the wireless clients connect to a same local access point and send packets periodically which makes them detected by sniffing software. For the purpose of evaluate the performance of estimator, not only we need RSSI values, but we also need the ground truth (i.e. the location of the wireless clients). Thus we employ a custom app, which logs GPS coordinates and time. While conducting experiment, wireless clients periodically transmit the GPS information collected by app to a central server. MAC addresses and time stamps are then used to match locations to power vectors at the center server, yielding a data set for performance evaluation.
+\section{Wireless Client}
+In our experiment, the wireless clients are Android{\texttrademark} smartphones. All the wireless clients connect to a same local access point and send packets periodically which makes them detectable by sniffing software.
+For the purpose of evaluating the performance of our estimators, not only do we need RSSI values, but we also need a ground truth (i.e., the true locations of the wireless clients).
+To this end, we employ a custom app, which logs GPS coordinates and time.
+Throughout the experiment, the wireless clients periodically transmit their GPS information collected by the app to a central server.
+MAC addresses and time stamps are subsequently employed to match locations to power vectors at the center server, yielding a data set for performance evaluation.
+
 
 \section{Experimental Samples}
-The experimental samples are divided into two categories, one is for monitoring devices with isotropic antennas, the other is for monitoring devices with directional antennas. Each category contains about 400 power and location vectors. Each power vector is in this form, $\underline{\mathbf{p}} = (\mathbf{p}_1, \ldots, \mathbf{p}_{4})$, where $\mathbf{p}_i$ is the power received by $i$ monitoring device. Since there are four monitoring devices, we have almost 3200 distinct points of RSSI. For conduct experimental trail as following. Firstly, generate the number of active clients inside $\r_{t}$ and number of active clients outside $\r_{o}$ according to two Poisson distribution with parameter $\lambda_{t}$ and $\lambda_[o]$ respectively. 
+
+The experimental samples are divided into two categories, one is for monitoring devices with isotropic antennas, the other is for monitoring devices with directional antennas. Each category contains about 400 power and location vectors. Each power vector is in this form, $\underline{\mathbf{p}} = (\mathbf{p}_1, \ldots, \mathbf{p}_{4})$, where $\mathbf{p}_i$ is the power received by monitoring device~$i$.
+Since there are four monitoring devices, we have almost 3200 distinct data points.
+
+Experimental trials are then conducted as follows.
+First, we generate the number of active agents inside $\r_{t}$ and number of active agents outside $\r_{o}$ according to the two Poisson distributions with parameters
 \begin{xalignat*}{2}
 	\lambda_{\mathrm{t}}
 	&= \alpha \frac{\lambda}{A_{\mathrm{t}}}
 	&\lambda_{\mathrm{o}}
 	&= (1 - \alpha) \frac{\lambda}{A_{\mathrm{o}}} .
 \end{xalignat*}
-Then $r_{t}$ entries are selected uniformly from clients in $A_{t}$, and $r_{o}$ entries are selected uniformly from clients in $A_{o}$. The two collections of entries are combined into a single vector $\underline{\mathbf{p}}$, which is the input to the estimator. At last, the estimates are evaluated through the ground truth.
+Then, $r_{t}$ entries are selected uniformly from clients in $A_{t}$, and $r_{o}$ entries are selected uniformly from clients in $A_{o}$.
+The two collections of entries are combined into a single vector $\underline{\mathbf{p}}$, which acts as input to the estimator.
+At last, the estimates are compared to the ground truth.
+
 
 \section{Channel Parameters}
-Channel parameters $A$ and $B$ can vary depending on the wireless environment. This experiment is conducted on widely open parking lot. Fig.  offers a satellite image view of the experiment site.
-The parameters are obtained by using least squares method mentioned in \ref{section:channel}. The parameters for the isotropic systems are $A = -41.68, B = -16.07$ and $\sigma_{s} = 7.91 dBm$. Similarly, the parameters for the systems with directional antennas are $A = -34.72, B = -17.11$ and $\sigma_{s} = 8.31 dBm$
+
+Channel parameters $A$ and $B$ can vary depending on the wireless environment.
+This experiment is conducted on widely open parking lot.
+Figure~\label{figure:Googlemap} offers a satellite image view of the experiment site.
+The parameters are obtained by using the least squares method mentioned in Section~\ref{section:channel}.
+The parameters for the the isotropic systems are $A = -41.68$, $B = -16.07$ and $\sigma_{s} = 7.91$~dBm.
+Similarly, the parameters for the systems with directional antennas are $A = -34.72$, $B = -17.11$ and $\sigma_{s} = 8.31$~dBm.
 \begin{figure}[]
 	\centering
 	\includegraphics[scale=1]{Figures/Googlemap.png}
 	\caption{This figure highlights the site used for the experiments and marks locations of experiment data. }
-	\label{figure: Googlemap}
+	\label{figure:Googlemap}
 \end{figure}
+
 
 \section{Experiment Results}
 \subsection{Performance of Bayes Estimation}
-Experimental curves under Bayes estimation scheme is shown in Fig. \ref{figure: bayesex}. The horizontal axis is the splitting parameter $\alpha$. The vertical axis is the BMSE. Each point is averaging over 10000 trails.
+
+The experimental results for the Bayes estimation scheme are shown in Fig.~\ref{figure: bayesex}.
+The horizontal axis represents the splitting parameter $\alpha$.
+The vertical axis corresponds to the BMSE.
+Each point is averaging over 10,000 trials.
 \begin{figure}[]
 	\centering
 	\includegraphics[scale=0.5]{Figures/bayesex.png}

@@ -14,18 +14,18 @@ We call the inside region the target area, and we refer to its complement as the
 \section{Antenna Characteristic}
 
 To analyze the effect of radiation characteristics of the sensing antennas on the estimation, isotropic antennas and directional antennas are considered.
-The antenna gain of isotropic antennas are zero in all directions.
-For the directional antennas, we adopt 3GPP antenna model in~\cite{3GPP-antenna}.
+The antenna gain of the isotropic antennas are zero in all directions.
+For the directional antennas, we adopt the 3GPP antenna model in~\cite{3GPP-antenna}.
 The directional antenna gains obey the following formula,
 \begin{equation*}
 G_i (\phi_{ij}) = - \min \left\{
 12 \left( \frac{\phi_{ij} - \theta_{i}}{\theta_{\mathrm{3dB}}} \right)^2,
 G_{\mathrm{floor}} \right\} - G_{\mathrm{avg}}
 \end{equation*}
-where $\theta_{i}$ is pointing direction of the antenna which is attached to monitoring device~$i$.
+where $\theta_{i}$ is the pointing direction of the antenna that is attached to monitoring device~$i$.
 Parameter $\theta_{\mathrm{3dB}}$ is the 3~dB beam-width of the radiation pattern.
-$G_{floor}$ is a nominal attenuation floor.
-$G_{average}$ is a normalization factor, which equal to the average gain over $\in (-180^{\circ}, 180^{\circ}]$,
+Variable $G_{floor}$ is a nominal attenuation floor.
+And, $G_{average}$ is a normalization factor, which equal to the average gain over $\in (-180^{\circ}, 180^{\circ}]$,
 \begin{equation*}
 10 \log_{10} \left( \int_{-180}^{180}
 \frac{ 10^{ - \frac{1}{10} \min \left\{
@@ -85,10 +85,10 @@ The parameter values we use to create the data set are summarized in Table~\ref{
 			\hline
 		\end{tabular}}
 \end{table}
-We generate the numerical data set as follow.
-We denote the location of the four monitoring devices as $\{ \mathbf{s}_i \}$ $i \in{1,2,3,4}$.
+We generate the numerical data set as follows.
+We denote the location of the four monitoring devices as $\{ \mathbf{s}_i \}$ where $i \in \{1,2,3,4\}$.
 First, we set a certain value $\lambda$, which represents the aggregate Poisson rate across the two monitored regions (inside region and outside region) equal to 32.
-The splitting parameter between two regions is $\alpha$.
+The splitting parameter between the two regions is $\alpha$.
 Thus,
 \begin{xalignat*}{2}
 	\lambda_{\mathrm{t}}
@@ -96,7 +96,7 @@ Thus,
 	&\lambda_{\mathrm{o}}
 	&= (1 - \alpha) \frac{\lambda}{A_{\mathrm{o}}}
 \end{xalignat*}
-where $\lambda_{t}$ is the Poisson rate of inside region and $\lambda_{o}$ is the Poisson rate of outside region.
+where $\lambda_{t}$ is the Poisson rate of the inside region and $\lambda_{o}$ is the Poisson rate of the outside region.
 Once $\lambda_{t}$ and $\lambda_{o}$ are determined, $r_{t}$ the number of devices inside and $r_{o}$ the number of devices outside are established using Poisson trials,
 \begin{xalignat*}{2}
 	R_{\mathrm{t}} &\sim
@@ -106,17 +106,17 @@ Once $\lambda_{t}$ and $\lambda_{o}$ are determined, $r_{t}$ the number of devic
 	\frac{\left( A_{\mathrm{o}} \lambda_{\mathrm{o}} \right)^k}{k!}
 	e^{- A_{\mathrm{o}} \lambda_{\mathrm{o}}} .
 \end{xalignat*}
-Each of $R_{{t}} = r_{{t}}$ devices inside the target area is independently assigned a location according to a uniform distribution.
-Likewise, each of $R_{\mathrm{o}} = r_{\mathrm{o}}$ devices outside is independently assigned a location according to another uniform distribution.
+Each of the $R_{{t}} = r_{{t}}$ devices inside the target area is independently assigned a location according to a uniform distribution.
+Likewise, each of the $R_{\mathrm{o}} = r_{\mathrm{o}}$ devices outside is independently assigned a location according to another uniform distribution.
 Therefore, we obtain the location vector $\underline{\mathbf{U}} = \underline{\mathbf{u}}$ of the wireless clients.
 For each of the wireless clients, a collection of four received signal strength corresponding to the four monitoring devices is computed according to \eqref{equation:Power}.
 The shadow fading component $L$ is generated following a log-normal distribution whose standard deviation $\sigma_{s}=2.0$~dBm.
-Finally, we get the sequence of power vectors $\underline{\mathbf{p}} = (\mathbf{p}_1, \ldots, \mathbf{p}_{n_{\mathrm{a}}})$, where vector $\mathbf{p}_j$ corresponding to wireless client $j$ contains four power strength received by four monitoring devices respectively.
+Finally, we get the sequence of power vectors $\underline{\mathbf{p}} = (\mathbf{p}_1, \ldots, \mathbf{p}_{n_{\mathrm{a}}})$, where vector $\mathbf{p}_j$ corresponding to wireless client $j$ contains four power strength received by four monitoring devices, respectively.
 
 
 \section{Performance Analysis}
 
-The proposed estimators act on observation vector $\mathbf{p}$
+The proposed estimators act on observation vector $\mathbf{p}$.
 
 
 \subsection{Bayes Estimation}
@@ -129,17 +129,18 @@ As is discussed in the previous section, the Poisson rate of the combined two re
 	&\lambda_{\mathrm{o}}
 	&= (1 - \alpha) \frac{\lambda}{A_{\mathrm{o}}} .
 \end{xalignat*}
-In the simulation results, the area of inside region $A_{t}$ is equal to 36, and the area of outside region $A_{o}$ is equal to 64.
+In the simulation results, the area of the inside region $A_{t}$ is equal to 36, and the area of the outside region $A_{o}$ is equal to 64.
 We can plot performance results as a function of the splitting coefficient $\alpha$.
-The vertical axis represents the BMSE of Bayes estimator.
-The black curve in Fig.~\ref{figure: BayesRt} shows the BMSE when the Bayes estimator operates on data collected using isotropic antennas.
+The vertical axis represents the BMSE of the Bayes estimator.
+The black curve in Fig.~\ref{figure: BayesRt} shows the BMSE when the Bayes estimator operates on the data collected using isotropic antennas.
 The red curve in Fig.~\ref{figure: BayesRt} corresponds to four directional antennas located at the four corners of the target area and pointing directly to the center.
 These antennas have a 3~dB beam-width of $\theta_{\mathrm{3dB}} = 90^{\circ}$ and a nominal attenuation floor of $G_{\mathrm{floor}} = 20$~dB.
 Every point is obtained by averaging over fifty thousand trials.
 \begin{figure}[]
 	\centering
 	\includegraphics[scale=0.6]{Figures/bayesRt.png}
-	\caption{This graph shows Bayesian mean squared error as functions of splitting parameter under scheme of \ref{section:BayesEstimation}. Black line correspond to performance of system equipped with isotropic antennas, whereas red line correspond to the performance of systems with directional antennas. }
+	\caption{This graph shows the Bayesian mean squared error as functions of splitting parameter under the scheme of \ref{section:BayesEstimation}.
+The black line corresponds to performance of the system equipped with isotropic antennas, whereas the red line corresponds to the performance of systems with directional antennas. }
 	\label{figure: BayesRt}
 \end{figure}
 According to Fig.~\ref{figure: BayesRt}, systems with directional antennas perform better than systems with isotropic antennas.
@@ -151,15 +152,15 @@ Some interval estimates would include the true population parameter and some may
 A 95\% confidence level means that 95\% of the intervals would include the true parameter.
 Generally, the confidence interval is computed as below.
 Select a confidence level which describes the uncertainty of a sampling method.
-Compute $\alpha$,
+Compute
 \begin{equation*}
-\alpha = 1 - (\text{confidence level} / 100) .
+\gamma = 1 - (\text{confidence level} / 100) .
 \end{equation*}
 Find the critical probability $p^*$
 \begin{equation*}
-p^* = 1 - \alpha/2 .
+p^* = 1 - \gamma/2 .
 \end{equation*}
-Express the critical value as a $t$-statistic by using degree of freedom and critical probability, where degree of freedom equals to
+Express the critical value as a $t$-statistic by using the degree of freedom and the critical probability, where the degree of freedom is equal to
 \begin{equation*}
 df = N-1
 \end{equation*}
@@ -169,17 +170,17 @@ The standard error $SE$ is given as
 SE= \dfrac{\sigma}{\sqrt{N}}
 \end{equation*}
 where $\sigma$ is the standard deviation of the sample.
-The magin of error is the product of critical value $t^*$ and $SE$.
+The margin of error is the product of the critical value $t^*$ and $SE$.
 The confidence interval is expressed as
 \begin{equation*}
 \text{Confidence interval} = \mu \pm \text{Margin of error}
 \end{equation*}
 where $\mu$ is the mean of the sample.
-In this simulation, we analyze the absolute difference between the real number of active devices inside $r_{t}$ and the estimator result $\hat{r_{t}}$.
+In this simulation, we analyze the absolute difference between the true number of target devices $r_{t}$ and the estimated result $\hat{r_{t}}$.
 The confidence intervals of $|r_{t}-\hat{r_{t}}|$ corresponding to isotropic antennas and directional antennas are summarized in Table~\ref{table:ConfidenceBayes}.
 The result is based on fifty thousand samples.
 \begin{table}[bht]
-	\caption{Confidence interval of $|r_{t}-\hat{r_{t}}|$ for simulation Bayes scheme} \label{table:ConfidenceBayes}
+	\caption{Confidence interval of $|r_{t}-\hat{r_{t}}|$ for the simulated Bayes scheme.} \label{table:ConfidenceBayes}
 	\centerline{
 		\begin{tabular}{|l|l|c|}
 			\hline
@@ -193,18 +194,18 @@ The result is based on fifty thousand samples.
 			\hline
 		\end{tabular}}
 	\end{table}
-To make the result more straightforward, we use Gaussian kernel density estimation to plot the approximation of the probability density function of $|r_{t}-\hat{r_{t}}|$.
+To make the result more straightforward, we use a Gaussian kernel density estimation to plot the approximation of the probability density function of $|r_{t}-\hat{r_{t}}|$.
 The horizontal axis represents value for $|r_{t}-\hat{r_{t}}|$.
 \begin{figure}[]
 	\centering
 	\includegraphics[scale=0.5]{Figures/bayesrtdir.png}
-	\caption{This graph shows the approximation probability density function of $|r_{t}-\hat{r_{t}}|$ corresponding to system equipped with directional antennas under the scheme of Section~\ref{section:BayesEstimation}. }
+	\caption{This graph shows the approximation probability density function of $|r_{t}-\hat{r_{t}}|$ corresponding to the system equipped with directional antennas under the scheme of Section~\ref{section:BayesEstimation}. }
 	\label{figure: BayesRtdir}
 \end{figure}
 \begin{figure}[]
 	\centering
 	\includegraphics[scale=0.5]{Figures/bayesrtomni.png}
-	\caption{This graph shows the approximation probability density function of $|r_{t}-\hat{r_{t}}|$ corresponding to system equipped with isotropic antennas under scheme of \ref{section:BayesEstimation}. }
+	\caption{This graph shows the approximation probability density function of $|r_{t}-\hat{r_{t}}|$ corresponding to the system equipped with isotropic antennas under the scheme of Section~\ref{section:BayesEstimation}. }
 	\label{figure: BayesRtomni}
 \end{figure}
 Comparing the PDF curves in Fig.~\ref{figure: BayesRtdir} and Fig.~\ref{figure: BayesRtomni}, the distribution of the error occurs in system with directional antennas appears closer to zero.
@@ -220,7 +221,8 @@ As before, the total Poisson rates is set to be 32 and the curves are functions 
 \begin{figure}[]
 	\centering
 	\includegraphics[scale=0.6]{Figures/MaxRt.png}
-	\caption{This figure shows mean squared error as functions of splitting parameter under scheme of Section~\ref{section:Maxestimation}. Black line correspond to performance of system equipped with isotropic antennas, whereas red line correspond to the performance of systems with directional antennas. }
+	\caption{This figure shows the mean squared error as functions of splitting parameter under scheme of Section~\ref{section:Maxestimation}.
+The black line corresponds to the performance of a system equipped with isotropic antennas, whereas the red line corresponds to the performance of a system with directional antennas. }
 	\label{figure: MaxRt}
 \end{figure}
 The black curve in Fig.~\ref{figure: MaxRt} shows the MSE when the maximum likelihood estimator operates on data collected using isotropic antennas.
@@ -258,8 +260,8 @@ The confidence interval of the absolute error $|r_{t}-\hat{r_{t}}|$ correspondin
 	\caption{This graph shows the approximation probability density function of $|r_{t}-\hat{r_{t}}|$ corresponding to system equipped with isotropic antennas under scheme of \ref{section:Maxestimation}. }
 	\label{figure: MaxRtomni}
 \end{figure}
-Compared the PDF curves in Fig.~\ref{figure: MaxRtdir} and Fig.~\ref{figure: MaxRtomni}, we see that the distribution of the error for systems with directional antennas appears closer to zero.
+Comparing the PDF curves in Fig.~\ref{figure: MaxRtdir} and Fig.~\ref{figure: MaxRtomni}, we see that the distribution of the error for systems with directional antennas appears closer to zero.
 This result, along with the fact that the MSE for the directional systems is smaller, shows that directional antennas outperform isotropic antennas within this context.
-Again, these results indicate that the information obtained from the directional antennas is more discriminating than the isotropic antennas. 
+Again, these results indicate that the information obtained from the directional antennas is more discriminating than the that gathered by isotropic antennas. 
 
 
