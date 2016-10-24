@@ -23,9 +23,9 @@ According to eMarketer's prediction in~\cite{emarketer}, smartphone user penetra
 In the U.S., 197.4 million people owned smartphones (79.3 percent mobile market penetration) during the three months ending in December 2015 according to comScore's report~\cite{comscore}.
 This rapid development demands an improved manufacturing process.
 As the result, mass production involved in smartphone technology have decreased the cost of smartphone components.
-This fact makes smartphones prize-friendly to users.
+This fact makes smartphones price-friendly to users.
 Notably smartphone operation systems also play important roles in mobile devices.
-For instance, Android system provides the manufacturer a tool to produce multi-platform application for smartphone.
+For instance, Android system provides the manufacturer a tool to produce multi-platform applications for smartphones.
 This makes the development procedure cheaper and it gets devices in the hands of more people.
 Overall, the continuous growth in mobile technology attracts more attention into this field.
 
@@ -40,35 +40,35 @@ Received signal power is a function of the distance between Tx and Rx.
 The simplest path loss model is used for unobstructed line-of-sight (LOS) signal path in free space propagation.
 Under this model, the received signal is given by
 \begin{equation}
-P_{R} = P_{T} G_{T} G_{R} \frac{\lambda^2}{4 \pi d^2}
+P_{R} = P_{T} G_{T} G_{R} \frac{\lambda^2}{4 \pi d^2} ,
 \end{equation}
 where $P_{T}$ is the transmitted power, $G_{T}$ and $G_{R}$ are the transmit and receive antenna gains, respectively, $\lambda$ is the transmitted carrier wavelength, and $d$ is the distance between Tx and Rx.
 Thus, the received power falls off proportional to the ratio of wavelength over distance squared.
-This also establishes the relation between path loss and wave length: shorter wave length, higher path loss.
-Though simple, the free space path loss model cannot be accurate in real environments.
+This also establishes the relation between path loss and wave length: a shorter wave length implies a higher path loss.
+Though simple, the free space path loss model is of limited value in real environments.
 Therefore, we need to take more factors into consideration.
 
 %\section{shadowing}
-In the previous path loss model, we assume the path loss to be a constant if the distance is given.
+In the previous path loss model, we assume the path loss to be constant if the distance is given.
 However in reality, the presence of obstacles like buildings and trees between transmitter and receiver may bring random variations in path loss.
 This effect is due to changes in scattering, reflecting and diffracting surfaces in the propagation environment and it is called shadowing~\cite{rappaport1996wireless}.
 Considering shadowing, the received signal power becomes
 \begin{equation}
-P_{R} = P_{T} G_{T} G_{R} S
+P_{R} = P_{T} G_{T} G_{R} S ,
 \end{equation}
 where $P_{L}$ and $S$ correspond to the path loss and the shadow fading factor,respectively.
 Above, $S$ is a random variable.
-Experiment results show that a log-normal distribution function provides a good match to the empirical pdf of the shadow fading component~\cite{bertoni1999radio}.
-Therefore, the pdf of $S$ can be approximated as the pdf of a Gaussian random variable when $S$ is expressed in $dB$ domain.
+Experiment results show that a log-normal distribution function provides a good match to the empirical probability density function (PDF) of the shadow fading component~\cite{bertoni1999radio}.
+Therefore, the pdf of $S$ can be approximated as the pdf of a Gaussian random variable when $S$ is expressed in the logarithmic (dB) domain:
 \begin{equation} 
 f_{S_{s}} (s)
 = \frac{1}{\sqrt{2 \pi} \sigma_{\mathrm{s}}} 
-\exp \left( - \frac{s^2}{2 \sigma_{\mathrm{s}}^2} \right)
+\exp \left( - \frac{s^2}{2 \sigma_{\mathrm{s}}^2} \right) ,
 \end{equation}
 where $\sigma_{\mathrm{s}}$ is the standard deviation of shadowing. Typically $\sigma_{\mathrm{s}}$ is between 5-10~dB.
 
 %\section{multipath fading}
-Multipath fading occurs as a result of the transmitted signal reflection, diffraction, and/or scattering on objects before reaching the destination.
+Multipath fading occurs as a result of signal reflections, diffractions, and/or scattering on objects before reaching the destination.
 Multiple copies of the signal may arrive at different phases.
 Multipath fading may also cause inter-symbol interference.
 Compared with shadowing fading, multipath fading is a short-term factor that generally causes smaller effects to the signal power.
@@ -85,38 +85,40 @@ In addition, camera-based approaches typically lead to high deployment cost, whi
 On the other hand, occupancy estimation based on RF signals is more promising.
 This category encompasses several methods. 
 Passive infrared sensor is one of the common technologies used in the past few years.
-In~\cite{Garg200081}, they proposed an occupancy estimation system which is able to adjust with movement of the people inside the building.
-The author shows  that about 5\% more energy can be saved by using smart occupancy sensor as compared to non-adapting fixed time-delay sensors.
+In~\cite{Garg200081}, the authors propose an occupancy estimation system which is able to adjust with movement of the people inside the building.
+They shows that about 5\% more energy can be saved by using smart occupancy sensor as compared to non-adapting fixed time-delay sensors.
 In~\cite{Shih:2015:OEU:2735960.2735969}, an indoor occupancy estimation using ultrasonic chirps is proposed.
 The author shows that the average error in percentage to the maximum capacity of the room is around 5\%.
-However, this option is an active sensing system; if multiple transducers are placed in the same room, each transducer will interfere with others.
-Some other methods involved Bluetooth~\cite{B_ad_hoc} and Wi-Fi~\cite{W_power}. However, the short transmission range limits the performance of Bluetooth-based methods.
+Yet, this option is an active sensing system; if multiple transducers are placed in the same room, they can interfere with one another.
+
+Other methods involved Bluetooth~\cite{B_ad_hoc} and Wi-Fi~\cite{W_power}.
+However, the short transmission range limits the performance of Bluetooth-based methods.
 A research compared Wi-Fi and Bluetooth approaches~\cite{quteprints71808}.
 In their work, the authors stipulate that Wi-Fi has advantage over Bluetooth in monitoring people, due to shorter discovery time and higher detection rates.
 According to their results, more than 90\% of scanned unique MAC addresses in all places are Wi-Fi addresses; the popularity of using Wi-Fi devices is therefore significantly higher than that of Bluetooth devices, which means occupancy estimation using Wi-Fi is much more convenient in practice.
 In~\cite{6847958}, the author proposes FCC, a device-Free Crowd Counting approach based on channel state information measurements.
 In~\cite{7102673}, the author develops a new approach for estimating the total number of people walking in an area with only Wi-Fi power measurements between a pair of stationary transmitter/receiver antennas.
-In that case, they do not need the measurement of channel state information.
+In this latter case, they do not need the measurement of channel state information.
 
 In this thesis, we are interested in estimating the number of active devices in a fixed area using Wi-Fi metadata.
 Modern mobile devices equipped with Wi-Fi modules transmit Wi-Fi messages periodically.
 Therefore, this provides a means to estimate occupancy by passively listening to Wi-Fi packets.
-More specifically, by deploying Wi-Fi monitoring devices in an area of interest, it is possible to detect these Wi-Fi transmissions.
+More specifically, by deploying Wi-Fi monitoring devices in an area of interest, it is possible to detect Wi-Fi transmissions.
 Each acquired Wi-Fi packet contains a unique MAC address.
 This information can be augmented by the received signal strength indicator (RSSI) of the captured signal.
-In the current context, the MAC address serves as a device identifier, whereas the RSSI provides partial information about the physical distance between the transmitter and the receiver.
+In the current context, the MAC address serves as a device identifier, whereas the RSSI provides partial information about the physical distance between the transmitter and the monitoring device.
 This information is helpful in inferring the device location status.
 The existence of \texttt{pcap}, an application programming interface for capturing network traffic, and wireshark, a network protocol analyzer, makes the Wi-Fi traffic analysis straightforward. 
 
 In the research, we focus on occupancy estimation based on Wi-Fi packets and we analyze the benefits associated with using directional antennas.
 On the one hand, we are going to introduce two stochastic estimation schemes.
 One is a Bayes estimation scheme and the other is a maximum likelihood scheme.
-On the other hand, we will investigate the benefit by using directional antennas in monitoring devices.
-Because the radiation pattern of antenna will influence the RF propagation, it is naturally to think of the potential impacts it brings to use directional antennas. 
+On the other hand, we will investigate the benefits of using directional antennas in monitoring devices.
+Because the radiation pattern of an antenna will influence the RF propagation, it is naturally to think of the potential impacts it brings to use directional antennas. 
 We employ numerical simulations to compare the performance of different schemes corresponding to sensing devices with directional antennas and isotropic antennas.
-In the simulation, we assume that four sensing devices are located in the four corners of a rectangular target area.
+In simulations, we assume that four sensing devices are located in the four corners of a rectangular target area.
 The training RSSI values are assumed to obey free-space path loss model as well.
-Our results indicate if directional antennas are used, the error rate decreases considerably.
+Our results indicate that, when directional antennas are employed, the error rate decreases considerably.
 In addition, our findings are further supported through outdoor experimentation.
 The testbed is implemented in a line-of-sight environment, with four sensing devices deployed at the corners of the area of interest.
 
