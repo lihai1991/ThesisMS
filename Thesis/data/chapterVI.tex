@@ -1,14 +1,17 @@
 \chapter{EXPERIMENTAL IMPLEMENTATION}
-To complement the numerical findings based on our theoretical framework, we take an experimental implementation to assess the two schemes proposed in this work.
-The RSSI signal strength data set is collected during this experiment. This information is also used to provide statistical evidence for the wireless channel model adopted
-throughout. This model is used to determine the characteristics of the environment. The system is designed to work on the 2.4~GHz ISM radio band, which is used by Wi-Fi technology. In this experiment, all the wireless clients are connected to a wireless access point.
-This chapter details the way the experiments are designed, and it explains the
-analysis of the gathered information.
+
+To complement the numerical findings based on our theoretical framework, we take an experimental implementation to assess the two schemes proposed in this thesis.
+The RSSI data set is collected during this experiment.
+This information is also used to provide statistical evidence for the wireless channel model adopted
+throughout. This model is used to determine the characteristics of the environment.
+The system is designed to work on the 2.4~GHz ISM radio band, which is used by Wi-Fi technology.
+In this experiment, all the wireless clients are connected to a wireless access point.
+This chapter details the way the experimental components are designed, and it explains the analysis of the gathered information.
 
 
 \section{Monitoring Devices}
 
-Every sensing device takes the form of a Next Unit of Computing (NUC) by Intel{\texttrademark}, and runs the Ubuntu 14.04 operation system.
+Every sensing device takes the form of a Next Unit of Computing (NUC) by Intel{\texttrademark}, and runs the Ubuntu 14.04 (GNU/Linux) operating system.
 Wireless monitoring is enabled through an Alfa{\texttrademark}~\texttt{AWUS036NHA} wireless interface with a detachable antenna.
 The Atheros{\texttrademark} chipset is able to listen to transmission packets on a channel if monitoring mode is turned on.
 The sub-miniature version A (SMA) antenna connectors are used to attach either isotropic antennas or directional antennas.
@@ -23,27 +26,30 @@ The radiation pattern of the directional antenna is shown in Fig.~\ref{figure:Di
 
 A sniffing software built on the \texttt{pcap} application programming interface captures and filters wireless packets.
 For filtering, we employ a hash table for removing the duplicates in the detected MAC addresses. 
-The software creates a local database to store the MAC addresses and RSSI values extracted from the wireless packets observed by the system.
+The software creates a local database to store the MAC addresses and the RSSI values extracted from the wireless packets observed by the system.
 Finally the local database is sent to a central server for processing.
-\begin{figure}[]
+The monitoring device we used during experiment is shown in Fig.~\ref{figure:Device}.
+\begin{figure}
 	\centering
 	\includegraphics[scale=0.5]{Figures/DeviceSetup.jpg}
-	\caption{This graph shows the monitoring device we use. }
-	\label{figure: Device}
+	\caption{This picture shows a custom monitoring device created for this experiment.}
+	\label{figure:Device}
 \end{figure}
-The monitoring device we used during experiment is shown in Fig. \ref{figure: Device}.
 
-\section{Wireless Client}
-In our experiment, the wireless clients are Android{\texttrademark} smartphones. All the wireless clients connect to a same local access point and send packets periodically which makes them detectable by sniffing software.
+
+\section{Wireless Clients}
+
+In our experiment, the wireless clients are Android{\texttrademark} smartphones.
+All the wireless clients connect to a same local access point and send packets periodically, which makes them detectable by monitoring software.
 For the purpose of evaluating the performance of our estimators, not only do we need RSSI values, but we also need a ground truth (i.e., the true locations of the wireless clients).
-To this end, we employ a custom app, which logs GPS coordinates and time.
-Throughout the experiment, the wireless clients periodically transmit their GPS information collected by the app to a central server.
+To this end, we employ a custom app that logs GPS coordinates and time.
+Throughout the experiment, the wireless clients periodically transmit the GPS information collected by their app to a central server.
 MAC addresses and time stamps are subsequently employed to match locations to power vectors at the center server, yielding a data set for performance evaluation.
 
 
 \section{Experimental Samples}
 
-The experimental samples are divided into two categories, one is for monitoring devices with isotropic antennas, the other is for monitoring devices with directional antennas. Each category contains about 400 power and location vectors. Each power vector is in this form, $\underline{\mathbf{p}} = (\mathbf{p}_1, \ldots, \mathbf{p}_{4})$, where $\mathbf{p}_i$ is the power received by monitoring device~$i$.
+The experimental samples are divided into two categories: one is for monitoring devices with isotropic antennas, the other is for monitoring devices with directional antennas. Each category contains about 400 power and location vectors. Each power vector is in this form, $\underline{\mathbf{p}} = (\mathbf{p}_1, \ldots, \mathbf{p}_{4})$, where $\mathbf{p}_i$ is the power received by monitoring device~$i$.
 Since there are four monitoring devices, we have almost 3200 distinct data points.
 
 Experimental trials are then conducted as follows.
@@ -54,7 +60,7 @@ First, we generate the number of active agents inside $\r_{t}$ and number of act
 	&\lambda_{\mathrm{o}}
 	&= (1 - \alpha) \frac{\lambda}{A_{\mathrm{o}}} .
 \end{xalignat*}
-Then, $r_{t}$ entries are selected uniformly from clients in $A_{t}$, and $r_{o}$ entries are selected uniformly from clients in $A_{o}$.
+Then, $r_{t}$ entries are selected uniformly from clients in $\mathcal{A}_{\mathrm{t}}$, and $r_{o}$ entries are selected uniformly from clients in $\mathcal{A}_{\mathrm{o}}$.
 The two collections of entries are combined into a single vector $\underline{\mathbf{p}}$, which acts as input to the estimator.
 At last, the estimates are compared to the ground truth.
 
@@ -70,7 +76,7 @@ Similarly, the parameters for the systems with directional antennas are $A = -34
 \begin{figure}[]
 	\centering
 	\includegraphics[scale=1]{Figures/Googlemap.png}
-	\caption{This figure highlights the site used for the experiments and marks locations of experiment data. }
+	\caption{This figure highlights the site used for the experiments, and it marks the locations of the mobile agents.}
 	\label{figure:Googlemap}
 \end{figure}
 
@@ -81,16 +87,17 @@ Similarly, the parameters for the systems with directional antennas are $A = -34
 The experimental results for the Bayes estimation scheme are shown in Fig.~\ref{figure: bayesex}.
 The horizontal axis represents the splitting parameter $\alpha$.
 The vertical axis corresponds to the BMSE.
-Each point is averaging over 10,000 trials.
+Each point is averaged over 10,000 trials.
 \begin{figure}[]
 	\centering
 	\includegraphics[scale=0.5]{Figures/bayesex.png}
-	\caption{This figure depicts the experimental Bayesian mean squared error as function of Poisson splitting coefficient $\alpha$. Red line represents systems with directional antennas, whereas black line represent system with isotropic antennas. }
+	\caption{This figure depicts the experimental Bayesian mean squared error as a function of Poisson splitting coefficient $\alpha$.
+	The red line represents systems with directional antennas, whereas the black line represents system with isotropic antennas.}
 	\label{figure: bayesex}
 \end{figure}
-The confidence intervals of $|r_{t}-\hat{r_{t}}|$ corresponding to isotropic antennas and directional antennas are summarized in Table \ref{table:ConfidenceBayesex}.
+The confidence intervals of $|r_{t}-\hat{r_{t}}|$ corresponding to isotropic antennas and directional antennas are summarized in Table~\ref{table:ConfidenceBayesex}.
 \begin{table}[bht]
-	\caption{Confidence interval of $|r_{t}-\hat{r_{t}}|$ for experimental Bayes scheme} \label{table:ConfidenceBayesex}
+	\caption{Confidence interval corresponding to $|r_{t}-\hat{r_{t}}|$ for the experimental Bayes scheme.} \label{table:ConfidenceBayesex}
 	\centerline{
 		\begin{tabular}{|l|l|c|}
 			\hline
@@ -104,31 +111,41 @@ The confidence intervals of $|r_{t}-\hat{r_{t}}|$ corresponding to isotropic ant
 			\hline
 		\end{tabular}}
 	\end{table}
-The approximation probability density functions corresponding to systems with directional antennas and isotropic antennas are shown in Fig. \ref{figure: bayesdirex} and Fig. \ref{figure: bayesomniex}.
+The approximate probability density functions corresponding to systems with directional antennas and isotropic antennas are shown in Fig.~\ref{figure: bayesdirex} and Fig.~\ref{figure: bayesomniex}.
 \begin{figure}[]
 	\centering
 	\includegraphics[scale=0.5]{Figures/bayesdirex.png}
-	\caption{This graph shows the approximation probability density function of $|r_{t}-\hat{r_{t}}|$ corresponding to system equipped with directional antennas under scheme of \ref{section:BayesEstimation}. }
+	\caption{This graph shows the approximate probability density function for $|r_{t}-\hat{r_{t}}|$ corresponding to a system equipped with directional antennas under the scheme of Section~\ref{section:BayesEstimation}. }
 	\label{figure: bayesdirex}
 \end{figure}
 \begin{figure}[]
 	\centering
 	\includegraphics[scale=0.5]{Figures/bayesomniex.png}
-	\caption{This graph shows the approximation probability density function of $|r_{t}-\hat{r_{t}}|$ corresponding to system equipped with isotropic antennas under scheme of \ref{section:BayesEstimation}. }
+	\caption{This graph shows the approximate probability density function for $|r_{t}-\hat{r_{t}}|$ corresponding to a system equipped with isotropic antennas under the scheme of Section~\ref{section:BayesEstimation}. }
 	\label{figure: bayesomniex}
 \end{figure}
-In this case using directional antennas does not bring an obvious benefit. The BMSE of systems with directional antennas and that with isotropic antennas are very close. As well as the confidence intervals and the absolute error distribution. This phenomena maybe caused by the inaccuracy of GPS information. Some small location errors may bring large errors, especially for the case when using directional antennas. 
-\subsection{Performance of Maximum Estimation}
-Experimental curves under Bayes estimation scheme is shown in Fig. \ref{figure: maxRTex}. The horizontal axis is the splitting parameter $\alpha$. The vertical axis is the BMSE. Each point is averaging over 10000 trails.
+In this case, using directional antennas does not bring an obvious benefit.
+The BMSE of the systems with directional antennas and that of the systems with isotropic antennas are very close.
+This phenomena may be caused by the inaccuracy of the GPS information.
+Small location errors may bring large estimation errors, especially when using directional antennas.
+
+
+\subsection{Performance of Maximum Likelihood Estimation}
+
+Experimental curves for the Bayes estimation scheme are shown in Fig.~\ref{figure: maxRTex}.
+The horizontal axis corresponds to the splitting parameter $\alpha$.
+The vertical axis is the BMSE.
+Each point is obtained by averaging over 10,000 trials.
 \begin{figure}[]
 	\centering
 	\includegraphics[scale=0.5]{Figures/maxRTex.png}
-	\caption{This figure depicts the experimental Bayesian mean squared error as function of Poisson splitting coefficient $\alpha$. Red line represents systems with directional antennas, whereas black line represent system with isotropic antennas. }
+	\caption{This figure depicts the experimental Bayesian mean squared error as a function of Poisson splitting coefficient $\alpha$.
+	The red line represents systems with directional antennas, whereas the black line represents systems with isotropic antennas.}
 	\label{figure: maxRTex}
 \end{figure}
-The confidence intervals of $|r_{t}-\hat{r_{t}}|$ corresponding to isotropic antennas and directional antennas are summarized in Table \ref{table:Confidencemaxex}.
+The confidence intervals of $|r_{t}-\hat{r_{t}}|$ corresponding to the isotropic antennas and directional antennas are summarized in Table~\ref{table:Confidencemaxex}.
 \begin{table}[bht]
-	\caption{Confidence interval of $|r_{t}-\hat{r_{t}}|$ for experimental Maximum estimation scheme} \label{table:Confidencemaxex}
+	\caption{Confidence interval associated with $|r_{t}-\hat{r_{t}}|$ for the experimental maximum likelihood estimation scheme.} \label{table:Confidencemaxex}
 	\centerline{
 		\begin{tabular}{|l|l|c|}
 			\hline
@@ -142,17 +159,18 @@ The confidence intervals of $|r_{t}-\hat{r_{t}}|$ corresponding to isotropic ant
 			\hline
 		\end{tabular}}
 	\end{table}
-	The approximation probability density functions corresponding to systems with directional antennas and isotropic antennas are shown in Fig. \ref{figure: maxdirex} and Fig. \ref{figure: maxomniex}.
+	The approximate probability density functions corresponding to systems with directional antennas and isotropic antennas are shown in Fig.~\ref{figure: maxdirex} and Fig.~\ref{figure: maxomniex}.
 	\begin{figure}[]
 		\centering
 		\includegraphics[scale=0.5]{Figures/maxdirex.png}
-		\caption{This graph shows the approximation probability density function of $|r_{t}-\hat{r_{t}}|$ corresponding to system equipped with directional antennas under scheme of \ref{section:Maxestimation}. }
+		\caption{This graph shows the approximate probability density function of $|r_{t}-\hat{r_{t}}|$ corresponding to systems equipped with directional antennas under the scheme of Section~\ref{section:Maxestimation}. }
 		\label{figure: maxdirex}
 	\end{figure}
 	\begin{figure}[]
 		\centering
 		\includegraphics[scale=0.5]{Figures/maxomniex.png}
-		\caption{This graph shows the approximation probability density function of $|r_{t}-\hat{r_{t}}|$ corresponding to system equipped with isotropic antennas under scheme of \ref{section:Maxestimation}. }
+		\caption{This graph shows the approximate probability density function of $|r_{t}-\hat{r_{t}}|$ corresponding to systems equipped with isotropic antennas under the scheme of Section~\ref{section:Maxestimation}. }
 		\label{figure: maxomniex}
 	\end{figure}
-In this case, systems with directional antennas better, which means systems equipped with direcional antennas are more discrimination.
+In this case, the systems with directional antennas perform better, which implies that directional antennas are collectively more discrimination.
+

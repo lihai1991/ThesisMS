@@ -1,7 +1,16 @@
 \chapter{CONCLUSION}
-In this thesis, we report two algorithms corresponding to different application scenarios for occupancy estimation using Wi-Fi monitoring. We serves NUC with sensing antenna as monitoring device. We test the estimators performance with isotropic and directional antennas through numerical simulation and experimental implementation. Our result indicates that it is possible to accurately estimate the number of active agents within a prescribed area by deploying sensing devices about the area of interest, and that performance is generally enhanced by the careful shaping of antenna radiation patterns.
-Performance of a monitoring system can then be enhanced by employing a configuration that strongly discriminates between wireless agents that are located within or outside the target area.
+
+In this thesis, we report two algorithms corresponding to different application scenarios for occupancy estimation using Wi-Fi monitoring.
+We utilize NUCs with sensing antennas as monitoring devices.
+We assess the performance of the estimators for isotropic and directional antennas through numerical simulations and prototyping.
+Our results indicate that it is possible to accurately estimate the number of active agents within a prescribed area by deploying sensing devices about the area of interest.
+Furthermore, performance is generally enhanced by the careful shaping of antenna radiation patterns.
+That is, the performance of a monitoring system can be enhanced by employing a configuration that strongly discriminates between wireless agents that are located within and outside the target area.
 In general, a more discriminating configuration yields considerable improvements over a generic setup with isotropic antennas.
 
-This work can be extended for future research. This includes tracking occupancy over time. It also includes estimate the density of person using non-uniform distributions. It is also interesting to use reconfigurable antennas to acquire very discriminating information about active devices for the wireless inference. Finally, the goal would be reality implementation such as indoor monitoring where multipath fading exists and tracking the movement of any particular active device. This information can be used to dynamically adapting Wi-Fi access point to network traffic conditions.
-\ignore{This work will include a numerical simulation corresponding to two estimation schemes. The simulation code is written in python. The simulation will show the performance comparison between directional antenna and isotropic antenna. The performance is evaluated via estimation error(BMSE for Bayesian estimation and MSE for maximum likelihood estimation). Preliminary results shows that performance improved when using directional antennas. To further support this result, an experiment will be conducted in the line of sight areas to obtain the experimental data. The performance of estimation will be reported with the experimental data obtained.}
+This work can be extended for future research.
+Potential problems include tracking occupancy over time, and estimate the density of people using non-uniform distributions.
+It would also be interesting to use reconfigurable antennas to acquire very discriminating information about active devices for wireless inference.
+Finally, a pragmatic goal would be to implement such a monitoring system indoors, where multipath fading exists and tracking the location of a particular device can be very challenging.
+This information could then be used to dynamically adapt Wi-Fi access points to changing network traffic conditions.
+
