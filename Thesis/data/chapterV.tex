@@ -136,13 +136,13 @@ The black curve in Fig.~\ref{figure: BayesRt} shows the BMSE when the Bayes esti
 The red curve in Fig.~\ref{figure: BayesRt} corresponds to four directional antennas located at the four corners of the target area and pointing directly to the center.
 These antennas have a 3~dB beam-width of $\theta_{\mathrm{3dB}} = 90^{\circ}$ and a nominal attenuation floor of $G_{\mathrm{floor}} = 20$~dB.
 Every point is obtained by averaging over fifty thousand trials.
-\begin{figure}[]
-	\centering
-	\includegraphics[scale=0.6]{Figures/bayesRt.png}
+\begin{figure}[t]
+	\centerline{\input{Figures/Simulations_Bayes_MSE}}
 	\caption{This graph shows the Bayesian mean squared error as functions of splitting parameter under the scheme of \ref{section:BayesEstimation}.
-The black line corresponds to performance of the system equipped with isotropic antennas, whereas the red line corresponds to the performance of systems with directional antennas. }
+		The black line corresponds to performance of the system equipped with isotropic antennas, whereas the red line corresponds to the performance of systems with directional antennas.}
 	\label{figure: BayesRt}
 \end{figure}
+
 According to Fig.~\ref{figure: BayesRt}, systems with directional antennas perform better than systems with isotropic antennas.
 
 To further compare the performances, we introduce confidence intervals.
@@ -218,11 +218,10 @@ This performance improvement results from the directional antennas being more di
 In this section, we look into the maximum likelihood estimation framework mentioned in Section~\ref{section:Maxestimation}.
 We use the average mean squared error to evaluate the performance of our estimator.
 As before, the total Poisson rates is set to be 32 and the curves are functions of splitting coefficient $\alpha$.
-\begin{figure}[]
-	\centering
-	\includegraphics[scale=0.6]{Figures/MaxRt.png}
+\begin{figure}[t]
+	\centerline{\input{Figures/Simulations_Max_MSE}}
 	\caption{This figure shows the mean squared error as functions of splitting parameter under scheme of Section~\ref{section:Maxestimation}.
-The black line corresponds to the performance of a system equipped with isotropic antennas, whereas the red line corresponds to the performance of a system with directional antennas. }
+		The black line corresponds to the performance of a system equipped with isotropic antennas, whereas the red line corresponds to the performance of a system with directional antennas.}
 	\label{figure: MaxRt}
 \end{figure}
 The black curve in Fig.~\ref{figure: MaxRt} shows the MSE when the maximum likelihood estimator operates on data collected using isotropic antennas.
